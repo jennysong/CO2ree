@@ -6,6 +6,7 @@ class Garden: UIViewController,UITableViewDataSource,UITableViewDelegate {
     var arrayOfTrees: [Tree] = [Tree]()
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "Garden"
         self.setUpTrees()
         // Do any additional setup after sloading the view, typically from a nib.
         //self.table.registerClass(UITableViewCell.self, forCellReuseIdentifier: "myCell")

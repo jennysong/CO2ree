@@ -19,7 +19,7 @@ class DetailTree: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationItem.title = treeNameValue
         //self.treeName.text = treeNameValue
         self.treeImage.image = UIImage(named: treeImageValue!)
         if(statusValue >= 1){
