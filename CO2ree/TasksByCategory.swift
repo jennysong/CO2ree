@@ -12,7 +12,7 @@ class TasksByCategory: UITableViewController, UITableViewDelegate, UITableViewDa
     
    
     @IBOutlet var taskTable: UITableView!
-    @IBOutlet weak var task: UIView!
+
     
     var items: [String] = ["We", "Heart", "Swift"]
     
