@@ -12,36 +12,59 @@ class TasksByCategory: UITableViewController, UITableViewDelegate, UITableViewDa
     
    
     @IBOutlet var taskTable: UITableView!
+    @IBOutlet weak var categoryTitle: UINavigationItem!
+    @IBOutlet weak var categoryGraph: UIImageView!
+    var categoryName = ""
+    var items: [String] = []
+    
 
-    
-    var items: [String] = ["We", "Heart", "Swift"]
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        categoryTitle.title = categoryName
         self.taskTable.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
-    }
-    
-    func taskTable(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.items.count;
-    }
-    
-    func taskTable(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell:UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell") as UITableViewCell
+        self.view.backgroundColor = UIColor.blackColor()
         
-        cell.textLabel?.text = self.items[indexPath.row]
+        //graph
+        categoryGraph.image = UIImage(named: "\(categoryName)Graph.jpg")
+        
+        for index in 0...28 {
+            if TaskLibrary().library[index][2] == categoryName {
+                items.append(TaskLibrary().library[index][0])
+            }
+        }
+    }
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return items.count;
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier("Cell") as UITableViewCell
+        
+        cell.textLabel?.text = items[indexPath.row]
         
         return cell
     }
     
-    func taskTable(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        println("You selected cell #\(indexPath.row)!")
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "goToTasksDetail" {
+                let taskDetailController = segue.destinationViewController as TaskDetail
+                if let indexPath = self.tableView.indexPathForSelectedRow() {
+                    taskDetailController.selectedTask = items[indexPath.row]
+                }
+            }
+        
     }
     
 }
-    
 
-    
-    
+
+
+
+
+
+
 

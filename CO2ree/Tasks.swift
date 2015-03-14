@@ -24,19 +24,19 @@ class Tasks: UIViewController {
         
         if segue.identifier == "goToTasksTransportation" {
             let tasksTransportation = segue.destinationViewController as TasksByCategory
-            //tasksTransportation.categoryName = "Transportation"
+            tasksTransportation.categoryName = "Transportation"
         }
         if segue.identifier == "goToTasksHome" {
             let tasksHome = segue.destinationViewController as TasksByCategory
-            //tasksHome.categoryName = "Home"
+            tasksHome.categoryName = "Home"
         }
         if segue.identifier == "goToTasksFood" {
             let tasksFood = segue.destinationViewController as TasksByCategory
-            //tasksFood.categoryName = "Food"
+            tasksFood.categoryName = "Food"
         }
         if segue.identifier == "goToTasksSchool" {
             let tasksSchool = segue.destinationViewController as TasksByCategory
-            //tasksSchool.categoryName = "School"
+            tasksSchool.categoryName = "School"
         }
     }
     
