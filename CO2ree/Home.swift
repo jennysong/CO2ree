@@ -34,6 +34,8 @@ class Home: UIViewController {
         }
     }
     
-    
+    @IBAction func goToGarden(sender: AnyObject) {
+        performSegueWithIdentifier("goToGardenFromHome", sender: sender)
+    }
 }
 
