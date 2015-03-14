@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  CO2ree 
+//  CO2ree
 //
 //  Created by Jenny Song on 2015-03-13.
 //  Copyright (c) 2015 SOJUniverse. All rights reserved.
@@ -8,18 +8,11 @@
 
 import UIKit
 
-class Home: UIViewController {
-    var userFirstTime: Bool = true
+class SignUp: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-
-    override func viewDidAppear(animated: Bool){
-        super.viewDidAppear(animated)
-        if userFirstTime {
-            self.performSegueWithIdentifier("goToLogIn", sender: self)
-        }
+        // Do any additional setup after loading the view, typically from a nib.
     }
     
     override func didReceiveMemoryWarning() {
@@ -27,13 +20,18 @@ class Home: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-        if segue.identifier == "goToLogIn" {
-            let signUpController = segue.destinationViewController as LogIn
+        if segue.identifier == "goToSignUpWithEmail" {
+            let signUpWithEmailController = segue.destinationViewController as SignUpWithEmail
         }
     }
     
     
+    @IBAction func signUpWithEmail(sender: AnyObject) {
+            performSegueWithIdentifier("goToSignUpWithEmail", sender: sender)
+    }
+    
+    
 }
-

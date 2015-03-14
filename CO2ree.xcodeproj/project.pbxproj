@@ -9,6 +9,19 @@
 /* Begin PBXBuildFile section */
 		BA221D4E1AB4370800DD7AC7 /* TaskLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA221D4D1AB4370800DD7AC7 /* TaskLibrary.swift */; };
 		BA221D801AB4569F00DD7AC7 /* TasksByCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA221D7F1AB4569F00DD7AC7 /* TasksByCategory.swift */; };
+		BA4DCD311AB4AAF900DFC265 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4DCD301AB4AAF900DFC265 /* User.swift */; };
+		BA4DCD331AB4B17600DFC265 /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4DCD321AB4B17600DFC265 /* LogIn.swift */; };
+		BA4DCD371AB4B88B00DFC265 /* LoginWithFacebookButton.png in Resources */ = {isa = PBXBuildFile; fileRef = BA4DCD341AB4B88B00DFC265 /* LoginWithFacebookButton.png */; };
+		BA4DCD381AB4B88B00DFC265 /* loginWithEmailButton.png in Resources */ = {isa = PBXBuildFile; fileRef = BA4DCD351AB4B88B00DFC265 /* loginWithEmailButton.png */; };
+		BA4DCD391AB4B88B00DFC265 /* signUpButton.png in Resources */ = {isa = PBXBuildFile; fileRef = BA4DCD361AB4B88B00DFC265 /* signUpButton.png */; };
+		BA4DCD3B1AB4BB9900DFC265 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4DCD3A1AB4BB9900DFC265 /* SignUp.swift */; };
+		BA4DCD3D1AB4BBEC00DFC265 /* WhyNeedLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4DCD3C1AB4BBEC00DFC265 /* WhyNeedLogin.swift */; };
+		BA4DCD3F1AB4BC6900DFC265 /* LoginWithEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4DCD3E1AB4BC6900DFC265 /* LoginWithEmail.swift */; };
+		BA4DCD411AB4CE5C00DFC265 /* LoginWithFB.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4DCD401AB4CE5C00DFC265 /* LoginWithFB.swift */; };
+		BA4DCD441AB4D65B00DFC265 /* signUpWithEmailButton.png in Resources */ = {isa = PBXBuildFile; fileRef = BA4DCD421AB4D65A00DFC265 /* signUpWithEmailButton.png */; };
+		BA4DCD451AB4D65B00DFC265 /* SignUpWithFBButton.png in Resources */ = {isa = PBXBuildFile; fileRef = BA4DCD431AB4D65A00DFC265 /* SignUpWithFBButton.png */; };
+		BA4DCD471AB4D6BC00DFC265 /* SignUpWithEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4DCD461AB4D6BC00DFC265 /* SignUpWithEmail.swift */; };
+		BA4DCD491AB4EA8200DFC265 /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4DCD481AB4EA8200DFC265 /* Welcome.swift */; };
 		BA5337581AB3EAE7004450C7 /* aboutus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA5337521AB3EAE7004450C7 /* aboutus.jpg */; };
 		BA5337591AB3EAE7004450C7 /* achievement.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA5337531AB3EAE7004450C7 /* achievement.jpg */; };
 		BA53375B1AB3EAE7004450C7 /* profile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA5337551AB3EAE7004450C7 /* profile.jpg */; };
@@ -22,7 +35,6 @@
 		BA53376F1AB3F88A004450C7 /* homeButton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA53376B1AB3F88A004450C7 /* homeButton.jpg */; };
 		BA5337701AB3F88A004450C7 /* schoolButton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA53376C1AB3F88A004450C7 /* schoolButton.jpg */; };
 		BA5337711AB3F88A004450C7 /* transportationButton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA53376D1AB3F88A004450C7 /* transportationButton.jpg */; };
-		BA5337731AB3FB4A004450C7 /* TasksWithCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5337721AB3FB4A004450C7 /* TasksWithCategories.swift */; };
 		BA5337771AB41462004450C7 /* transportationGraph.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA5337761AB41462004450C7 /* transportationGraph.jpg */; };
 		BA5337791AB41656004450C7 /* foodGraph.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA5337781AB41656004450C7 /* foodGraph.jpg */; };
 		BA53377C1AB416C3004450C7 /* homeGraph.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA53377A1AB416C3004450C7 /* homeGraph.jpg */; };
@@ -54,6 +66,19 @@
 /* Begin PBXFileReference section */
 		BA221D4D1AB4370800DD7AC7 /* TaskLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskLibrary.swift; sourceTree = "<group>"; };
 		BA221D7F1AB4569F00DD7AC7 /* TasksByCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksByCategory.swift; sourceTree = "<group>"; };
+		BA4DCD301AB4AAF900DFC265 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BA4DCD321AB4B17600DFC265 /* LogIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
+		BA4DCD341AB4B88B00DFC265 /* LoginWithFacebookButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginWithFacebookButton.png; sourceTree = "<group>"; };
+		BA4DCD351AB4B88B00DFC265 /* loginWithEmailButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginWithEmailButton.png; sourceTree = "<group>"; };
+		BA4DCD361AB4B88B00DFC265 /* signUpButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signUpButton.png; sourceTree = "<group>"; };
+		BA4DCD3A1AB4BB9900DFC265 /* SignUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		BA4DCD3C1AB4BBEC00DFC265 /* WhyNeedLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhyNeedLogin.swift; sourceTree = "<group>"; };
+		BA4DCD3E1AB4BC6900DFC265 /* LoginWithEmail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWithEmail.swift; sourceTree = "<group>"; };
+		BA4DCD401AB4CE5C00DFC265 /* LoginWithFB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWithFB.swift; sourceTree = "<group>"; };
+		BA4DCD421AB4D65A00DFC265 /* signUpWithEmailButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signUpWithEmailButton.png; sourceTree = "<group>"; };
+		BA4DCD431AB4D65A00DFC265 /* SignUpWithFBButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SignUpWithFBButton.png; sourceTree = "<group>"; };
+		BA4DCD461AB4D6BC00DFC265 /* SignUpWithEmail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpWithEmail.swift; sourceTree = "<group>"; };
+		BA4DCD481AB4EA8200DFC265 /* Welcome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
 		BA5337521AB3EAE7004450C7 /* aboutus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aboutus.jpg; sourceTree = "<group>"; };
 		BA5337531AB3EAE7004450C7 /* achievement.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = achievement.jpg; sourceTree = "<group>"; };
 		BA5337551AB3EAE7004450C7 /* profile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = profile.jpg; sourceTree = "<group>"; };
@@ -67,7 +92,6 @@
 		BA53376B1AB3F88A004450C7 /* homeButton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = homeButton.jpg; sourceTree = "<group>"; };
 		BA53376C1AB3F88A004450C7 /* schoolButton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = schoolButton.jpg; sourceTree = "<group>"; };
 		BA53376D1AB3F88A004450C7 /* transportationButton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = transportationButton.jpg; sourceTree = "<group>"; };
-		BA5337721AB3FB4A004450C7 /* TasksWithCategories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksWithCategories.swift; sourceTree = "<group>"; };
 		BA5337761AB41462004450C7 /* transportationGraph.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = transportationGraph.jpg; sourceTree = "<group>"; };
 		BA5337781AB41656004450C7 /* foodGraph.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = foodGraph.jpg; sourceTree = "<group>"; };
 		BA53377A1AB416C3004450C7 /* homeGraph.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = homeGraph.jpg; sourceTree = "<group>"; };
@@ -111,9 +135,15 @@
 		BA5337501AB3EA2C004450C7 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				BA4DCD321AB4B17600DFC265 /* LogIn.swift */,
+				BA4DCD3E1AB4BC6900DFC265 /* LoginWithEmail.swift */,
+				BA4DCD401AB4CE5C00DFC265 /* LoginWithFB.swift */,
+				BA4DCD3C1AB4BBEC00DFC265 /* WhyNeedLogin.swift */,
+				BA4DCD3A1AB4BB9900DFC265 /* SignUp.swift */,
+				BA4DCD461AB4D6BC00DFC265 /* SignUpWithEmail.swift */,
+				BA4DCD481AB4EA8200DFC265 /* Welcome.swift */,
 				BAAE19E31AB3DECE0008ED97 /* Home.swift */,
 				BA53375E1AB3ED71004450C7 /* Tasks.swift */,
-				BA5337721AB3FB4A004450C7 /* TasksWithCategories.swift */,
 				BA221D7F1AB4569F00DD7AC7 /* TasksByCategory.swift */,
 				BAD3AA7A1AB4722400470F8B /* TaskDetail.swift */,
 				BA5337601AB3F15D004450C7 /* Garden.swift */,
@@ -121,6 +151,7 @@
 				BA5337641AB3F19E004450C7 /* Profile.swift */,
 				F34C306C1AB44C0900BA4627 /* CustomCell.swift */,
 				F3CCEEC41AB46AB90008340C /* DetailTree.swift */,
+				BA4DCD301AB4AAF900DFC265 /* User.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -128,6 +159,11 @@
 		BA5337511AB3EA46004450C7 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				BA4DCD421AB4D65A00DFC265 /* signUpWithEmailButton.png */,
+				BA4DCD431AB4D65A00DFC265 /* SignUpWithFBButton.png */,
+				BA4DCD341AB4B88B00DFC265 /* LoginWithFacebookButton.png */,
+				BA4DCD351AB4B88B00DFC265 /* loginWithEmailButton.png */,
+				BA4DCD361AB4B88B00DFC265 /* signUpButton.png */,
 				BA53377E1AB418E1004450C7 /* back.png */,
 				F3504ADC1AB45E5D0080F6EF /* tree.png */,
 				BA5337781AB41656004450C7 /* foodGraph.jpg */,
@@ -288,9 +324,12 @@
 			files = (
 				BA53375C1AB3EAE7004450C7 /* statistics.jpg in Resources */,
 				BA5337771AB41462004450C7 /* transportationGraph.jpg in Resources */,
+				BA4DCD371AB4B88B00DFC265 /* LoginWithFacebookButton.png in Resources */,
 				BA53377F1AB418E1004450C7 /* back.png in Resources */,
 				BA53376E1AB3F88A004450C7 /* foodButton.jpg in Resources */,
+				BA4DCD451AB4D65B00DFC265 /* SignUpWithFBButton.png in Resources */,
 				BA5337711AB3F88A004450C7 /* transportationButton.jpg in Resources */,
+				BA4DCD441AB4D65B00DFC265 /* signUpWithEmailButton.png in Resources */,
 				BA53377C1AB416C3004450C7 /* homeGraph.jpg in Resources */,
 				BA5337701AB3F88A004450C7 /* schoolButton.jpg in Resources */,
 				BAAE19E71AB3DECE0008ED97 /* Main.storyboard in Resources */,
@@ -301,7 +340,9 @@
 				BAAE19EC1AB3DECE0008ED97 /* LaunchScreen.xib in Resources */,
 				BA53376F1AB3F88A004450C7 /* homeButton.jpg in Resources */,
 				BA5337791AB41656004450C7 /* foodGraph.jpg in Resources */,
+				BA4DCD381AB4B88B00DFC265 /* loginWithEmailButton.png in Resources */,
 				BA5337591AB3EAE7004450C7 /* achievement.jpg in Resources */,
+				BA4DCD391AB4B88B00DFC265 /* signUpButton.png in Resources */,
 				BAAE19E91AB3DECE0008ED97 /* Images.xcassets in Resources */,
 				BA53375B1AB3EAE7004450C7 /* profile.jpg in Resources */,
 			);
@@ -323,14 +364,21 @@
 			files = (
 				BAAE19E41AB3DECE0008ED97 /* Home.swift in Sources */,
 				BA5337651AB3F19E004450C7 /* Profile.swift in Sources */,
-				BA5337731AB3FB4A004450C7 /* TasksWithCategories.swift in Sources */,
 				F3CCEEC31AB462D00008340C /* Tree.swift in Sources */,
 				F3CCEEC51AB46AB90008340C /* DetailTree.swift in Sources */,
+				BA4DCD3B1AB4BB9900DFC265 /* SignUp.swift in Sources */,
 				BA5337611AB3F15D004450C7 /* Garden.swift in Sources */,
 				BA53375F1AB3ED71004450C7 /* Tasks.swift in Sources */,
+				BA4DCD471AB4D6BC00DFC265 /* SignUpWithEmail.swift in Sources */,
 				BAD3AA7B1AB4722400470F8B /* TaskDetail.swift in Sources */,
+				BA4DCD331AB4B17600DFC265 /* LogIn.swift in Sources */,
+				BA4DCD3F1AB4BC6900DFC265 /* LoginWithEmail.swift in Sources */,
 				BA221D4E1AB4370800DD7AC7 /* TaskLibrary.swift in Sources */,
+				BA4DCD411AB4CE5C00DFC265 /* LoginWithFB.swift in Sources */,
+				BA4DCD3D1AB4BBEC00DFC265 /* WhyNeedLogin.swift in Sources */,
+				BA4DCD311AB4AAF900DFC265 /* User.swift in Sources */,
 				BA5337631AB3F187004450C7 /* Standings.swift in Sources */,
+				BA4DCD491AB4EA8200DFC265 /* Welcome.swift in Sources */,
 				F34C306D1AB44C0900BA4627 /* CustomCell.swift in Sources */,
 				BAAE19E21AB3DECE0008ED97 /* AppDelegate.swift in Sources */,
 				BA221D801AB4569F00DD7AC7 /* TasksByCategory.swift in Sources */,

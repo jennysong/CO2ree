@@ -24,7 +24,6 @@ class TasksByCategory: UITableViewController, UITableViewDelegate, UITableViewDa
         // Do any additional setup after loading the view, typically from a nib.
         categoryTitle.title = categoryName
         self.taskTable.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        self.view.backgroundColor = UIColor.blackColor()
         
         //graph
         categoryGraph.image = UIImage(named: "\(categoryName)Graph.jpg")
