@@ -1,6 +1,6 @@
 import UIKit
 
-class Garden: UITableViewController,UITableViewDataSource,UITableViewDelegate {
+class Garden: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
     @IBOutlet weak var table: UITableView!
     var arrayOfTrees: [Tree] = [Tree]()
