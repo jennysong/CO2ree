@@ -35,6 +35,8 @@
 		BAAE19F81AB3DECE0008ED97 /* CO2reeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE19F71AB3DECE0008ED97 /* CO2reeTests.swift */; };
 		F34C306D1AB44C0900BA4627 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34C306C1AB44C0900BA4627 /* CustomCell.swift */; };
 		F3504ADD1AB45E5D0080F6EF /* tree.png in Resources */ = {isa = PBXBuildFile; fileRef = F3504ADC1AB45E5D0080F6EF /* tree.png */; };
+		F3CCEEC31AB462D00008340C /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCEEC21AB462D00008340C /* Tree.swift */; };
+		F3CCEEC51AB46AB90008340C /* DetailTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCEEC41AB46AB90008340C /* DetailTree.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		BAAE19F71AB3DECE0008ED97 /* CO2reeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CO2reeTests.swift; sourceTree = "<group>"; };
 		F34C306C1AB44C0900BA4627 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		F3504ADC1AB45E5D0080F6EF /* tree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tree.png; sourceTree = "<group>"; };
+		F3CCEEC21AB462D00008340C /* Tree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
+		F3CCEEC41AB46AB90008340C /* DetailTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTree.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,7 @@
 				BA5337621AB3F187004450C7 /* Standings.swift */,
 				BA5337641AB3F19E004450C7 /* Profile.swift */,
 				F34C306C1AB44C0900BA4627 /* CustomCell.swift */,
+				F3CCEEC41AB46AB90008340C /* DetailTree.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -165,6 +170,7 @@
 				BAAE19E81AB3DECE0008ED97 /* Images.xcassets */,
 				BAAE19EA1AB3DECE0008ED97 /* LaunchScreen.xib */,
 				BAAE19DF1AB3DECE0008ED97 /* Supporting Files */,
+				F3CCEEC21AB462D00008340C /* Tree.swift */,
 			);
 			path = CO2ree;
 			sourceTree = "<group>";
@@ -313,6 +319,8 @@
 				BAAE19E41AB3DECE0008ED97 /* Home.swift in Sources */,
 				BA5337651AB3F19E004450C7 /* Profile.swift in Sources */,
 				BA5337731AB3FB4A004450C7 /* TasksWithCategories.swift in Sources */,
+				F3CCEEC31AB462D00008340C /* Tree.swift in Sources */,
+				F3CCEEC51AB46AB90008340C /* DetailTree.swift in Sources */,
 				BA5337611AB3F15D004450C7 /* Garden.swift in Sources */,
 				BA53375F1AB3ED71004450C7 /* Tasks.swift in Sources */,
 				BA5337631AB3F187004450C7 /* Standings.swift in Sources */,
