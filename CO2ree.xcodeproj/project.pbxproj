@@ -32,6 +32,7 @@
 		BAAE19E91AB3DECE0008ED97 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAAE19E81AB3DECE0008ED97 /* Images.xcassets */; };
 		BAAE19EC1AB3DECE0008ED97 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAAE19EA1AB3DECE0008ED97 /* LaunchScreen.xib */; };
 		BAAE19F81AB3DECE0008ED97 /* CO2reeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE19F71AB3DECE0008ED97 /* CO2reeTests.swift */; };
+		F3EDDEF11AB42989001F2445 /* MyCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EDDEF01AB42989001F2445 /* MyCustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		BAAE19F11AB3DECE0008ED97 /* CO2reeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CO2reeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAAE19F61AB3DECE0008ED97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAAE19F71AB3DECE0008ED97 /* CO2reeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CO2reeTests.swift; sourceTree = "<group>"; };
+		F3EDDEF01AB42989001F2445 /* MyCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		BA5337501AB3EA2C004450C7 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				F3EDDEF01AB42989001F2445 /* MyCustomCell.swift */,
 				BAAE19E31AB3DECE0008ED97 /* Home.swift */,
 				BA53375E1AB3ED71004450C7 /* Tasks.swift */,
 				BA5337721AB3FB4A004450C7 /* TasksWithCategories.swift */,
@@ -305,6 +308,7 @@
 				BA5337611AB3F15D004450C7 /* Garden.swift in Sources */,
 				BA53375F1AB3ED71004450C7 /* Tasks.swift in Sources */,
 				BA5337631AB3F187004450C7 /* Standings.swift in Sources */,
+				F3EDDEF11AB42989001F2445 /* MyCustomCell.swift in Sources */,
 				BAAE19E21AB3DECE0008ED97 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
