@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="oq2-XQ-3Pk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="nmO-ej-VXb">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
@@ -327,12 +327,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="home" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86V-9z-yNS">
-                                <rect key="frame" x="128" y="131" width="44" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="ZQ8-0C-Ngk">
+                                <rect key="frame" x="35" y="80" width="250" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -434,7 +432,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="72v-r4-kbX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3357" y="246"/>
+            <point key="canvasLocation" x="2756" y="-308"/>
         </scene>
         <!--Garden-->
         <scene sceneID="AcC-T7-hDr">
@@ -596,6 +594,43 @@
             </objects>
             <point key="canvasLocation" x="2312" y="319"/>
         </scene>
+        <!--TasksWithCategories-->
+        <scene sceneID="VuV-qe-bEX">
+            <objects>
+                <viewController id="6mx-Ap-7qM" userLabel="TasksWithCategories" customClass="TasksWithCategories" customModule="CO2ree" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Xc-1E-i4p">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="62E-CL-q3w">
+                                <rect key="frame" x="0.0" y="245" width="328" height="280"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="E6n-5x-U55" customClass="I">
+                                <rect key="frame" x="0.0" y="64" width="320" height="183"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="ac4-6s-Unk"/>
+                    <connections>
+                        <outlet property="categoryGraph" destination="E6n-5x-U55" id="xC1-N8-WVV"/>
+                        <outlet property="categoryTitle" destination="ac4-6s-Unk" id="9zK-kS-pPf"/>
+                        <outlet property="tasksByCategory" destination="62E-CL-q3w" id="H33-Jf-PAx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="joj-jV-374" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="keo-cW-JkC">
+                    <connections>
+                        <action selector="backButton:" destination="6mx-Ap-7qM" id="XWZ-qq-8Th"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1410" y="1141"/>
+        </scene>
         <!--Title-->
         <scene sceneID="VJ7-XE-4sC">
             <objects>
@@ -756,36 +791,60 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M2v-U8-WSu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1376" y="319"/>
+            <point key="canvasLocation" x="1924" y="319"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Udr-9M-2Cg">
+        <!--Garden-->
+        <scene sceneID="NdR-bD-3gN">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oq2-XQ-3Pk" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="umU-UE-ZYf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Garden" id="Ih4-zO-Vcf"/>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="LLq-e7-2HT"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PwD-bi-CIG">
+                    <navigationItem key="navigationItem" id="miD-in-Af1"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HAo-0m-Tbb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="baA-eJ-vaP" kind="relationship" relationship="rootViewController" id="dVT-wk-kF2"/>
+                        <segue destination="pZh-Gf-T8v" kind="relationship" relationship="rootViewController" id="vgS-eJ-oej"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GmY-yt-2in" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ToS-r7-FzA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="968" y="-350"/>
+            <point key="canvasLocation" x="2798" y="295"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="0ZM-Zv-O1M">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Twi-Pw-DT1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="home-gray.png" id="gt2-s2-G1b"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5H5-H9-L3I">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="kDW-rN-LPf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7uG-SD-X98" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="968" y="319"/>
         </scene>
     </scenes>
     <resources>
+        <image name="05tree.png" width="17" height="20"/>
         <image name="LoginWithFacebookButton.png" width="432" height="76"/>
         <image name="SignUpWithFBButton.png" width="426" height="70"/>
         <image name="foodButton.jpg" width="600" height="100"/>
         <image name="home-gray.png" width="23" height="21"/>
         <image name="homeButton.jpg" width="600" height="100"/>
+        <image name="profile-gray.png" width="15" height="20"/>
         <image name="loginWithEmailButton.png" width="432" height="76"/>
         <image name="schoolButton.jpg" width="600" height="100"/>
+        <image name="standings-gray.png" width="19" height="18"/>
+        <image name="tasks-gray.png" width="18" height="20"/>
         <image name="signUpButton.png" width="434" height="76"/>
         <image name="signUpWithEmailButton.png" width="430" height="70"/>
         <image name="transportationButton.jpg" width="600" height="100"/>
