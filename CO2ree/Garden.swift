@@ -38,14 +38,22 @@ class Garden: UIViewController,UITableViewDataSource,UITableViewDelegate {
             self.table.reloadData()
         } */
     }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "goToTasksTransportation" {
+            
+        }
+    }
     
+    /*
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let tree = arrayOfTrees[indexPath.row]
+        println("hi")
         var detailTree: DetailTree = self.storyboard?.instantiateViewControllerWithIdentifier("DetailTree") as DetailTree
+        
         detailTree.treeNameValue = tree.name
         detailTree.treeImageValue = tree.imageName
         detailTree.statusValue = tree.status
         self.presentViewController(detailTree, animated: true, completion: nil)
         self.table.deselectRowAtIndexPath(indexPath, animated: true)
-    }
+    }*/
 }

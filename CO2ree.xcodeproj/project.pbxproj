@@ -173,6 +173,7 @@
 				BAAE19EA1AB3DECE0008ED97 /* LaunchScreen.xib */,
 				BAAE19DF1AB3DECE0008ED97 /* Supporting Files */,
 				F3CCEEC21AB462D00008340C /* Tree.swift */,
+				BA221D4D1AB4370800DD7AC7 /* TaskLibrary.swift */,
 			);
 			path = CO2ree;
 			sourceTree = "<group>";
