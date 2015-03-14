@@ -50,4 +50,7 @@ class Home: UIViewController {
             let signUpController = segue.destinationViewController as LogIn
         }
     }
+    @IBAction func goToGardenButton(sender: AnyObject) {
+    performSegueWithIdentifier("goToGardenFromHome", sender: sender)
+    }
 }

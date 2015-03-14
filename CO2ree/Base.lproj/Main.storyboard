@@ -8,10 +8,6 @@
         <scene sceneID="axH-Vp-4Gp">
             <objects>
                 <viewController id="dQT-Yz-Ga6" customClass="SignUp" customModule="CO2ree" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="EQ1-qy-iNE"/>
-                        <viewControllerLayoutGuide type="bottom" id="rMF-Ek-mal"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jx3-8S-4if">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -53,10 +49,6 @@
         <scene sceneID="Plh-YY-lwa">
             <objects>
                 <viewController id="iDW-sh-NTe" customClass="SignUpWithEmail" customModule="CO2ree" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="UMC-Kr-trF"/>
-                        <viewControllerLayoutGuide type="bottom" id="6ze-X2-ak3"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="RUC-6q-MhM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -137,10 +129,6 @@
         <scene sceneID="rb3-pk-FeB">
             <objects>
                 <viewController id="szX-mx-sVI" customClass="Welcome" customModule="CO2ree" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="hXk-ad-03P"/>
-                        <viewControllerLayoutGuide type="bottom" id="X48-nI-ybT"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="P0d-9D-jhn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -164,10 +152,6 @@
         <scene sceneID="Bay-UJ-9mV">
             <objects>
                 <viewController id="5VJ-nI-z4k" customClass="LoginWithFB" customModule="CO2ree" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="sVp-I9-q8H"/>
-                        <viewControllerLayoutGuide type="bottom" id="9eB-eq-f57"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="emQ-Pm-L4x">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -191,10 +175,6 @@
         <scene sceneID="DcC-Yb-uYb">
             <objects>
                 <viewController id="TOQ-Mc-LOe" customClass="WhyNeedLogin" customModule="CO2ree" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="mDK-mU-rv6"/>
-                        <viewControllerLayoutGuide type="bottom" id="Qo1-sh-5m3"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="so7-Zi-Ud8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -218,10 +198,6 @@
         <scene sceneID="rdb-kq-kll">
             <objects>
                 <viewController id="baA-eJ-vaP" customClass="LogIn" customModule="CO2ree" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="BRp-0Q-7CI"/>
-                        <viewControllerLayoutGuide type="bottom" id="jOy-2B-hg9"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="eq5-X8-DF8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -296,10 +272,6 @@
         <scene sceneID="9OL-Zb-yZ8">
             <objects>
                 <viewController id="S5V-hh-hPG" customClass="LoginWithEmail" customModule="CO2ree" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="0EO-L6-hhC"/>
-                        <viewControllerLayoutGuide type="bottom" id="ga0-Bi-bRR"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kbY-Dl-Y2v">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -345,7 +317,8 @@
                                 </state>
                                 <connections>
                                     <action selector="goToGarden:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DHv-PU-zMg"/>
-                                    <segue destination="umU-UE-ZYf" kind="push" identifier="goToGardenFromHome" id="lSK-Ly-lFf"/>
+                                    <action selector="goToGardenButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uLL-LL-g6V"/>
+                                    <segue destination="pZh-Gf-T8v" kind="push" identifier="goToGardenFromHome" id="0R9-NU-HEu"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -384,7 +357,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1632" y="-65"/>
+            <point key="canvasLocation" x="1416" y="147"/>
         </scene>
         <!--Profile-->
         <scene sceneID="txB-fa-uCo">
@@ -840,13 +813,13 @@
         <image name="foodButton.jpg" width="600" height="100"/>
         <image name="home-gray.png" width="23" height="21"/>
         <image name="homeButton.jpg" width="600" height="100"/>
-        <image name="profile-gray.png" width="15" height="20"/>
         <image name="loginWithEmailButton.png" width="432" height="76"/>
+        <image name="profile-gray.png" width="15" height="20"/>
         <image name="schoolButton.jpg" width="600" height="100"/>
-        <image name="standings-gray.png" width="19" height="18"/>
-        <image name="tasks-gray.png" width="18" height="20"/>
         <image name="signUpButton.png" width="434" height="76"/>
         <image name="signUpWithEmailButton.png" width="430" height="70"/>
+        <image name="standings-gray.png" width="19" height="18"/>
+        <image name="tasks-gray.png" width="18" height="20"/>
         <image name="transportationButton.jpg" width="600" height="100"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -856,6 +829,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="rte-iT-1zR"/>
-        <segue reference="lSK-Ly-lFf"/>
+        <segue reference="0R9-NU-HEu"/>
     </inferredMetricsTieBreakers>
 </document>
