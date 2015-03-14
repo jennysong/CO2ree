@@ -212,31 +212,107 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="I would like to save CO2 by.." borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E73-j9-SQG">
-                                <rect key="frame" x="34" y="117" width="264" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="transportationButton.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="OP2-Xq-6EV">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="transportationButton.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="OP2-Xq-6EV">
                                 <rect key="frame" x="10" y="193" width="300" height="60"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="eqq-mm-D4u" appends="YES" id="x9y-3X-kXI"/>
+                                </connections>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="homeButton.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="79z-JH-SFx">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="homeButton.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="79z-JH-SFx">
                                 <rect key="frame" x="10" y="276" width="300" height="60"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="oCH-H3-mP8" appends="YES" id="2WS-pe-CI3"/>
+                                </connections>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="foodButton.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4jt-h1-jkr">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="foodButton.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4jt-h1-jkr">
                                 <rect key="frame" x="10" y="360" width="300" height="60"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="QvB-GX-UBG" appends="YES" id="1bZ-OA-lPH"/>
+                                </connections>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="schoolButton.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Und-uZ-1G0">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="schoolButton.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Und-uZ-1G0">
                                 <rect key="frame" x="10" y="443" width="300" height="60"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="BxM-RT-nH6" appends="YES" id="h4M-iV-uGe"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I would like to save CO2 by.." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8oT-dl-FYw">
+                                <rect key="frame" x="51" y="118" width="253" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tasks" id="Ngh-5t-AUK"/>
+                    <connections>
+                        <segue destination="6mx-Ap-7qM" kind="push" identifier="goToTasksTransportation" id="HX1-Nw-0OJ"/>
+                        <segue destination="6mx-Ap-7qM" kind="push" identifier="goToTasksHome" id="Yoe-kV-wr2"/>
+                        <segue destination="6mx-Ap-7qM" kind="push" identifier="goToTasksFood" id="gq1-Lj-m8B"/>
+                        <segue destination="6mx-Ap-7qM" kind="push" identifier="goToTasksSchool" id="VQZ-tQ-ONG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NeI-Ds-cRS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="eqq-mm-D4u" userLabel="Transportation">
+                    <connections>
+                        <action selector="transportationAction:" destination="8fb-DI-JDq" id="upd-Ql-MLI"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="oCH-H3-mP8" userLabel="Home">
+                    <connections>
+                        <action selector="homeAction:" destination="8fb-DI-JDq" id="hqq-qS-GJH"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="QvB-GX-UBG" userLabel="Food">
+                    <connections>
+                        <action selector="FoodAction:" destination="8fb-DI-JDq" id="rom-88-azu"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="BxM-RT-nH6" userLabel="School">
+                    <connections>
+                        <action selector="SchoolAction:" destination="8fb-DI-JDq" id="SGF-Uo-OT1"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1273" y="-927"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="VuV-qe-bEX">
+            <objects>
+                <viewController id="6mx-Ap-7qM" customClass="TasksWithCategories" customModule="CO2ree" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3XV-9f-bZu"/>
+                        <viewControllerLayoutGuide type="bottom" id="Krs-Yz-bS8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3Xc-1E-i4p">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E6n-5x-U55">
+                                <rect key="frame" x="-56" y="-55" width="320" height="568"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="b9L-n1-Fgr" appends="YES" id="4eO-gn-zRC"/>
+                        </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Tasks" id="Ngh-5t-AUK"/>
+                    <navigationItem key="navigationItem" title="Title" id="ac4-6s-Unk"/>
+                    <connections>
+                        <outlet property="categoryTitle" destination="ac4-6s-Unk" id="oJR-oV-kdj"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NeI-Ds-cRS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="joj-jV-374" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="b9L-n1-Fgr"/>
             </objects>
-            <point key="canvasLocation" x="1273" y="-927"/>
+            <point key="canvasLocation" x="1742" y="-927"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="C0q-aQ-mpo">
@@ -274,4 +350,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="VQZ-tQ-ONG"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -20,6 +20,43 @@ class Tasks: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "goToTasksTransportation" {
+            let tasksTransportation = segue.destinationViewController as TasksWithCategories
+            tasksTransportation.categoryName = "Transportation"
+        }
+        if segue.identifier == "goToTasksHome" {
+            let tasksHome = segue.destinationViewController as TasksWithCategories
+            tasksHome.categoryName = "Home"
+        }
+        if segue.identifier == "goToTasksFood" {
+            let tasksFood = segue.destinationViewController as TasksWithCategories
+            tasksFood.categoryName = "Food"
+        }
+        if segue.identifier == "goToTasksSchool" {
+            let tasksSchool = segue.destinationViewController as TasksWithCategories
+            tasksSchool.categoryName = "School"
+        }
+    }
+    
+    
+    @IBAction func transportationAction(sender: AnyObject) {
+        performSegueWithIdentifier("goToTasksTransportation", sender: sender)
+    }
+    
+    @IBAction func homeAction(sender: AnyObject) {
+        performSegueWithIdentifier("goToTasksHome", sender: sender)
+    }
+    
+    @IBAction func FoodAction(sender: AnyObject) {
+        performSegueWithIdentifier("goToTasksFood", sender: sender)
+    }
+    
+    @IBAction func SchoolAction(sender: AnyObject) {
+        performSegueWithIdentifier("goToTasksSchool", sender: sender)
+    }
+    
     
 }
 
