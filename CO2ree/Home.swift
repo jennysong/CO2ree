@@ -26,19 +26,19 @@ class Home: UIViewController {
             let taskController = segue.destinationViewController as Tasks
         }
         if segue.identifier == "goToTree" {
-            let taskController = segue.destinationViewController as Tree
+            let treeController = segue.destinationViewController as Tree
         }
         if segue.identifier == "goToStandings" {
-            let taskController = segue.destinationViewController as Standings
+            let standingController = segue.destinationViewController as Standings
         }
         if segue.identifier == "goToProfile" {
-            let taskController = segue.destinationViewController as Profile
+            let profileController = segue.destinationViewController as Profile
         }
         if segue.identifier == "goToWhy" {
-            let taskController = segue.destinationViewController as Why
+            let whyController = segue.destinationViewController as Why
         }
         if segue.identifier == "goToAboutUs" {
-            let taskController = segue.destinationViewController as AboutUs
+            let aboutUsController = segue.destinationViewController as AboutUs
         }
         
         
