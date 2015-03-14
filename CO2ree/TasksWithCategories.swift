@@ -12,6 +12,8 @@ class TasksWithCategories: UIViewController {
     
 
     @IBOutlet weak var categoryTitle: UINavigationItem!
+    @IBOutlet weak var categoryGraph: UIImageView!
+    
     var categoryName = ""
     
     override func viewDidLoad() {
@@ -20,7 +22,12 @@ class TasksWithCategories: UIViewController {
         
 
         //graph
-        
+        categoryGraph.image = UIImage(named: "\(categoryName)Graph.jpg")
+            
+            
+            //UIImage( name: String,
+//        inBundle bundle: NSBundle?,
+  //      compatibleWithTraitCollection traitCollection: UITraitCollection?
         
         
         

@@ -34,11 +34,8 @@ class Home: UIViewController {
         if segue.identifier == "goToProfile" {
             let profileController = segue.destinationViewController as Profile
         }
-        if segue.identifier == "goToWhy" {
-            let whyController = segue.destinationViewController as Why
-        }
-        if segue.identifier == "goToAboutUs" {
-            let aboutUsController = segue.destinationViewController as AboutUs
+        if segue.identifier == "goToAbout" {
+            let aboutController = segue.destinationViewController as About
         }
         
         
@@ -60,12 +57,8 @@ class Home: UIViewController {
         performSegueWithIdentifier("goToProfile", sender: sender)
     }
     
-    @IBAction func whyAction(sender: AnyObject) {
-        performSegueWithIdentifier("goToWhy", sender: sender)
-    }
-    
     @IBAction func aboutUsAction(sender: AnyObject) {
-        performSegueWithIdentifier("goToAboutUs", sender: sender)
+        performSegueWithIdentifier("goToAbout", sender: sender)
     }
     
     

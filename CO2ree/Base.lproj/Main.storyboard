@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="MAt-r9-Vid">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
@@ -17,45 +17,38 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aboutus.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="RU2-ge-gNg">
-                                <rect key="frame" x="164" y="404" width="150" height="150"/>
+                                <rect key="frame" x="252" y="505" width="55" height="55"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="Czq-h4-LlO" appends="YES" id="SNE-wh-2RT"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="achievement.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="LGp-NO-D4e">
-                                <rect key="frame" x="6" y="88" width="150" height="150"/>
+                                <rect key="frame" x="12" y="505" width="55" height="55"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="AZL-65-i6C" appends="YES" id="6Tt-bl-Rnx"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tree.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="NIu-Bd-nHc">
-                                <rect key="frame" x="164" y="88" width="150" height="150"/>
+                                <rect key="frame" x="72" y="505" width="55" height="55"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="C5A-JL-nzg" appends="YES" id="OJO-b7-qwL"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="statistics.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="WT7-VU-ZsS">
-                                <rect key="frame" x="6" y="246" width="150" height="150"/>
+                                <rect key="frame" x="132" y="505" width="55" height="55"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="vLf-gv-h0P" appends="YES" id="FOH-D2-pVd"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profile.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="kLc-I2-fG9">
-                                <rect key="frame" x="164" y="247" width="150" height="150"/>
+                                <rect key="frame" x="192" y="505" width="55" height="55"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="tXX-im-Zmb" appends="YES" id="8KT-5P-rdk"/>
-                                </connections>
-                            </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="co2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9x1-83-NZy">
-                                <rect key="frame" x="6" y="404" width="150" height="150"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="pCm-Ps-kQE" appends="YES" id="IHw-S1-0lH"/>
                                 </connections>
                             </imageView>
                         </subviews>
@@ -63,12 +56,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Tree App" id="FIs-0G-Jvy"/>
                     <connections>
-                        <segue destination="8fb-DI-JDq" kind="push" identifier="goToTasks" id="xu9-OG-h3M"/>
-                        <segue destination="pZh-Gf-T8v" kind="push" identifier="goToTree" id="gSm-d9-hMB"/>
-                        <segue destination="7B2-Zy-bHS" kind="push" identifier="goToAboutUs" id="MhU-pB-TAi"/>
-                        <segue destination="Sxj-ab-4nn" kind="push" identifier="goToStandings" id="j6C-Mw-joB"/>
-                        <segue destination="J58-Vj-1Ht" kind="push" identifier="goToProfile" id="Kep-hR-rKc"/>
-                        <segue destination="7aQ-MN-P7y" kind="push" identifier="goToWhy" id="5yq-Jq-W0n"/>
+                        <segue destination="8fb-DI-JDq" kind="modal" identifier="goToTasks" modalTransitionStyle="crossDissolve" id="xu9-OG-h3M"/>
+                        <segue destination="pZh-Gf-T8v" kind="modal" identifier="goToTree" modalTransitionStyle="crossDissolve" id="gSm-d9-hMB"/>
+                        <segue destination="7B2-Zy-bHS" kind="modal" identifier="goToAbout" modalTransitionStyle="crossDissolve" id="MhU-pB-TAi"/>
+                        <segue destination="Sxj-ab-4nn" kind="modal" identifier="goToStandings" modalTransitionStyle="crossDissolve" id="j6C-Mw-joB"/>
+                        <segue destination="J58-Vj-1Ht" kind="modal" identifier="goToProfile" modalTransitionStyle="crossDissolve" id="Kep-hR-rKc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -104,25 +96,6 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="734" y="319"/>
-        </scene>
-        <!--Why-->
-        <scene sceneID="aJu-k4-pjz">
-            <objects>
-                <viewController id="7aQ-MN-P7y" customClass="Why" customModule="CO2ree" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="E7z-ZU-r3T"/>
-                        <viewControllerLayoutGuide type="bottom" id="e4w-Fu-gp1"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="NGb-gz-6GP">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Why" id="UP2-XA-npt"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="p8c-Pi-qad" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1273" y="1577"/>
         </scene>
         <!--Profile-->
         <scene sceneID="txB-fa-uCo">
@@ -162,10 +135,10 @@
             </objects>
             <point key="canvasLocation" x="1273" y="-305"/>
         </scene>
-        <!--About Us-->
+        <!--About-->
         <scene sceneID="WFt-DT-AIx">
             <objects>
-                <viewController id="7B2-Zy-bHS" customClass="AboutUs" customModule="CO2ree" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7B2-Zy-bHS" userLabel="About" customClass="About" customModule="CO2ree" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wkx-bj-IgN"/>
                         <viewControllerLayoutGuide type="bottom" id="ln5-V1-kTU"/>
@@ -179,7 +152,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7vZ-DV-t31" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1273" y="2203"/>
+            <point key="canvasLocation" x="1273" y="1573"/>
         </scene>
         <!--Standings-->
         <scene sceneID="1Ob-4Q-7uY">
@@ -252,10 +225,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="Tasks" id="Ngh-5t-AUK"/>
                     <connections>
-                        <segue destination="6mx-Ap-7qM" kind="push" identifier="goToTasksTransportation" id="HX1-Nw-0OJ"/>
-                        <segue destination="6mx-Ap-7qM" kind="push" identifier="goToTasksHome" id="Yoe-kV-wr2"/>
-                        <segue destination="6mx-Ap-7qM" kind="push" identifier="goToTasksFood" id="gq1-Lj-m8B"/>
-                        <segue destination="6mx-Ap-7qM" kind="push" identifier="goToTasksSchool" id="VQZ-tQ-ONG"/>
+                        <segue destination="6mx-Ap-7qM" kind="modal" identifier="goToTasksTransportation" animates="NO" id="HX1-Nw-0OJ"/>
+                        <segue destination="6mx-Ap-7qM" kind="modal" identifier="goToTasksHome" animates="NO" id="Yoe-kV-wr2"/>
+                        <segue destination="6mx-Ap-7qM" kind="modal" identifier="goToTasksFood" animates="NO" id="gq1-Lj-m8B"/>
+                        <segue destination="6mx-Ap-7qM" kind="modal" identifier="goToTasksSchool" animates="NO" id="VQZ-tQ-ONG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NeI-Ds-cRS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -295,7 +268,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E6n-5x-U55">
-                                <rect key="frame" x="-56" y="-55" width="320" height="568"/>
+                                <rect key="frame" x="-1" y="64" width="320" height="183"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -306,6 +279,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="ac4-6s-Unk"/>
                     <connections>
+                        <outlet property="categoryGraph" destination="E6n-5x-U55" id="xC1-N8-WVV"/>
                         <outlet property="categoryTitle" destination="ac4-6s-Unk" id="oJR-oV-kdj"/>
                     </connections>
                 </viewController>
@@ -314,29 +288,10 @@
             </objects>
             <point key="canvasLocation" x="1742" y="-927"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="C0q-aQ-mpo">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MAt-r9-Vid" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jbI-fJ-F5N">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="1hV-EW-uDx"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mVN-H7-slv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="202" y="319"/>
-        </scene>
     </scenes>
     <resources>
         <image name="aboutus.jpg" width="300" height="300"/>
         <image name="achievement.jpg" width="300" height="300"/>
-        <image name="co2.jpg" width="300" height="300"/>
         <image name="foodButton.jpg" width="600" height="100"/>
         <image name="homeButton.jpg" width="600" height="100"/>
         <image name="profile.jpg" width="300" height="300"/>
@@ -351,6 +306,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="VQZ-tQ-ONG"/>
+        <segue reference="HX1-Nw-0OJ"/>
     </inferredMetricsTieBreakers>
 </document>
