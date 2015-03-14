@@ -9,7 +9,7 @@
 import UIKit
 
 class DetailTree: UIViewController {
-    @IBOutlet weak var treeName: UILabel!
+    //@IBOutlet weak var treeName: UILabel!
 
     @IBOutlet weak var treeImage: UIImageView!
     @IBOutlet weak var status: UILabel!
@@ -20,7 +20,7 @@ class DetailTree: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.treeName.text = treeNameValue
+        //self.treeName.text = treeNameValue
         self.treeImage.image = UIImage(named: treeImageValue!)
         if(statusValue >= 1){
             self.status.text = "Complete"

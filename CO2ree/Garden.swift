@@ -7,7 +7,7 @@ class Garden: UIViewController,UITableViewDataSource,UITableViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setUpTrees()
-        // Do any additional setup after loading the view, typically from a nib.
+        // Do any additional setup after sloading the view, typically from a nib.
         //self.table.registerClass(UITableViewCell.self, forCellReuseIdentifier: "myCell")
         self.table.dataSource = self
     }
@@ -38,8 +38,10 @@ class Garden: UIViewController,UITableViewDataSource,UITableViewDelegate {
             self.table.reloadData()
         } */
     }
+
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "goToDetailTree" {
+            println("hihi")
             let detailTree = segue.destinationViewController as DetailTree
             if let indexPath = self.table.indexPathForSelectedRow() {
                 let tree = arrayOfTrees[indexPath.row]
@@ -49,8 +51,8 @@ class Garden: UIViewController,UITableViewDataSource,UITableViewDelegate {
             }
         }
     }
-    
-    /*
+ 
+ /*
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let tree = arrayOfTrees[indexPath.row]
         println("hi")
@@ -61,5 +63,6 @@ class Garden: UIViewController,UITableViewDataSource,UITableViewDelegate {
         detailTree.statusValue = tree.status
         self.presentViewController(detailTree, animated: true, completion: nil)
         self.table.deselectRowAtIndexPath(indexPath, animated: true)
-    }*/
+    }
+*/
 }
