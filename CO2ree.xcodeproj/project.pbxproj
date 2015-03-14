@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA221D4E1AB4370800DD7AC7 /* TaskLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA221D4D1AB4370800DD7AC7 /* TaskLibrary.swift */; };
+		BA221D801AB4569F00DD7AC7 /* TasksByCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA221D7F1AB4569F00DD7AC7 /* TasksByCategory.swift */; };
 		BA5337581AB3EAE7004450C7 /* aboutus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA5337521AB3EAE7004450C7 /* aboutus.jpg */; };
 		BA5337591AB3EAE7004450C7 /* achievement.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA5337531AB3EAE7004450C7 /* achievement.jpg */; };
 		BA53375B1AB3EAE7004450C7 /* profile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA5337551AB3EAE7004450C7 /* profile.jpg */; };
@@ -26,7 +28,6 @@
 		BA53377C1AB416C3004450C7 /* homeGraph.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA53377A1AB416C3004450C7 /* homeGraph.jpg */; };
 		BA53377D1AB416C3004450C7 /* schoolGraph.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA53377B1AB416C3004450C7 /* schoolGraph.jpg */; };
 		BA53377F1AB418E1004450C7 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = BA53377E1AB418E1004450C7 /* back.png */; };
-		BA5337811AB428F6004450C7 /* TaskLibrary.json in Resources */ = {isa = PBXBuildFile; fileRef = BA5337801AB428F6004450C7 /* TaskLibrary.json */; };
 		BAAE19E21AB3DECE0008ED97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE19E11AB3DECE0008ED97 /* AppDelegate.swift */; };
 		BAAE19E41AB3DECE0008ED97 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE19E31AB3DECE0008ED97 /* Home.swift */; };
 		BAAE19E71AB3DECE0008ED97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAAE19E51AB3DECE0008ED97 /* Main.storyboard */; };
@@ -47,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA221D4D1AB4370800DD7AC7 /* TaskLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskLibrary.swift; sourceTree = "<group>"; };
+		BA221D7F1AB4569F00DD7AC7 /* TasksByCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksByCategory.swift; sourceTree = "<group>"; };
 		BA5337521AB3EAE7004450C7 /* aboutus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aboutus.jpg; sourceTree = "<group>"; };
 		BA5337531AB3EAE7004450C7 /* achievement.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = achievement.jpg; sourceTree = "<group>"; };
 		BA5337551AB3EAE7004450C7 /* profile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = profile.jpg; sourceTree = "<group>"; };
@@ -66,7 +69,6 @@
 		BA53377A1AB416C3004450C7 /* homeGraph.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = homeGraph.jpg; sourceTree = "<group>"; };
 		BA53377B1AB416C3004450C7 /* schoolGraph.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = schoolGraph.jpg; sourceTree = "<group>"; };
 		BA53377E1AB418E1004450C7 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
-		BA5337801AB428F6004450C7 /* TaskLibrary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TaskLibrary.json; sourceTree = "<group>"; };
 		BAAE19DC1AB3DECE0008ED97 /* CO2ree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CO2ree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAAE19E01AB3DECE0008ED97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAAE19E11AB3DECE0008ED97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				BAAE19E31AB3DECE0008ED97 /* Home.swift */,
 				BA53375E1AB3ED71004450C7 /* Tasks.swift */,
 				BA5337721AB3FB4A004450C7 /* TasksWithCategories.swift */,
+				BA221D7F1AB4569F00DD7AC7 /* TasksByCategory.swift */,
 				BA5337601AB3F15D004450C7 /* Garden.swift */,
 				BA5337621AB3F187004450C7 /* Standings.swift */,
 				BA5337641AB3F19E004450C7 /* Profile.swift */,
@@ -157,11 +160,11 @@
 				BA5337511AB3EA46004450C7 /* images */,
 				BA5337501AB3EA2C004450C7 /* view */,
 				BAAE19E11AB3DECE0008ED97 /* AppDelegate.swift */,
-				BA5337801AB428F6004450C7 /* TaskLibrary.json */,
 				BAAE19E51AB3DECE0008ED97 /* Main.storyboard */,
 				BAAE19E81AB3DECE0008ED97 /* Images.xcassets */,
 				BAAE19EA1AB3DECE0008ED97 /* LaunchScreen.xib */,
 				BAAE19DF1AB3DECE0008ED97 /* Supporting Files */,
+				BA221D4D1AB4370800DD7AC7 /* TaskLibrary.swift */,
 			);
 			path = CO2ree;
 			sourceTree = "<group>";
@@ -285,7 +288,6 @@
 				BAAE19EC1AB3DECE0008ED97 /* LaunchScreen.xib in Resources */,
 				BA53376F1AB3F88A004450C7 /* homeButton.jpg in Resources */,
 				BA5337791AB41656004450C7 /* foodGraph.jpg in Resources */,
-				BA5337811AB428F6004450C7 /* TaskLibrary.json in Resources */,
 				BA5337591AB3EAE7004450C7 /* achievement.jpg in Resources */,
 				BAAE19E91AB3DECE0008ED97 /* Images.xcassets in Resources */,
 				BA53375B1AB3EAE7004450C7 /* profile.jpg in Resources */,
@@ -311,9 +313,11 @@
 				BA5337731AB3FB4A004450C7 /* TasksWithCategories.swift in Sources */,
 				BA5337611AB3F15D004450C7 /* Garden.swift in Sources */,
 				BA53375F1AB3ED71004450C7 /* Tasks.swift in Sources */,
+				BA221D4E1AB4370800DD7AC7 /* TaskLibrary.swift in Sources */,
 				BA5337631AB3F187004450C7 /* Standings.swift in Sources */,
 				F3EDDEF11AB42989001F2445 /* MyCustomCell.swift in Sources */,
 				BAAE19E21AB3DECE0008ED97 /* AppDelegate.swift in Sources */,
+				BA221D801AB4569F00DD7AC7 /* TasksByCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

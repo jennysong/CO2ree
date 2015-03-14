@@ -23,20 +23,20 @@ class Tasks: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         if segue.identifier == "goToTasksTransportation" {
-            let tasksTransportation = segue.destinationViewController as TasksWithCategories
-            tasksTransportation.categoryName = "Transportation"
+            let tasksTransportation = segue.destinationViewController as TasksByCategory
+            //tasksTransportation.categoryName = "Transportation"
         }
         if segue.identifier == "goToTasksHome" {
-            let tasksHome = segue.destinationViewController as TasksWithCategories
-            tasksHome.categoryName = "Home"
+            let tasksHome = segue.destinationViewController as TasksByCategory
+            //tasksHome.categoryName = "Home"
         }
         if segue.identifier == "goToTasksFood" {
-            let tasksFood = segue.destinationViewController as TasksWithCategories
-            tasksFood.categoryName = "Food"
+            let tasksFood = segue.destinationViewController as TasksByCategory
+            //tasksFood.categoryName = "Food"
         }
         if segue.identifier == "goToTasksSchool" {
-            let tasksSchool = segue.destinationViewController as TasksWithCategories
-            tasksSchool.categoryName = "School"
+            let tasksSchool = segue.destinationViewController as TasksByCategory
+            //tasksSchool.categoryName = "School"
         }
     }
     
