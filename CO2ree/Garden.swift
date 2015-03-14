@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Tree: UIViewController {
+class Garden: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

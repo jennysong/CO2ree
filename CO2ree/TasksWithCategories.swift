@@ -12,7 +12,8 @@ class TasksWithCategories: UIViewController {
     
 
 
-    @IBOutlet weak var categoryTitle: UILabel!
+
+    @IBOutlet weak var categoryTitle: UINavigationItem!
     @IBOutlet weak var categoryGraph: UIImageView!
 
     
@@ -20,7 +21,7 @@ class TasksWithCategories: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        categoryTitle.text = categoryName
+        categoryTitle.title = categoryName
         
 
         //graph
@@ -48,16 +49,12 @@ class TasksWithCategories: UIViewController {
    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-        if segue.identifier == "backToTasks" {
+        /*if segue.identifier == "backToTasks" {
             let tasksController = segue.destinationViewController as Tasks
-        }
+        }*/
     }
 
-    
-    @IBAction func backButton(sender: AnyObject) {
-        performSegueWithIdentifier("backToTasks", sender: sender)
-    }
-    
+
     
 }
 

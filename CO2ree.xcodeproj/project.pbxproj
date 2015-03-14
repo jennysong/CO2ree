@@ -13,10 +13,9 @@
 		BA53375C1AB3EAE7004450C7 /* statistics.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA5337561AB3EAE7004450C7 /* statistics.jpg */; };
 		BA53375D1AB3EAE7004450C7 /* tree.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA5337571AB3EAE7004450C7 /* tree.jpg */; };
 		BA53375F1AB3ED71004450C7 /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA53375E1AB3ED71004450C7 /* Tasks.swift */; };
-		BA5337611AB3F15D004450C7 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5337601AB3F15D004450C7 /* Tree.swift */; };
+		BA5337611AB3F15D004450C7 /* Garden.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5337601AB3F15D004450C7 /* Garden.swift */; };
 		BA5337631AB3F187004450C7 /* Standings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5337621AB3F187004450C7 /* Standings.swift */; };
 		BA5337651AB3F19E004450C7 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5337641AB3F19E004450C7 /* Profile.swift */; };
-		BA5337691AB3F1C7004450C7 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5337681AB3F1C7004450C7 /* About.swift */; };
 		BA53376E1AB3F88A004450C7 /* foodButton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA53376A1AB3F88A004450C7 /* foodButton.jpg */; };
 		BA53376F1AB3F88A004450C7 /* homeButton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA53376B1AB3F88A004450C7 /* homeButton.jpg */; };
 		BA5337701AB3F88A004450C7 /* schoolButton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA53376C1AB3F88A004450C7 /* schoolButton.jpg */; };
@@ -52,10 +51,9 @@
 		BA5337561AB3EAE7004450C7 /* statistics.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = statistics.jpg; sourceTree = "<group>"; };
 		BA5337571AB3EAE7004450C7 /* tree.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tree.jpg; sourceTree = "<group>"; };
 		BA53375E1AB3ED71004450C7 /* Tasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
-		BA5337601AB3F15D004450C7 /* Tree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
+		BA5337601AB3F15D004450C7 /* Garden.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Garden.swift; sourceTree = "<group>"; };
 		BA5337621AB3F187004450C7 /* Standings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Standings.swift; sourceTree = "<group>"; };
 		BA5337641AB3F19E004450C7 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
-		BA5337681AB3F1C7004450C7 /* About.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
 		BA53376A1AB3F88A004450C7 /* foodButton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = foodButton.jpg; sourceTree = "<group>"; };
 		BA53376B1AB3F88A004450C7 /* homeButton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = homeButton.jpg; sourceTree = "<group>"; };
 		BA53376C1AB3F88A004450C7 /* schoolButton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = schoolButton.jpg; sourceTree = "<group>"; };
@@ -102,10 +100,9 @@
 				BAAE19E31AB3DECE0008ED97 /* Home.swift */,
 				BA53375E1AB3ED71004450C7 /* Tasks.swift */,
 				BA5337721AB3FB4A004450C7 /* TasksWithCategories.swift */,
-				BA5337601AB3F15D004450C7 /* Tree.swift */,
+				BA5337601AB3F15D004450C7 /* Garden.swift */,
 				BA5337621AB3F187004450C7 /* Standings.swift */,
 				BA5337641AB3F19E004450C7 /* Profile.swift */,
-				BA5337681AB3F1C7004450C7 /* About.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -304,9 +301,8 @@
 			files = (
 				BAAE19E41AB3DECE0008ED97 /* Home.swift in Sources */,
 				BA5337651AB3F19E004450C7 /* Profile.swift in Sources */,
-				BA5337691AB3F1C7004450C7 /* About.swift in Sources */,
 				BA5337731AB3FB4A004450C7 /* TasksWithCategories.swift in Sources */,
-				BA5337611AB3F15D004450C7 /* Tree.swift in Sources */,
+				BA5337611AB3F15D004450C7 /* Garden.swift in Sources */,
 				BA53375F1AB3ED71004450C7 /* Tasks.swift in Sources */,
 				BA5337631AB3F187004450C7 /* Standings.swift in Sources */,
 				BAAE19E21AB3DECE0008ED97 /* AppDelegate.swift in Sources */,

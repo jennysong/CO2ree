@@ -22,43 +22,9 @@ class Home: UIViewController {
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-        if segue.identifier == "goToTasks" {
+        /*if segue.identifier == "goToTasks" {
             let tasksController = segue.destinationViewController as Tasks
-        }
-        if segue.identifier == "goToTree" {
-            let treeController = segue.destinationViewController as Tree
-        }
-        if segue.identifier == "goToStandings" {
-            let standingsController = segue.destinationViewController as Standings
-        }
-        if segue.identifier == "goToProfile" {
-            let profileController = segue.destinationViewController as Profile
-        }
-        if segue.identifier == "goToAbout" {
-            let aboutController = segue.destinationViewController as About
-        }
-        
-        
-    }
-    
-    @IBAction func taskAction(sender: AnyObject) {
-        performSegueWithIdentifier("goToTasks", sender: sender)
-    }
-    
-    @IBAction func treeAction(sender: AnyObject) {
-        performSegueWithIdentifier("goToTree", sender: sender)
-    }
-    
-    @IBAction func standingsAction(sender: AnyObject) {
-        performSegueWithIdentifier("goToStandings", sender: sender)
-    }
-    
-    @IBAction func profileAction(sender: AnyObject) {
-        performSegueWithIdentifier("goToProfile", sender: sender)
-    }
-    
-    @IBAction func aboutUsAction(sender: AnyObject) {
-        performSegueWithIdentifier("goToAbout", sender: sender)
+        }*/
     }
     
     
