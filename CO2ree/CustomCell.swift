@@ -25,9 +25,9 @@ class CustomCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setUp(labelString: String, imageName: String){
-        self.myLabel.text = labelString
-        self.myImage.image = UIImage(named: imageName)
+    func setUp(tree: Tree){
+        self.myLabel.text = tree.name
+        self.myImage.image = UIImage(named: tree.imageName)
     }
 
 }
