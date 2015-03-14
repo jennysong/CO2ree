@@ -1,25 +1,277 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="MAt-r9-Vid">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Tree App-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="Home" customModule="CO2ree" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aboutus.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="RU2-ge-gNg">
+                                <rect key="frame" x="164" y="404" width="150" height="150"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Czq-h4-LlO" appends="YES" id="SNE-wh-2RT"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="achievement.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="LGp-NO-D4e">
+                                <rect key="frame" x="6" y="88" width="150" height="150"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="AZL-65-i6C" appends="YES" id="6Tt-bl-Rnx"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tree.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="NIu-Bd-nHc">
+                                <rect key="frame" x="164" y="88" width="150" height="150"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="C5A-JL-nzg" appends="YES" id="OJO-b7-qwL"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="statistics.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="WT7-VU-ZsS">
+                                <rect key="frame" x="6" y="246" width="150" height="150"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="vLf-gv-h0P" appends="YES" id="FOH-D2-pVd"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profile.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="kLc-I2-fG9">
+                                <rect key="frame" x="164" y="247" width="150" height="150"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="tXX-im-Zmb" appends="YES" id="8KT-5P-rdk"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="co2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9x1-83-NZy">
+                                <rect key="frame" x="6" y="404" width="150" height="150"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="pCm-Ps-kQE" appends="YES" id="IHw-S1-0lH"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Tree App" id="FIs-0G-Jvy"/>
+                    <connections>
+                        <segue destination="8fb-DI-JDq" kind="push" identifier="goToTasks" id="xu9-OG-h3M"/>
+                        <segue destination="pZh-Gf-T8v" kind="push" identifier="goToTree" id="gSm-d9-hMB"/>
+                        <segue destination="7B2-Zy-bHS" kind="push" identifier="goToAboutUs" id="MhU-pB-TAi"/>
+                        <segue destination="Sxj-ab-4nn" kind="push" identifier="goToStandings" id="j6C-Mw-joB"/>
+                        <segue destination="J58-Vj-1Ht" kind="push" identifier="goToProfile" id="Kep-hR-rKc"/>
+                        <segue destination="7aQ-MN-P7y" kind="push" identifier="goToWhy" id="5yq-Jq-W0n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="AZL-65-i6C" userLabel="Tasks">
+                    <connections>
+                        <action selector="taskAction:" destination="vXZ-lx-hvc" id="h1x-Ip-1he"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="C5A-JL-nzg" userLabel="Tree">
+                    <connections>
+                        <action selector="treeAction:" destination="vXZ-lx-hvc" id="b7G-nN-Slb"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="vLf-gv-h0P" userLabel="Standings">
+                    <connections>
+                        <action selector="standingsAction:" destination="vXZ-lx-hvc" id="Bim-5q-IEO"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="tXX-im-Zmb" userLabel="Profile">
+                    <connections>
+                        <action selector="profileAction:" destination="vXZ-lx-hvc" id="D57-FB-Rz8"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="pCm-Ps-kQE" userLabel="Why">
+                    <connections>
+                        <action selector="whyAction:" destination="vXZ-lx-hvc" id="CDA-xH-98O"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Czq-h4-LlO" userLabel="AboutUs">
+                    <connections>
+                        <action selector="aboutUsAction:" destination="vXZ-lx-hvc" id="hJb-DT-sjP"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="734" y="319"/>
+        </scene>
+        <!--Why-->
+        <scene sceneID="aJu-k4-pjz">
+            <objects>
+                <viewController id="7aQ-MN-P7y" customClass="Why" customModule="CO2ree" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="E7z-ZU-r3T"/>
+                        <viewControllerLayoutGuide type="bottom" id="e4w-Fu-gp1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NGb-gz-6GP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Why" id="UP2-XA-npt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p8c-Pi-qad" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1273" y="1577"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="txB-fa-uCo">
+            <objects>
+                <viewController id="J58-Vj-1Ht" customClass="Profile" customModule="CO2ree" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y2t-o9-YMB"/>
+                        <viewControllerLayoutGuide type="bottom" id="tY5-Lm-Q4n"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RFB-n2-nZn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Profile" id="b1B-Vk-mm9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7vA-zM-jpl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1273" y="951"/>
+        </scene>
+        <!--Tree-->
+        <scene sceneID="AcC-T7-hDr">
+            <objects>
+                <viewController id="pZh-Gf-T8v" customClass="Tree" customModule="CO2ree" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sea-EJ-kxf"/>
+                        <viewControllerLayoutGuide type="bottom" id="G62-PL-ToV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="veZ-tc-6Gu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tree" id="RCJ-Qx-CUf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iyE-wH-ksS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1273" y="-305"/>
+        </scene>
+        <!--About Us-->
+        <scene sceneID="WFt-DT-AIx">
+            <objects>
+                <viewController id="7B2-Zy-bHS" customClass="AboutUs" customModule="CO2ree" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wkx-bj-IgN"/>
+                        <viewControllerLayoutGuide type="bottom" id="ln5-V1-kTU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3Vk-8D-v0g">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="About Us" id="VT1-Hd-BlN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7vZ-DV-t31" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1273" y="2203"/>
+        </scene>
+        <!--Standings-->
+        <scene sceneID="1Ob-4Q-7uY">
+            <objects>
+                <viewController id="Sxj-ab-4nn" customClass="Standings" customModule="CO2ree" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Ur-qj-ZZ2"/>
+                        <viewControllerLayoutGuide type="bottom" id="BbI-0g-Gvz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wn6-b7-j1H">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Standings" id="FY4-wo-Mc3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6kh-MW-o0Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1273" y="319"/>
+        </scene>
+        <!--Tasks-->
+        <scene sceneID="MIL-BQ-6g1">
+            <objects>
+                <viewController id="8fb-DI-JDq" customClass="Tasks" customModule="CO2ree" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BdG-W5-9mZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="IvE-Ir-XF9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GDO-L2-9Rv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="I would like to save CO2 by.." borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E73-j9-SQG">
+                                <rect key="frame" x="34" y="117" width="264" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="transportationButton.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="OP2-Xq-6EV">
+                                <rect key="frame" x="10" y="193" width="300" height="60"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="homeButton.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="79z-JH-SFx">
+                                <rect key="frame" x="10" y="276" width="300" height="60"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="foodButton.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4jt-h1-jkr">
+                                <rect key="frame" x="10" y="360" width="300" height="60"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="schoolButton.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Und-uZ-1G0">
+                                <rect key="frame" x="10" y="443" width="300" height="60"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tasks" id="Ngh-5t-AUK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NeI-Ds-cRS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1273" y="-927"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="C0q-aQ-mpo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MAt-r9-Vid" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jbI-fJ-F5N">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="1hV-EW-uDx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mVN-H7-slv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="202" y="319"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="aboutus.jpg" width="300" height="300"/>
+        <image name="achievement.jpg" width="300" height="300"/>
+        <image name="co2.jpg" width="300" height="300"/>
+        <image name="foodButton.jpg" width="600" height="100"/>
+        <image name="homeButton.jpg" width="600" height="100"/>
+        <image name="profile.jpg" width="300" height="300"/>
+        <image name="schoolButton.jpg" width="600" height="100"/>
+        <image name="statistics.jpg" width="300" height="300"/>
+        <image name="transportationButton.jpg" width="600" height="100"/>
+        <image name="tree.jpg" width="300" height="300"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>
