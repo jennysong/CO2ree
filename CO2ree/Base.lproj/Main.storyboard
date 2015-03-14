@@ -201,7 +201,7 @@
                     <navigationItem key="navigationItem" title="Tasks" id="Ngh-5t-AUK"/>
                     <connections>
                         <segue destination="5rT-EH-b7C" kind="push" identifier="goToTasksTransportation" id="Mjz-y2-QP8"/>
-                        <segue destination="5rT-EH-b7C" kind="push" id="uST-iB-zru"/>
+                        <segue destination="5rT-EH-b7C" kind="push" identifier="goToTasksHome" id="uST-iB-zru"/>
                         <segue destination="5rT-EH-b7C" kind="push" identifier="goToTasksFood" id="0LU-AY-QpV"/>
                         <segue destination="5rT-EH-b7C" kind="push" identifier="goToTasksSchool" id="rte-iT-1zR"/>
                     </connections>
@@ -267,30 +267,40 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1392" y="1091"/>
+            <point key="canvasLocation" x="1410" y="1141"/>
         </scene>
-        <!--Tasks By Category-->
+        <!--Title-->
         <scene sceneID="VJ7-XE-4sC">
             <objects>
                 <tableViewController id="5rT-EH-b7C" customClass="TasksByCategory" customModule="CO2ree" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="MXL-qs-PG7">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="41" sectionHeaderHeight="22" sectionFooterHeight="22" id="MXL-qs-PG7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" red="1" green="0.42640323019999998" blue="0.38604600639999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <imageView key="tableHeaderView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="QVY-dH-e1V">
+                            <rect key="frame" x="0.0" y="64" width="320" height="204"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="kyb-AT-st6">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="z9p-qJ-RVz" rowHeight="41" style="IBUITableViewCellStyleDefault" id="kyb-AT-st6">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kyb-AT-st6" id="lCD-0p-XDi">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kef-lV-DvT">
-                                            <rect key="frame" x="14" y="12" width="268" height="21"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="z9p-qJ-RVz">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <segue destination="OqV-mi-6sQ" kind="push" identifier="goToTasksDetail" id="oOI-TM-jAL"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -298,14 +308,38 @@
                             <outlet property="delegate" destination="5rT-EH-b7C" id="UgZ-VP-RC0"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="9vW-u2-Lqf"/>
+                    <navigationItem key="navigationItem" title="Title" id="pRK-eL-YJ4"/>
                     <connections>
+                        <outlet property="categoryGraph" destination="QVY-dH-e1V" id="ouz-ma-D5e"/>
+                        <outlet property="categoryTitle" destination="pRK-eL-YJ4" id="x0I-EY-YvU"/>
                         <outlet property="taskTable" destination="MXL-qs-PG7" id="8PV-d1-NSt"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="35N-te-xfS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1780" y="1141"/>
+        </scene>
+        <!--TaskDetail-->
+        <scene sceneID="lN3-PM-d0P">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gHh-KM-sR2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="OqV-mi-6sQ" customClass="TaskDetail" customModule="CO2ree" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="U2Q-P0-eN1"/>
+                        <viewControllerLayoutGuide type="bottom" id="fHF-fx-EuC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Haq-Fa-uv9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="TaskDetail" id="Jq0-or-lbR"/>
+                    <connections>
+                        <outlet property="taskName" destination="Jq0-or-lbR" id="vFI-zx-c7M"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2190" y="1141"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="8Zm-WR-ZP9">

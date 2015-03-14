@@ -34,6 +34,7 @@
 		BAAE19E91AB3DECE0008ED97 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAAE19E81AB3DECE0008ED97 /* Images.xcassets */; };
 		BAAE19EC1AB3DECE0008ED97 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAAE19EA1AB3DECE0008ED97 /* LaunchScreen.xib */; };
 		BAAE19F81AB3DECE0008ED97 /* CO2reeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE19F71AB3DECE0008ED97 /* CO2reeTests.swift */; };
+		BAD3AA7B1AB4722400470F8B /* TaskDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD3AA7A1AB4722400470F8B /* TaskDetail.swift */; };
 		F34C306D1AB44C0900BA4627 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34C306C1AB44C0900BA4627 /* CustomCell.swift */; };
 		F3504ADD1AB45E5D0080F6EF /* tree.png in Resources */ = {isa = PBXBuildFile; fileRef = F3504ADC1AB45E5D0080F6EF /* tree.png */; };
 /* End PBXBuildFile section */
@@ -80,6 +81,7 @@
 		BAAE19F11AB3DECE0008ED97 /* CO2reeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CO2reeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAAE19F61AB3DECE0008ED97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAAE19F71AB3DECE0008ED97 /* CO2reeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CO2reeTests.swift; sourceTree = "<group>"; };
+		BAD3AA7A1AB4722400470F8B /* TaskDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetail.swift; sourceTree = "<group>"; };
 		F34C306C1AB44C0900BA4627 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		F3504ADC1AB45E5D0080F6EF /* tree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tree.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,6 +111,7 @@
 				BA53375E1AB3ED71004450C7 /* Tasks.swift */,
 				BA5337721AB3FB4A004450C7 /* TasksWithCategories.swift */,
 				BA221D7F1AB4569F00DD7AC7 /* TasksByCategory.swift */,
+				BAD3AA7A1AB4722400470F8B /* TaskDetail.swift */,
 				BA5337601AB3F15D004450C7 /* Garden.swift */,
 				BA5337621AB3F187004450C7 /* Standings.swift */,
 				BA5337641AB3F19E004450C7 /* Profile.swift */,
@@ -317,6 +320,7 @@
 				BA5337731AB3FB4A004450C7 /* TasksWithCategories.swift in Sources */,
 				BA5337611AB3F15D004450C7 /* Garden.swift in Sources */,
 				BA53375F1AB3ED71004450C7 /* Tasks.swift in Sources */,
+				BAD3AA7B1AB4722400470F8B /* TaskDetail.swift in Sources */,
 				BA221D4E1AB4370800DD7AC7 /* TaskLibrary.swift in Sources */,
 				BA5337631AB3F187004450C7 /* Standings.swift in Sources */,
 				F34C306D1AB44C0900BA4627 /* CustomCell.swift in Sources */,
