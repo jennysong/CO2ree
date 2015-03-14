@@ -1,5 +1,5 @@
-	//
-//  MyCustomCell.swift
+//
+//  CustomCell.swift
 //  CO2ree
 //
 //  Created by Younsuk Oh on 3/14/15.
@@ -8,9 +8,11 @@
 
 import UIKit
 
-class MyCustomCell: UITableViewCell {
-
-    @IBOutlet weak var labelCell: UILabel!
+class CustomCell: UITableViewCell {
+    
+    @IBOutlet weak var myLabel: UILabel!
+    
+    @IBOutlet weak var myImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,6 +23,11 @@ class MyCustomCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func setUp(labelString: String, imageName: String){
+        self.myLabel.text = labelString
+        self.myImage.image = UIImage(named: imageName)
     }
 
 }
