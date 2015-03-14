@@ -127,7 +127,7 @@
                                 <rect key="frame" x="0.0" y="28" width="320" height="491"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="myCell" rowHeight="82" id="ZRJ-n1-HwO" customClass="CustomCell" customModule="CO2ree" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CustomCell" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="myCell" rowHeight="82" id="ZRJ-n1-HwO" customClass="CustomCell" customModule="CO2ree" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" tableViewCell="ZRJ-n1-HwO" id="lHy-mj-kbi">
@@ -139,7 +139,7 @@
                                                         <constraint firstAttribute="width" constant="85" id="OJQ-z0-q8M"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RaE-5T-rds">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RaE-5T-rds">
                                                     <rect key="frame" x="122" y="19" width="183" height="44"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -159,7 +159,7 @@
                                         <connections>
                                             <outlet property="myImage" destination="dK4-BM-lz9" id="voB-27-RU4"/>
                                             <outlet property="myLabel" destination="RaE-5T-rds" id="VzV-dq-pC3"/>
-                                            <segue destination="Jsb-Vc-1QX" kind="push" identifier="goToDetailTree" trigger="accessoryAction" id="sib-G1-EdE"/>
+                                            <segue destination="Jsb-Vc-1QX" kind="push" identifier="goToDetailTree" id="cZo-kl-geA"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -377,7 +377,6 @@
         <!--TaskDetail-->
         <scene sceneID="lN3-PM-d0P">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gHh-KM-sR2" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="OqV-mi-6sQ" customClass="TaskDetail" customModule="CO2ree" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="U2Q-P0-eN1"/>
@@ -393,6 +392,7 @@
                         <outlet property="taskName" destination="Jq0-or-lbR" id="vFI-zx-c7M"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gHh-KM-sR2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2190" y="1141"/>
         </scene>
@@ -450,6 +450,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Mjz-y2-QP8"/>
+        <segue reference="rte-iT-1zR"/>
     </inferredMetricsTieBreakers>
 </document>

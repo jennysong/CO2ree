@@ -1,6 +1,6 @@
 import UIKit
 
-class Garden: UIViewController,UITableViewDataSource,UITableViewDelegate {
+class Garden: UITableViewController,UITableViewDataSource,UITableViewDelegate {
     
     @IBOutlet weak var table: UITableView!
     var arrayOfTrees: [Tree] = [Tree]()
@@ -21,7 +21,7 @@ class Garden: UIViewController,UITableViewDataSource,UITableViewDelegate {
         return arrayOfTrees.count
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell:CustomCell = tableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath) as CustomCell
+        var cell:CustomCell = tableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath) as CustomCell
         cell.setUp(arrayOfTrees[indexPath.row])
         return cell
     }
@@ -39,8 +39,14 @@ class Garden: UIViewController,UITableViewDataSource,UITableViewDelegate {
         } */
     }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "goToTasksTransportation" {
-            
+        if segue.identifier == "goToDetailTree" {
+            let detailTree = segue.destinationViewController as DetailTree
+            if let indexPath = self.table.indexPathForSelectedRow() {
+                let tree = arrayOfTrees[indexPath.row]
+                detailTree.treeNameValue = tree.name
+                detailTree.treeImageValue = tree.imageName
+                detailTree.statusValue = tree.status
+            }
         }
     }
     
