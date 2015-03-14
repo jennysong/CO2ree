@@ -26,16 +26,10 @@ class TasksWithCategories: UIViewController {
 
         //graph
         categoryGraph.image = UIImage(named: "\(categoryName)Graph.jpg")
-            
-            
-            //UIImage( name: String,
-//        inBundle bundle: NSBundle?,
-  //      compatibleWithTraitCollection traitCollection: UITraitCollection?
-        
-        
-        
         
         //list
+        //let jsonData = NSData(contentsOfFile:
+        
         
         
         
