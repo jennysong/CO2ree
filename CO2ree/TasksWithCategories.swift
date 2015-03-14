@@ -11,14 +11,16 @@ import UIKit
 class TasksWithCategories: UIViewController {
     
 
-    @IBOutlet weak var categoryTitle: UINavigationItem!
+
+    @IBOutlet weak var categoryTitle: UILabel!
     @IBOutlet weak var categoryGraph: UIImageView!
+
     
     var categoryName = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        categoryTitle.title = categoryName
+        categoryTitle.text = categoryName
         
 
         //graph
@@ -41,6 +43,19 @@ class TasksWithCategories: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+   
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "backToTasks" {
+            let tasksController = segue.destinationViewController as Tasks
+        }
+    }
+
+    
+    @IBAction func backButton(sender: AnyObject) {
+        performSegueWithIdentifier("backToTasks", sender: sender)
     }
     
     

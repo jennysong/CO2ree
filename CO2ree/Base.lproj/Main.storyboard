@@ -17,40 +17,51 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aboutus.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="RU2-ge-gNg">
-                                <rect key="frame" x="252" y="505" width="55" height="55"/>
+                                <rect key="frame" x="253" y="384" width="55" height="55"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="Czq-h4-LlO" appends="YES" id="SNE-wh-2RT"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="achievement.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="LGp-NO-D4e">
-                                <rect key="frame" x="12" y="505" width="55" height="55"/>
+                                <rect key="frame" x="13" y="384" width="55" height="55"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="AZL-65-i6C" appends="YES" id="6Tt-bl-Rnx"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tree.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="NIu-Bd-nHc">
-                                <rect key="frame" x="72" y="505" width="55" height="55"/>
+                                <rect key="frame" x="73" y="384" width="55" height="55"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="C5A-JL-nzg" appends="YES" id="OJO-b7-qwL"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="statistics.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="WT7-VU-ZsS">
-                                <rect key="frame" x="132" y="505" width="55" height="55"/>
+                                <rect key="frame" x="133" y="384" width="55" height="55"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="vLf-gv-h0P" appends="YES" id="FOH-D2-pVd"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profile.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="kLc-I2-fG9">
-                                <rect key="frame" x="192" y="505" width="55" height="55"/>
+                                <rect key="frame" x="193" y="384" width="55" height="55"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="tXX-im-Zmb" appends="YES" id="8KT-5P-rdk"/>
                                 </connections>
                             </imageView>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yuv-lf-1kr">
+                                <rect key="frame" x="0.0" y="519" width="320" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem systemItem="featured" id="cFa-uc-Uu0" userLabel="Tasks"/>
+                                    <tabBarItem systemItem="history" id="D3f-Uc-MjN" userLabel="Garden"/>
+                                    <tabBarItem systemItem="favorites" id="npS-2i-f44" userLabel="Standings"/>
+                                    <tabBarItem systemItem="search" id="3jh-zW-2nm" userLabel="Profile"/>
+                                    <tabBarItem systemItem="more" id="ASn-Rd-dbm" userLabel="About"/>
+                                </items>
+                            </tabBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -82,11 +93,6 @@
                 <tapGestureRecognizer id="tXX-im-Zmb" userLabel="Profile">
                     <connections>
                         <action selector="profileAction:" destination="vXZ-lx-hvc" id="D57-FB-Rz8"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="pCm-Ps-kQE" userLabel="Why">
-                    <connections>
-                        <action selector="whyAction:" destination="vXZ-lx-hvc" id="CDA-xH-98O"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="Czq-h4-LlO" userLabel="AboutUs">
@@ -219,6 +225,12 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tasks" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUu-bc-1YJ">
+                                <rect key="frame" x="113" y="44" width="117" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -255,10 +267,10 @@
             </objects>
             <point key="canvasLocation" x="1273" y="-927"/>
         </scene>
-        <!--Title-->
+        <!--TasksWithCategories-->
         <scene sceneID="VuV-qe-bEX">
             <objects>
-                <viewController id="6mx-Ap-7qM" customClass="TasksWithCategories" customModule="CO2ree" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6mx-Ap-7qM" userLabel="TasksWithCategories" customClass="TasksWithCategories" customModule="CO2ree" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3XV-9f-bZu"/>
                         <viewControllerLayoutGuide type="bottom" id="Krs-Yz-bS8"/>
@@ -270,21 +282,36 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E6n-5x-U55">
                                 <rect key="frame" x="-1" y="64" width="320" height="183"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7k-6Z-WJC">
+                                <rect key="frame" x="41" y="24" width="236" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back.png" translatesAutoresizingMaskIntoConstraints="NO" id="YAU-Dn-B0h">
+                                <rect key="frame" x="11" y="20" width="27" height="27"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="keo-cW-JkC" appends="YES" id="49b-dS-oX6"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="b9L-n1-Fgr" appends="YES" id="4eO-gn-zRC"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="ac4-6s-Unk"/>
                     <connections>
                         <outlet property="categoryGraph" destination="E6n-5x-U55" id="xC1-N8-WVV"/>
-                        <outlet property="categoryTitle" destination="ac4-6s-Unk" id="oJR-oV-kdj"/>
+                        <outlet property="categoryTitle" destination="h7k-6Z-WJC" id="uIi-qX-G37"/>
+                        <segue destination="8fb-DI-JDq" kind="modal" identifier="backToTasks" animates="NO" id="9dR-fY-Hbp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="joj-jV-374" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="b9L-n1-Fgr"/>
+                <tapGestureRecognizer id="keo-cW-JkC">
+                    <connections>
+                        <action selector="backButton:" destination="6mx-Ap-7qM" id="XWZ-qq-8Th"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1742" y="-927"/>
         </scene>
@@ -292,6 +319,7 @@
     <resources>
         <image name="aboutus.jpg" width="300" height="300"/>
         <image name="achievement.jpg" width="300" height="300"/>
+        <image name="back.png" width="72" height="72"/>
         <image name="foodButton.jpg" width="600" height="100"/>
         <image name="homeButton.jpg" width="600" height="100"/>
         <image name="profile.jpg" width="300" height="300"/>
@@ -306,6 +334,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="xu9-OG-h3M"/>
         <segue reference="HX1-Nw-0OJ"/>
     </inferredMetricsTieBreakers>
 </document>

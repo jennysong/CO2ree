@@ -23,13 +23,13 @@ class Home: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         if segue.identifier == "goToTasks" {
-            let taskController = segue.destinationViewController as Tasks
+            let tasksController = segue.destinationViewController as Tasks
         }
         if segue.identifier == "goToTree" {
             let treeController = segue.destinationViewController as Tree
         }
         if segue.identifier == "goToStandings" {
-            let standingController = segue.destinationViewController as Standings
+            let standingsController = segue.destinationViewController as Standings
         }
         if segue.identifier == "goToProfile" {
             let profileController = segue.destinationViewController as Profile

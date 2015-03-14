@@ -23,6 +23,10 @@
 		BA5337711AB3F88A004450C7 /* transportationButton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA53376D1AB3F88A004450C7 /* transportationButton.jpg */; };
 		BA5337731AB3FB4A004450C7 /* TasksWithCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5337721AB3FB4A004450C7 /* TasksWithCategories.swift */; };
 		BA5337771AB41462004450C7 /* transportationGraph.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA5337761AB41462004450C7 /* transportationGraph.jpg */; };
+		BA5337791AB41656004450C7 /* foodGraph.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA5337781AB41656004450C7 /* foodGraph.jpg */; };
+		BA53377C1AB416C3004450C7 /* homeGraph.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA53377A1AB416C3004450C7 /* homeGraph.jpg */; };
+		BA53377D1AB416C3004450C7 /* schoolGraph.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA53377B1AB416C3004450C7 /* schoolGraph.jpg */; };
+		BA53377F1AB418E1004450C7 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = BA53377E1AB418E1004450C7 /* back.png */; };
 		BAAE19E21AB3DECE0008ED97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE19E11AB3DECE0008ED97 /* AppDelegate.swift */; };
 		BAAE19E41AB3DECE0008ED97 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE19E31AB3DECE0008ED97 /* Home.swift */; };
 		BAAE19E71AB3DECE0008ED97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAAE19E51AB3DECE0008ED97 /* Main.storyboard */; };
@@ -58,6 +62,10 @@
 		BA53376D1AB3F88A004450C7 /* transportationButton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = transportationButton.jpg; sourceTree = "<group>"; };
 		BA5337721AB3FB4A004450C7 /* TasksWithCategories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksWithCategories.swift; sourceTree = "<group>"; };
 		BA5337761AB41462004450C7 /* transportationGraph.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = transportationGraph.jpg; sourceTree = "<group>"; };
+		BA5337781AB41656004450C7 /* foodGraph.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = foodGraph.jpg; sourceTree = "<group>"; };
+		BA53377A1AB416C3004450C7 /* homeGraph.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = homeGraph.jpg; sourceTree = "<group>"; };
+		BA53377B1AB416C3004450C7 /* schoolGraph.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = schoolGraph.jpg; sourceTree = "<group>"; };
+		BA53377E1AB418E1004450C7 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		BAAE19DC1AB3DECE0008ED97 /* CO2ree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CO2ree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAAE19E01AB3DECE0008ED97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAAE19E11AB3DECE0008ED97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,7 +113,11 @@
 		BA5337511AB3EA46004450C7 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				BA53377E1AB418E1004450C7 /* back.png */,
+				BA5337781AB41656004450C7 /* foodGraph.jpg */,
 				BA5337761AB41462004450C7 /* transportationGraph.jpg */,
+				BA53377A1AB416C3004450C7 /* homeGraph.jpg */,
+				BA53377B1AB416C3004450C7 /* schoolGraph.jpg */,
 				BA53376A1AB3F88A004450C7 /* foodButton.jpg */,
 				BA53376B1AB3F88A004450C7 /* homeButton.jpg */,
 				BA53376C1AB3F88A004450C7 /* schoolButton.jpg */,
@@ -258,14 +270,18 @@
 			files = (
 				BA53375C1AB3EAE7004450C7 /* statistics.jpg in Resources */,
 				BA5337771AB41462004450C7 /* transportationGraph.jpg in Resources */,
+				BA53377F1AB418E1004450C7 /* back.png in Resources */,
 				BA53376E1AB3F88A004450C7 /* foodButton.jpg in Resources */,
 				BA5337711AB3F88A004450C7 /* transportationButton.jpg in Resources */,
+				BA53377C1AB416C3004450C7 /* homeGraph.jpg in Resources */,
 				BA5337701AB3F88A004450C7 /* schoolButton.jpg in Resources */,
 				BAAE19E71AB3DECE0008ED97 /* Main.storyboard in Resources */,
 				BA5337581AB3EAE7004450C7 /* aboutus.jpg in Resources */,
+				BA53377D1AB416C3004450C7 /* schoolGraph.jpg in Resources */,
 				BA53375D1AB3EAE7004450C7 /* tree.jpg in Resources */,
 				BAAE19EC1AB3DECE0008ED97 /* LaunchScreen.xib in Resources */,
 				BA53376F1AB3F88A004450C7 /* homeButton.jpg in Resources */,
+				BA5337791AB41656004450C7 /* foodGraph.jpg in Resources */,
 				BA5337591AB3EAE7004450C7 /* achievement.jpg in Resources */,
 				BAAE19E91AB3DECE0008ED97 /* Images.xcassets in Resources */,
 				BA53375B1AB3EAE7004450C7 /* profile.jpg in Resources */,
