@@ -53,14 +53,11 @@ class Home: UIViewController {
         /*if segue.identifier == "goToTasks" {
             let tasksController = segue.destinationViewController as Tasks
         }*/
-        if segue.identifier == "goToGardenFromHome" {
+        if segue.identifier == "goToTaskFromHome" {
             let gardenController = segue.destinationViewController as Garden
         }
         if segue.identifier == "goToLogIn" {
             let signUpController = segue.destinationViewController as LogIn
         }
-    }
-    @IBAction func goToGardenButton(sender: AnyObject) {
-    performSegueWithIdentifier("goToGardenFromHome", sender: sender)
     }
 }

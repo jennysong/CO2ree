@@ -1,12 +1,21 @@
 import UIKit
 
 class Garden: UIViewController,UITableViewDataSource,UITableViewDelegate {
+    var height:CGFloat?
+    var width:CGFloat?
     
+    @IBOutlet weak var findOutLabel: UILabel!
     @IBOutlet weak var table: UITableView!
     var arrayOfTrees: [Tree] = [Tree]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "Garden"
+        navigationItem.title = "Personal Garden"
+        navigationController?.navigationBar.barTintColor =  Color().get(0x9AEC5B)
+        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        height = self.view.frame.size.height
+        width = self.view.frame.size.width
+        
+        findOutLabel.frame.origin = CGPoint(x:self.width!*0.16, y: self.height!*0.20)
         self.setUpTrees()
         // Do any additional setup after sloading the view, typically from a nib.
         //self.table.registerClass(UITableViewCell.self, forCellReuseIdentifier: "myCell")
@@ -28,16 +37,12 @@ class Garden: UIViewController,UITableViewDataSource,UITableViewDelegate {
     }
     
     func setUpTrees(){
-        arrayOfTrees.append(Tree(name: "Pine Tree", imageName: "pineTree.png",status: 0.0))
-        arrayOfTrees.append(Tree(name: "Tree", imageName: "tree.png",status: 0.0))
-        arrayOfTrees.append(Tree(name: "Git Tree", imageName: "gitTree.png",status: 0.0))
-    }
-    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        /*
-        if editingStyle == UITableViewCellEditingStyle.Delete{
-            arrayOfTrees.removeAtIndex(indexPath.row)
-            self.table.reloadData()
-        } */
+        arrayOfTrees.append(Tree(name: "Plain Tree", imageName: "plain-a.png",status: 0.0))
+        arrayOfTrees.append(Tree(name: "Pine Tree", imageName: "pine-a.png",status: 0.0))
+        arrayOfTrees.append(Tree(name: "Binary Tree", imageName: "binary-a.png",status: 0.0))
+        arrayOfTrees.append(Tree(name: "Git Tree", imageName: "git-a.png",status: 0.0))
+        arrayOfTrees.append(Tree(name: "Money Tree", imageName: "money-a.png",status: 0.0))
+        arrayOfTrees.append(Tree(name: "Snoopy Tree", imageName: "snoopy-a.png",status: 0.0))
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -52,18 +57,4 @@ class Garden: UIViewController,UITableViewDataSource,UITableViewDelegate {
             }
         }
     }
- 
- /*
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let tree = arrayOfTrees[indexPath.row]
-        println("hi")
-        var detailTree: DetailTree = self.storyboard?.instantiateViewControllerWithIdentifier("DetailTree") as DetailTree
-        
-        detailTree.treeNameValue = tree.name
-        detailTree.treeImageValue = tree.imageName
-        detailTree.statusValue = tree.status
-        self.presentViewController(detailTree, animated: true, completion: nil)
-        self.table.deselectRowAtIndexPath(indexPath, animated: true)
-    }
-*/
 }

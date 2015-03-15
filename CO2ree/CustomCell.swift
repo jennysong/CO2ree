@@ -27,7 +27,15 @@ class CustomCell: UITableViewCell {
     
     func setUp(tree: Tree){
         self.myLabel.text = tree.name
+        /*
         self.myImage.image = UIImage(named: tree.imageName)
+        
+        // this is to get white image to green
+        self.myImage.image = self.myImage.image?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+        self.myImage.tintColor = Color().get(0x9AEC5B)
+        self.myImage.frame = CGRectMake(40,30,self.myImage.frame.width*0.5,self.myImage.frame.height*0.5)
+        */
+        
     }
 
 }
