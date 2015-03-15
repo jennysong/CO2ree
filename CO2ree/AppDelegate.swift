@@ -27,10 +27,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        //if userExist() {
+
+        var app = UIApplication.sharedApplication().delegate as AppDelegate
+        if ((app.user) != nil){
             var homeViewController: UITabBarController = mainStoryboard.instantiateViewControllerWithIdentifier("HomeControllerIdentifier") as UITabBarController
             self.window?.rootViewController = homeViewController
-        //}
+        }
+        else {
+            var loginViewController: UINavigationController = mainStoryboard.instantiateViewControllerWithIdentifier("LoginControllerIdentifier") as UINavigationController
+            self.window?.rootViewController = loginViewController
+            
+        }
         
         self.window?.makeKeyAndVisible()
         
