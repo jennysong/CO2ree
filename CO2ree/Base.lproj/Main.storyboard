@@ -41,27 +41,12 @@
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signUpButton.png" id="Uqo-jW-cwf">
                                 <rect key="frame" x="40" y="339" width="240" height="49"/>
                                 <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="AQC-kO-25e" appends="YES" id="1tF-LG-bfI"/>
-                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <outlet property="countryField" destination="mQU-rZ-MOV" id="Ip7-l5-vCk"/>
-                        <outlet property="passwordField" destination="tMt-3W-jQW" id="Kjw-d4-lSc"/>
-                        <outlet property="provinceField" destination="eZW-9k-zBG" id="8ra-6E-Alf"/>
-                        <outlet property="repasswordField" destination="HsU-aO-wli" id="36j-kf-cVD"/>
-                        <segue destination="szX-mx-sVI" kind="modal" identifier="goToWelcome" modalTransitionStyle="crossDissolve" id="HH7-lc-EVZ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fRo-yf-wLh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="AQC-kO-25e">
-                    <connections>
-                        <action selector="submitAction:" destination="GjT-iq-Bmn" id="adz-gW-C2N"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2871" y="-974"/>
         </scene>
@@ -97,6 +82,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign UP" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="82S-Ki-aND">
+                                <rect key="frame" x="129" y="106" width="63" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SignUpWithFBButton.png" translatesAutoresizingMaskIntoConstraints="NO" id="g4V-ch-m78">
+                                <rect key="frame" x="40" y="213" width="240" height="49"/>
+                            </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="signUpWithEmailButton.png" translatesAutoresizingMaskIntoConstraints="NO" id="6EJ-Ka-PYt">
                                 <rect key="frame" x="40" y="276" width="240" height="49"/>
                                 <gestureRecognizers/>
@@ -116,7 +110,7 @@
                     <connections>
                         <outlet property="fbLoginView" destination="ITw-ht-1lA" id="aFU-34-Coq"/>
                         <segue destination="iDW-sh-NTe" kind="push" identifier="goToSignUpWithEmail" id="INq-GA-xHL"/>
-                        <segue destination="GjT-iq-Bmn" kind="modal" identifier="goToSignUpWithFB" modalTransitionStyle="crossDissolve" id="Rto-S5-5xw"/>
+                        <segue destination="GjT-iq-Bmn" kind="modal" identifier="goTosignUpWithFB" modalTransitionStyle="crossDissolve" id="Rto-S5-5xw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ddu-iq-wEH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -222,19 +216,10 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VTt-Sh-TRe">
-                                <rect key="frame" x="51" y="120" width="218" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="EIR-Hx-7R8"/>
-                    <connections>
-                        <outlet property="nameLabel" destination="VTt-Sh-TRe" id="mhq-vo-jLb"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z81-D1-7dr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -358,7 +343,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1948" y="-464"/>
+            <point key="canvasLocation" x="1394" y="-457"/>
         </scene>
         <!--Login With Email-->
         <scene sceneID="9OL-Zb-yZ8">
@@ -383,7 +368,7 @@
             </objects>
             <point key="canvasLocation" x="1929" y="-1193"/>
         </scene>
-        <!--Tree App-->
+        <!--Ctree-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="Home" customModule="CO2ree" customModuleProvider="target" sceneMemberID="viewController">
@@ -415,19 +400,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Tree App" id="FIs-0G-Jvy">
+                    <navigationItem key="navigationItem" title="Ctree" id="FIs-0G-Jvy">
                         <barButtonItem key="rightBarButtonItem" id="h2h-Bg-em5">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XkG-2g-HKx">
                                 <rect key="frame" x="233" y="7" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="+">
+                                    <color key="titleColor" red="0.60392156862745094" green="0.92549019607843142" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="goToGarden:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DHv-PU-zMg"/>
                                     <action selector="goToGardenButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uLL-LL-g6V"/>
-                                    <segue destination="pZh-Gf-T8v" kind="push" identifier="goToGardenFromHome" id="0R9-NU-HEu"/>
+                                    <segue destination="8fb-DI-JDq" kind="push" identifier="goToTaskFromHome" id="t82-5W-Sfy"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -437,6 +423,8 @@
                     <size key="freeformSize" width="320" height="568"/>
                     <connections>
                         <outlet property="homeTreeImage" destination="ZQ8-0C-Ngk" id="7ll-te-OFZ"/>
+                        <outlet property="treeDescription" destination="UUR-It-MmJ" id="RZT-ev-KSq"/>
+                        <outlet property="treeNameLabel" destination="VvK-q7-Y24" id="m8c-f2-Hki"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -466,7 +454,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1948" y="147"/>
+            <point key="canvasLocation" x="1424" y="211"/>
         </scene>
         <!--Profile-->
         <scene sceneID="txB-fa-uCo">
@@ -553,25 +541,26 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CustomCell" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="myCell" rowHeight="82" id="ZRJ-n1-HwO" customClass="CustomCell" customModule="CO2ree" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CustomCell" selectionStyle="blue" indentationWidth="10" reuseIdentifier="myCell" rowHeight="82" id="ZRJ-n1-HwO" customClass="CustomCell" customModule="CO2ree" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" tableViewCell="ZRJ-n1-HwO" id="lHy-mj-kbi">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="dK4-BM-lz9">
-                                                    <rect key="frame" x="8" y="0.0" width="85" height="81"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" id="RaE-5T-rds">
-                                                    <rect key="frame" x="122" y="19" width="183" height="44"/>
+                                                    <rect key="frame" x="25" y="19" width="183" height="44"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="dK4-BM-lz9">
+                                                    <rect key="frame" x="228" y="8" width="77" height="65"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="tintColor" red="0.60392156860000001" green="0.92549019610000005" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="myImage" destination="dK4-BM-lz9" id="voB-27-RU4"/>
                                             <outlet property="myLabel" destination="RaE-5T-rds" id="VzV-dq-pC3"/>
@@ -584,8 +573,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Garden" image="05tree.png" id="jfZ-EK-MMc"/>
-                    <navigationItem key="navigationItem" id="RCJ-Qx-CUf"/>
+                    <navigationItem key="navigationItem" title="Personal Garden" id="RCJ-Qx-CUf"/>
                     <connections>
+                        <outlet property="findOutLabel" destination="yB8-oP-XfS" id="hJs-np-nbw"/>
                         <outlet property="table" destination="d8Z-PA-TYn" id="NYw-65-U2x"/>
                     </connections>
                 </viewController>
@@ -609,7 +599,7 @@
             </objects>
             <point key="canvasLocation" x="3636" y="319"/>
         </scene>
-        <!--Tasks-->
+        <!--Add a Task-->
         <scene sceneID="MIL-BQ-6g1">
             <objects>
                 <viewController id="8fb-DI-JDq" customClass="Tasks" customModule="CO2ree" customModuleProvider="target" sceneMemberID="viewController">
@@ -617,14 +607,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="transportationButton.jpg" id="OP2-Xq-6EV">
-                                <rect key="frame" x="10" y="193" width="300" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="eqq-mm-D4u" appends="YES" id="x9y-3X-kXI"/>
-                                </connections>
-                            </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeButton.jpg" id="79z-JH-SFx">
                                 <rect key="frame" x="10" y="276" width="300" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -663,12 +645,26 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="transportationButton.jpg" id="OP2-Xq-6EV">
+                                <rect key="frame" x="10" y="193" width="300" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="eqq-mm-D4u" appends="YES" id="x9y-3X-kXI"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Tasks" image="tasks-gray.png" id="W4x-yH-2pA"/>
-                    <navigationItem key="navigationItem" title="Tasks" id="Ngh-5t-AUK"/>
+                    <navigationItem key="navigationItem" title="Add a Task" id="Ngh-5t-AUK">
+                        <barButtonItem key="backBarButtonItem" id="qNc-Kc-ExB">
+                            <string key="title" base64-UTF8="YES">
+CQ
+</string>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="5rT-EH-b7C" kind="push" identifier="goToTasksTransportation" id="Mjz-y2-QP8"/>
                         <segue destination="5rT-EH-b7C" kind="push" identifier="goToTasksHome" id="uST-iB-zru"/>
@@ -956,8 +952,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="t82-5W-Sfy"/>
         <segue reference="rte-iT-1zR"/>
-        <segue reference="0R9-NU-HEu"/>
-        <segue reference="HH7-lc-EVZ"/>
     </inferredMetricsTieBreakers>
 </document>
