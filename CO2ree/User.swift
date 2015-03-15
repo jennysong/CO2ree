@@ -8,7 +8,7 @@
 
 import Foundation
 
-class User {
+class User : NSObject, NSCoding {
     
     var firstName: String?
     var lastName: String?
@@ -18,6 +18,29 @@ class User {
     var province: String?
     var password: String?
     var score: Double?
+    var token: String?
+    func encodeWithCoder(aCoder: NSCoder) {
+        aCoder.encodeObject(firstName, forKey: "firstName")
+        aCoder.encodeObject(lastName, forKey: "lastName")
+        aCoder.encodeObject(email, forKey: "email")
+        aCoder.encodeObject(facebookID, forKey: "facebookID")
+        aCoder.encodeObject(country, forKey: "country")
+        aCoder.encodeObject(province, forKey: "province")
+        aCoder.encodeObject(score, forKey: "score")
+        aCoder.encodeObject(token, forKey: "token")
+    }
+    required init(coder aDecoder: NSCoder) {
+        firstName = aDecoder.decodeObjectForKey("firstName") as String?
+        lastName = aDecoder.decodeObjectForKey("lastName") as String?
+        email = aDecoder.decodeObjectForKey("email") as String?
+        facebookID = aDecoder.decodeObjectForKey("facebookID") as String?
+        country = aDecoder.decodeObjectForKey("country") as String?
+        province = aDecoder.decodeObjectForKey("province") as String?
+        score = aDecoder.decodeObjectForKey("score") as Double?
+        token = aDecoder.decodeObjectForKey("token") as String?
+        
+        
+    }
     
     init(firstName: String, lastName: String, email: String, country: String, province: String, password: String) {
         self.firstName = firstName
