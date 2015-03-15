@@ -9,7 +9,7 @@
 import UIKit
 
 class SignUpWithEmail: UIViewController {
-    
+    var userDataManager = UserDataManager()
     @IBOutlet weak var firstNameInput: UITextField!
     @IBOutlet weak var lastNameInput: UITextField!
     @IBOutlet weak var emailInput: UITextField!
@@ -85,6 +85,8 @@ class SignUpWithEmail: UIViewController {
                     // store session token
                     println(data)
                     app.user.token = data["session_token"] as? String
+                    self.userDataManager.addNewUser(app.user)
+                    self.userDataManager.save()
                     self.performSegueWithIdentifier("goToWelcome", sender: self)
                 },
                 error: { data, response in
