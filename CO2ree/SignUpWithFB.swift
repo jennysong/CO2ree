@@ -76,6 +76,8 @@ class SignUpWithFB: UIViewController {
                 ],
                 success: { data, response in
                     // store session token
+                    println(data)
+                    app.user.token = data["session_token"] as? String
                     self.performSegueWithIdentifier("goToWelcome", sender: self)
                 },
                 error: { data, response in
