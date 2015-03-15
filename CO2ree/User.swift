@@ -19,7 +19,7 @@ class User : NSObject, NSCoding {
     var password: String?
     var score: Double?
     var token: String?
-    var isLogOut: Bool = 1
+    var isLogOut: Bool = true
     func encodeWithCoder(aCoder: NSCoder) {
         aCoder.encodeObject(firstName, forKey: "firstName")
         aCoder.encodeObject(lastName, forKey: "lastName")
