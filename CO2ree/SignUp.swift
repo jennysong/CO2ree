@@ -9,6 +9,7 @@
 import UIKit
 
 class SignUp: UIViewController, FBLoginViewDelegate {
+    var userDataManager = UserDataManager()
     
     var facebookID: String!
     var firstName: String!
@@ -50,13 +51,30 @@ class SignUp: UIViewController, FBLoginViewDelegate {
     
     func loginViewFetchedUserInfo(loginView : FBLoginView!, user: FBGraphUser) {
         println("User: \(user)")
+        self.fbLoginView.delegate = nil
         facebookID = user.objectID
         firstName = user.first_name
         lastName = user.last_name
         var userEmail = user.objectForKey("email") as String
         email = userEmail
         
-        self.performSegueWithIdentifier("goToSignUpWithFB", sender: self)
+        RESTClient.post("http://code.shawnjung.ca/session/facebook",
+            data: [ "facebook_id": facebookID ],
+            success: { data, response in
+                let app = UIApplication.sharedApplication().delegate as AppDelegate
+                app.user = User(firstName: data["first_name"] as String, lastName: data["last_name"] as String, email: data["email"] as String, country: data["country_code"] as String, province: data["subregion_code"] as String, password: "")
+                app.user.token = data["session_token"] as? String
+                app.user.isLogOut = false
+                self.userDataManager.addNewUser(app.user)
+                self.userDataManager.save()
+                self.performSegueWithIdentifier("goToWelcome", sender: self)
+            },
+            error: { data, response in
+                self.performSegueWithIdentifier("goToSignUpWithFB", sender: self)
+            }
+        )
+        
+        
         
     }
     

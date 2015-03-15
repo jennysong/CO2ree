@@ -39,7 +39,7 @@ class LoginWithFB: UIViewController, FBLoginViewDelegate {
         var userEmail = user.objectForKey("email") as String
         email = userEmail
         
-        RESTClient.post("http://code.shawnjung.ca/user/facebook",
+        RESTClient.post("http://code.shawnjung.ca/session/facebook",
             data: [ "facebook_id": facebookID ],
             success: { data, response in
                 
