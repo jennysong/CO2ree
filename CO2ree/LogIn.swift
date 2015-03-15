@@ -11,6 +11,11 @@ import UIKit
 class LogIn: UIViewController {
     
     override func viewDidLoad() {
+        
+        /*var app = UIApplication.sharedApplication().delegate as AppDelegate
+        if (true){
+            self.performSegueWithIdentifier("goToHome", sender: self)
+        }*/
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -33,6 +38,9 @@ class LogIn: UIViewController {
         }
         if segue.identifier == "goToWhyNeedLogin" {
             let whyNeedLoginController = segue.destinationViewController as WhyNeedLogin
+        }
+        if segue.identifier == "goToHome" {
+            let goHomeController = segue.destinationViewController as UITabBarController
         }
     }
     
