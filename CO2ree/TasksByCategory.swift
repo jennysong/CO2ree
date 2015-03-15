@@ -26,7 +26,27 @@ class TasksByCategory: UITableViewController, UITableViewDelegate, UITableViewDa
         self.taskTable.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
         
         //graph
-        categoryGraph.image = UIImage(named: "\(categoryName)Graph.jpg")
+        var randNum: Int = 0
+        
+        if categoryName == "Transportation"{
+        randNum = Int(arc4random()) % 5 + 1
+        categoryGraph.image = UIImage(named: "transportation\(randNum).jpg")
+        }
+        
+        else if categoryName == "School"{
+        randNum = Int(arc4random()) % 4 + 1
+        categoryGraph.image = UIImage(named: "office\(randNum).jpg")
+        }
+        
+        else if categoryName == "Home" {
+        randNum = Int(arc4random()) % 4 + 1
+        categoryGraph.image = UIImage(named: "home\(randNum).jpg")
+        }
+        else if categoryName == "Food" {
+        randNum = Int(arc4random()) % 5 + 1
+        categoryGraph.image = UIImage(named: "food\(randNum).jpg")
+        }
+       
         
         for index in 0...28 {
             if TaskLibrary().library[index][2] == categoryName {

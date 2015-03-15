@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
@@ -488,7 +488,7 @@
                         <viewControllerLayoutGuide type="bottom" id="8dY-wI-0Sc"/>
                     </layoutGuides>
                     <view key="view" autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZQ8-0C-Ngk">
@@ -514,8 +514,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Ctree" id="FIs-0G-Jvy"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="568"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="homeTreeImage" destination="ZQ8-0C-Ngk" id="7ll-te-OFZ"/>
                         <outlet property="treeDescription" destination="UUR-It-MmJ" id="RZT-ev-KSq"/>
@@ -1061,7 +1060,7 @@
             </objects>
             <point key="canvasLocation" x="3997" y="319"/>
         </scene>
-        <!--Add a Task-->
+        <!--Add an Action-->
         <scene sceneID="MIL-BQ-6g1">
             <objects>
                 <viewController id="8fb-DI-JDq" customClass="Tasks" customModule="CO2ree" customModuleProvider="target" sceneMemberID="viewController">
@@ -1073,22 +1072,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="homeButton.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="79z-JH-SFx">
-                                <rect key="frame" x="10" y="276" width="300" height="60"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="oCH-H3-mP8" appends="YES" id="2WS-pe-CI3"/>
-                                </connections>
-                            </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="foodButton.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4jt-h1-jkr">
-                                <rect key="frame" x="10" y="360" width="300" height="60"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="QvB-GX-UBG" appends="YES" id="1bZ-OA-lPH"/>
-                                </connections>
-                            </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="schoolButton.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Und-uZ-1G0">
-                                <rect key="frame" x="10" y="443" width="300" height="60"/>
+                                <rect key="frame" x="0.0" y="280" width="377" height="52"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="BxM-RT-nH6" appends="YES" id="h4M-iV-uGe"/>
@@ -1100,14 +1085,28 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I would like to save CO2 by.." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8oT-dl-FYw">
-                                <rect key="frame" x="51" y="118" width="253" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose a Category" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8oT-dl-FYw">
+                                <rect key="frame" x="16" y="88" width="253" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="homeButton.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="79z-JH-SFx">
+                                <rect key="frame" x="0.0" y="180" width="377" height="52"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="oCH-H3-mP8" appends="YES" id="2WS-pe-CI3"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="foodButton.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4jt-h1-jkr">
+                                <rect key="frame" x="0.0" y="230" width="377" height="52"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="QvB-GX-UBG" appends="YES" id="1bZ-OA-lPH"/>
+                                </connections>
+                            </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="transportationButton.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="OP2-Xq-6EV">
-                                <rect key="frame" x="10" y="193" width="300" height="60"/>
+                                <rect key="frame" x="-1" y="130" width="377" height="52"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="eqq-mm-D4u" appends="YES" id="x9y-3X-kXI"/>
@@ -1118,13 +1117,14 @@
                         <gestureRecognizers/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Tasks" image="tasks-gray.png" id="W4x-yH-2pA"/>
-                    <navigationItem key="navigationItem" title="Add a Task" id="Ngh-5t-AUK">
+                    <navigationItem key="navigationItem" title="Add an Action" id="Ngh-5t-AUK">
                         <barButtonItem key="backBarButtonItem" id="qNc-Kc-ExB">
                             <string key="title" base64-UTF8="YES">
 CQ
 </string>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <segue destination="5rT-EH-b7C" kind="push" identifier="goToTasksTransportation" id="Mjz-y2-QP8"/>
                         <segue destination="5rT-EH-b7C" kind="push" identifier="goToTasksHome" id="uST-iB-zru"/>
@@ -1154,7 +1154,7 @@ CQ
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2312" y="319"/>
+            <point key="canvasLocation" x="2311.5" y="318.5"/>
         </scene>
         <!--Title-->
         <scene sceneID="VJ7-XE-4sC">
@@ -1165,8 +1165,8 @@ CQ
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexBackgroundColor" red="1" green="0.42640323019999998" blue="0.38604600639999997" alpha="1" colorSpace="calibratedRGB"/>
-                        <imageView key="tableHeaderView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="QVY-dH-e1V">
-                            <rect key="frame" x="0.0" y="64" width="375" height="204"/>
+                        <imageView key="tableHeaderView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quickFact.jpg" id="QVY-dH-e1V">
+                            <rect key="frame" x="0.0" y="64" width="375" height="231"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                         <prototypes>
@@ -1196,6 +1196,7 @@ CQ
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Title" id="pRK-eL-YJ4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="categoryGraph" destination="QVY-dH-e1V" id="ouz-ma-D5e"/>
                         <outlet property="categoryTitle" destination="pRK-eL-YJ4" id="x0I-EY-YvU"/>
@@ -1204,9 +1205,9 @@ CQ
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="35N-te-xfS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2312" y="1105"/>
+            <point key="canvasLocation" x="2311.5" y="1104.5"/>
         </scene>
-        <!--TaskDetail-->
+        <!--Task Detail-->
         <scene sceneID="lN3-PM-d0P">
             <objects>
                 <viewController id="OqV-mi-6sQ" customClass="TaskDetail" customModule="CO2ree" customModuleProvider="target" sceneMemberID="viewController">
@@ -1268,13 +1269,12 @@ CQ
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="TaskDetail" id="Jq0-or-lbR"/>
+                    <navigationItem key="navigationItem" id="Jq0-or-lbR"/>
                     <connections>
                         <outlet property="currentLabel" destination="nPk-1v-gBO" id="oOP-nX-IZI"/>
                         <outlet property="projectedLabel" destination="Kbb-4g-8MA" id="tfv-UA-wcn"/>
                         <outlet property="taskDescription" destination="4Ua-D8-qU7" id="iQV-zU-C1o"/>
                         <outlet property="taskLabel" destination="APe-4c-9OC" id="tA5-Gg-B3o"/>
-                        <outlet property="taskName" destination="Jq0-or-lbR" id="vFI-zx-c7M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gHh-KM-sR2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1340,7 +1340,7 @@ CQ
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ToS-r7-FzA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2798" y="295"/>
+            <point key="canvasLocation" x="2814" y="295"/>
         </scene>
         <!--Home-->
         <scene sceneID="0ZM-Zv-O1M">
@@ -1422,19 +1422,20 @@ CQ
         <image name="05tree.png" width="17" height="20"/>
         <image name="LoginWithFacebookButton.png" width="432" height="76"/>
         <image name="SignUpWithFBButton.png" width="426" height="70"/>
-        <image name="foodButton.jpg" width="600" height="100"/>
+        <image name="foodButton.jpg" width="1242" height="172"/>
         <image name="home-gray.png" width="23" height="21"/>
-        <image name="homeButton.jpg" width="600" height="100"/>
+        <image name="homeButton.jpg" width="1242" height="172"/>
         <image name="loginWithEmailButton.png" width="432" height="76"/>
         <image name="profile-gray.png" width="15" height="20"/>
         <image name="profile-green.png" width="58" height="80"/>
-        <image name="schoolButton.jpg" width="600" height="100"/>
+        <image name="quickFact.jpg" width="1242" height="762"/>
+        <image name="schoolButton.jpg" width="1242" height="172"/>
         <image name="signUpButton.png" width="434" height="76"/>
         <image name="signUpWithEmailButton.png" width="430" height="70"/>
         <image name="standings-gray.png" width="19" height="18"/>
         <image name="task-bike-white.png" width="224" height="116"/>
         <image name="tasks-gray.png" width="18" height="20"/>
-        <image name="transportationButton.jpg" width="600" height="100"/>
+        <image name="transportationButton.jpg" width="1242" height="172"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

@@ -11,7 +11,7 @@ import UIKit
 class TaskDetail: UIViewController {
     var selectedTask = ""
     
-    @IBOutlet weak var taskName: UINavigationItem!
+//    @IBOutlet weak var taskName: UINavigationItem!
     @IBOutlet weak var taskLabel: UILabel!
     @IBOutlet weak var taskDescription: UITextView!
     @IBOutlet weak var currentLabel: UILabel!
@@ -19,7 +19,7 @@ class TaskDetail: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        taskName.title = selectedTask
+  //      taskName.title = selectedTask
         taskLabel.text = selectedTask
         
         //
