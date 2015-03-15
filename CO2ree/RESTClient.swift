@@ -74,19 +74,20 @@ class RESTClient {
             var httpResponse: NSHTTPURLResponse = response as NSHTTPURLResponse
             var responseData: AnyObject? = NSJSONSerialization.JSONObjectWithData(rawData, options: .MutableLeaves, error: &responseDataErr)
             
-            // Run complete callback
-            complete(responseData!, httpResponse)
-            
-            if responseError == nil && httpResponse.statusCode <= 400 {
-                // Run succss callback
-                success(responseData!, httpResponse)
-            } else {
-                // Run error callback
-                error(responseData!, httpResponse)
+            NSOperationQueue.mainQueue().addOperationWithBlock {
+                // Run complete callback
+                complete(responseData!, httpResponse)
+                
+                if responseError == nil && httpResponse.statusCode <= 400 {
+                    // Run succss callback
+                    success(responseData!, httpResponse)
+                } else {
+                    // Run error callback
+                    error(responseData!, httpResponse)
+                }
             }
             
-            }
-        )
+        })
         
     }
     
