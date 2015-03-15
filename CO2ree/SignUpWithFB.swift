@@ -9,7 +9,7 @@
 import UIKit
 
 class SignUpWithFB: UIViewController {
-    
+    var userDataManager = UserDataManager()
     @IBOutlet var countryField: UITextField!
     @IBOutlet var provinceField: UITextField!
     @IBOutlet var passwordField: UITextField!

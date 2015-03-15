@@ -8,7 +8,7 @@
 
 import Foundation
 
-class BotDataManager {
+class UserDataManager {
     var users:Array<UserData> = [];
     
     init() {
