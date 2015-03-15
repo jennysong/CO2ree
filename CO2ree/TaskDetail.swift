@@ -23,7 +23,9 @@ class TaskDetail: UIViewController {
         taskLabel.text = selectedTask
         
         //
-        let current = 21.4
+        var app = UIApplication.sharedApplication().delegate as AppDelegate
+        let current = app.user.score!
+        println(current)
         //
         currentLabel.text = "\(current)kg"
         
