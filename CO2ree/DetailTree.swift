@@ -12,13 +12,16 @@ class DetailTree: UIViewController {
     //@IBOutlet weak var treeName: UILabel!
     var height:CGFloat?
     var width:CGFloat?
-    @IBOutlet weak var treeImage: UIImageView!
+    
     @IBOutlet weak var status: UILabel!
     var treeNameValue: String?
     var treeImageValue: String?
     var statusValue: Double?
     var imagesize: Character?
     @IBOutlet weak var treeNameLabel: UILabel!
+    @IBOutlet weak var treeImage1: UIImageView!
+    @IBOutlet weak var treeImage2: UIImageView!
+    @IBOutlet weak var treeImage3: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.barTintColor =  UIColor.whiteColor()
@@ -38,7 +41,7 @@ class DetailTree: UIViewController {
         self.treeNameLabel.text = treeNameValue!
         self.treeNameLabel.textColor = UIColor.whiteColor()
         self.treeNameLabel.frame.origin = CGPoint(x:self.width!*0.11, y: self.height!*0.13)
-        self.treeImage.image = UIImage(named: treeImageValue!)
+
         var i = 0;
         var s = Array(self.treeImageValue!)
         var j = s.count
@@ -50,17 +53,14 @@ class DetailTree: UIViewController {
         }
         
         if(imagesize == "a"){
-            self.treeImage.frame = CGRectMake(0,0,self.width!*0.3,self.height!*0.2)
-            self.treeImage.center = self.view.center
-            self.treeImage.frame.origin = CGPoint(x:self.width!*0.25, y: self.height!*0.35)
+            self.treeImage1.image = UIImage(named: treeImageValue!)
+            statusValue = 0.3
         }else if(imagesize == "b"){
-            self.treeImage.frame = CGRectMake(0,0,self.width!*0.45,self.height!*0.35)
-            self.treeImage.center = self.view.center
-            self.treeImage.frame.origin = CGPoint(x:self.width!*0.22, y: self.height!*0.33)
+            self.treeImage2.image = UIImage(named: treeImageValue!)
+            statusValue = 0.7
         } else if(imagesize == "c"){
-            self.treeImage.frame = CGRectMake(0,0,self.width!*0.6,self.height!*0.5)
-            self.treeImage.center = self.view.center
-            self.treeImage.frame.origin = CGPoint(x:self.width!*0.19, y: self.height!*0.23)
+            self.treeImage3.image = UIImage(named: treeImageValue!)
+            statusValue = 1
         }
         
         if(statusValue >= 1){

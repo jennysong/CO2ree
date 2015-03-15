@@ -656,7 +656,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="task-bike-white.png" id="l4o-Ja-syx">
-                                                    <rect key="frame" x="0.0" y="0.0" width="2005" height="358"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="2325" height="409"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <color key="backgroundColor" red="0.60392156860000001" green="0.92549019610000005" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
@@ -681,7 +681,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="task-bike-white.png" id="mLG-Sr-8aX">
-                                                    <rect key="frame" x="0.0" y="0.0" width="2005" height="358"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="2325" height="409"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <color key="backgroundColor" red="0.60392156860000001" green="0.92549019610000005" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
@@ -706,7 +706,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="task-bike-white.png" id="v4y-Vd-722">
-                                                    <rect key="frame" x="0.0" y="0.0" width="2005" height="358"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="2325" height="409"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <color key="backgroundColor" red="0.60392156860000001" green="0.92549019610000005" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
@@ -731,7 +731,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="task-bike-white.png" id="ymc-et-fcK">
-                                                    <rect key="frame" x="0.0" y="0.0" width="2005" height="358"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="2325" height="409"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <color key="backgroundColor" red="0.60392156860000001" green="0.92549019610000005" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
@@ -756,7 +756,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="task-bike-white.png" id="ep4-h8-G2m">
-                                                    <rect key="frame" x="0.0" y="0.0" width="2005" height="358"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="2325" height="409"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <color key="backgroundColor" red="0.60392156860000001" green="0.92549019610000005" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
@@ -802,33 +802,41 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Complete / Processing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awi-Fe-yxT">
-                                <rect key="frame" x="56" y="492" width="209" height="21"/>
+                                <rect key="frame" x="16" y="492" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2hi-JB-dAf">
-                                <rect key="frame" x="16" y="65" width="288" height="387"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hZ-85-Hfi">
-                                <rect key="frame" x="16" y="80" width="288" height="34"/>
+                                <rect key="frame" x="43" y="81" width="288" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dow-0I-knp">
+                                <rect key="frame" x="79" y="242" width="216" height="209"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PvL-tn-WYg">
+                                <rect key="frame" x="129" y="345" width="117" height="106"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2hi-JB-dAf">
+                                <rect key="frame" x="16" y="152" width="343" height="299"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="1oT-BZ-O8t"/>
                     <connections>
                         <outlet property="status" destination="awi-Fe-yxT" id="ADl-V6-5SF"/>
-                        <outlet property="treeImage" destination="2hi-JB-dAf" id="PwG-gj-rt2"/>
+                        <outlet property="treeImage1" destination="2hi-JB-dAf" id="rhb-bK-9Uf"/>
+                        <outlet property="treeImage2" destination="2hi-JB-dAf" id="eaV-jh-ye8"/>
+                        <outlet property="treeImage3" destination="2hi-JB-dAf" id="kHk-xG-NHY"/>
                         <outlet property="treeNameLabel" destination="3hZ-85-Hfi" id="Mf0-9h-zsB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="72v-r4-kbX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3288" y="1067"/>
+            <point key="canvasLocation" x="3287.5" y="1066.5"/>
         </scene>
         <!--Garden-->
         <scene sceneID="AcC-T7-hDr">
@@ -1211,7 +1219,7 @@ CQ
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2311.5" y="318.5"/>
+            <point key="canvasLocation" x="2085.5" y="329.5"/>
         </scene>
         <!--Title-->
         <scene sceneID="VJ7-XE-4sC">
@@ -1381,7 +1389,7 @@ CQ
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M2v-U8-WSu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1924" y="319"/>
+            <point key="canvasLocation" x="1454.5" y="289.5"/>
         </scene>
         <!--Garden-->
         <scene sceneID="NdR-bD-3gN">
