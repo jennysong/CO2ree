@@ -15,7 +15,9 @@ class TaskDetail: UIViewController {
     @IBOutlet weak var taskLabel: UILabel!
     @IBOutlet weak var taskDescription: UITextView!
     @IBOutlet weak var currentLabel: UILabel!
-    @IBOutlet weak var projectedLabel: UILabel!
+
+    var app = UIApplication.sharedApplication().delegate as AppDelegate
+    var futurescore: Double = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,16 +25,16 @@ class TaskDetail: UIViewController {
         taskLabel.text = selectedTask
         
         //
-        //var app = UIApplication.sharedApplication().delegate as AppDelegate
-        //println(app.user.score!)
-        let current = 0.0
+        let current = app.user!.score!
         //
         currentLabel.text = "\(current)kg"
         
         for index in 1...28 {
             if TaskLibrary().library[index][0] == selectedTask {
                 taskDescription.text = TaskLibrary().library[index][1]
-                projectedLabel.text = "\(current + (TaskLibrary().library[index][3] as NSString).doubleValue)kg"
+                currentLabel.text = TaskLibrary().library[index][3]
+                futurescore = current + (TaskLibrary().library[index][3] as NSString).doubleValue
+                
             }
         }
         
@@ -43,13 +45,22 @@ class TaskDetail: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func iDidItButton(sender: AnyObject) {
-        let alertController = UIAlertController(title: "Are you sure?", message:
-            "", preferredStyle: UIAlertControllerStyle.Alert)
-        alertController.addAction(UIAlertAction(title: "No", style: UIAlertActionStyle.Default,handler: nil))
-        alertController.addAction(UIAlertAction(title: "Yes", style: UIAlertActionStyle.Default,handler: nil))
-        
-        self.presentViewController(alertController, animated: true, completion: nil)
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "goBackToAction" {
+            let goToActionController = segue.destinationViewController as Tasks
+        }
     }
+
     
+    @IBAction func iDidItButton(sender: AnyObject) {
+        app.user!.score! = futurescore
+        
+        let alertController = UIAlertController(title: "Good Job!", message:
+            "Your CO2 Score is now \(futurescore) kg!", preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addAction(UIAlertAction(title: "ok", style: UIAlertActionStyle.Default,handler: nil))
+        self.presentViewController(alertController, animated: true, completion: nil)
+        
+    }
 }
+
+
