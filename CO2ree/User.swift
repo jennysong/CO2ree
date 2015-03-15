@@ -29,6 +29,7 @@ class User : NSObject, NSCoding {
         aCoder.encodeObject(province, forKey: "province")
         aCoder.encodeObject(score, forKey: "score")
         aCoder.encodeObject(token, forKey: "token")
+        aCoder.encodeObject(isLogOut, forKey: "isLogOut")
     }
     required init(coder aDecoder: NSCoder) {
         firstName = aDecoder.decodeObjectForKey("firstName") as String?
@@ -39,7 +40,7 @@ class User : NSObject, NSCoding {
         province = aDecoder.decodeObjectForKey("province") as String?
         score = aDecoder.decodeObjectForKey("score") as Double?
         token = aDecoder.decodeObjectForKey("token") as String?
-        
+        isLogOut = aDecoder.decodeObjectForKey("isLogOut") as Bool
         
     }
     
