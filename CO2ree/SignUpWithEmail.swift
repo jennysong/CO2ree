@@ -70,9 +70,33 @@ class SignUpWithEmail: UIViewController {
             var app = UIApplication.sharedApplication().delegate as AppDelegate
             app.user = User(firstName: firstNameInput.text, lastName: lastNameInput.text, email: emailInput.text, country:countryInput.text, province:provinceInput.text, password:passwordInput.text)
             
-            performSegueWithIdentifier("goToWelcome", sender: sender)
-   
-            
+            RESTClient.post("http://code.shawnjung.ca/user",
+                data: [
+                    "first_name": firstNameInput.text,
+                    "last_name": lastNameInput.text,
+                    "email": emailInput.text,
+                    "country_code": countryInput.text,
+                    "subregion_code": provinceInput.text,
+                    "password": passwordInput.text,
+                    "password_confirmation": passwordInput.text,
+                    
+                ],
+                success: { data, response in
+                    // store session token
+                    println(data)
+                    app.user.token = data["session_token"] as? String
+                    self.performSegueWithIdentifier("goToWelcome", sender: self)
+                },
+                error: { data, response in
+                    var message:String = data["error"] as String
+                    let alertController = UIAlertController(title: "Validation Error", message:
+                        message, preferredStyle: UIAlertControllerStyle.Alert)
+                    alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default,handler: nil))
+                    self.presentViewController(alertController, animated: true, completion: nil)
+                    
+                    
+                }
+            )
         }
         
     }
