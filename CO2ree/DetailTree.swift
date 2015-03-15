@@ -40,8 +40,13 @@ class DetailTree: UIViewController {
         self.treeNameLabel.frame.origin = CGPoint(x:self.width!*0.11, y: self.height!*0.13)
         self.treeImage.image = UIImage(named: treeImageValue!)
         var i = 0;
+        var s = Array(self.treeImageValue!)
+        var j = s.count
         for cha in self.treeImageValue!{
-        
+            if(i == j-5){
+                imagesize = cha
+            }
+            i++
         }
         
         if(imagesize == "a"){

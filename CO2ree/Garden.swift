@@ -37,13 +37,13 @@ class Garden: UIViewController,UITableViewDataSource,UITableViewDelegate {
     }
     
     func setUpTrees(){
-        imagesize = "a"
-        arrayOfTrees.append(Tree(name: "Plain Tree", imageName: "plain-\(imagesize).png",status: 0.0))
-        arrayOfTrees.append(Tree(name: "Pine Tree", imageName: "pine-\(imagesize).png",status: 0.0))
-        arrayOfTrees.append(Tree(name: "Binary Tree", imageName: "binary-\(imagesize).png",status: 0.0))
-        arrayOfTrees.append(Tree(name: "Git Tree", imageName: "git-\(imagesize).png",status: 0.0))
-        arrayOfTrees.append(Tree(name: "Money Tree", imageName: "money-\(imagesize).png",status: 0.0))
-        arrayOfTrees.append(Tree(name: "Snoopy Tree", imageName: "snoopy-\(imagesize).png",status: 0.0))
+        imagesize = "b"
+        arrayOfTrees.append(Tree(name: "Plain Tree", imageName: "plain-\(imagesize!).png",status: 0.0))
+        arrayOfTrees.append(Tree(name: "Pine Tree", imageName: "pine-\(imagesize!).png",status: 0.0))
+        arrayOfTrees.append(Tree(name: "Binary Tree", imageName: "binary-\(imagesize!).png",status: 0.0))
+        arrayOfTrees.append(Tree(name: "Git Tree", imageName: "git-\(imagesize!).png",status: 0.0))
+        arrayOfTrees.append(Tree(name: "Money Tree", imageName: "money-\(imagesize!).png",status: 0.0))
+        arrayOfTrees.append(Tree(name: "Snoopy Tree", imageName: "snoopy-\(imagesize!).png",status: 0.0))
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
