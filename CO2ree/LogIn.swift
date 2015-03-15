@@ -19,7 +19,7 @@ class LogIn: UIViewController {
         }*/
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        navigationController?.setNavigationBarHidden(true, animated: true)
+        navigationController?.setNavigationBarHidden(true, animated: false)
         height = self.view.frame.size.height
         width = self.view.frame.size.width
         let gradient: CAGradientLayer = CAGradientLayer()

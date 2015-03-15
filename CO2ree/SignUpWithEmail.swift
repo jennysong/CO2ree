@@ -17,6 +17,8 @@ class SignUpWithEmail: UIViewController {
     @IBOutlet weak var provinceInput: UITextField!
     @IBOutlet weak var passwordInput: UITextField!
     @IBOutlet weak var repasswordInput: UITextField!
+    var height:CGFloat?
+    var width:CGFloat?
     
     var Jenny: User!
     
