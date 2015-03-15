@@ -10,8 +10,12 @@ import UIKit
 
 class Welcome: UIViewController {
     
+    @IBOutlet var nameLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        var app = UIApplication.sharedApplication().delegate as AppDelegate
+        nameLabel.text = app.user.firstName
         // Do any additional setup after loading the view, typically from a nib.
     }
     

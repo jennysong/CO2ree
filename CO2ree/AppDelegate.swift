@@ -12,7 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var user: User?
+    var user: User!
     
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
@@ -22,6 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FBLoginView.self
         FBProfilePictureView.self
+        
+        
         
         if userExist() {
             //start from home
@@ -39,6 +41,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         else {
             return true
         }
+    }
+    
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: NSString?, annotation: AnyObject) -> Bool {
+        var wasHandled:Bool = FBAppCall.handleOpenURL(url, sourceApplication: sourceApplication)
+        return wasHandled
     }
 
     func applicationWillResignActive(application: UIApplication) {

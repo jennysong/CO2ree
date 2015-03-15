@@ -10,6 +10,16 @@ import UIKit
 
 class SignUpWithFB: UIViewController {
     
+    @IBOutlet var countryField: UITextField!
+    @IBOutlet var provinceField: UITextField!
+    @IBOutlet var passwordField: UITextField!
+    @IBOutlet var repasswordField: UITextField!
+    var facebookID = ""
+    var firstName = ""
+    var lastName = ""
+    var email = ""
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,5 +30,46 @@ class SignUpWithFB: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "goToWelcome" {
+            let welcomeController = segue.destinationViewController as Welcome
+        }
+    }
+    
+    @IBAction func submitAction(sender: AnyObject) {
+        if((countryField.text == "") || (provinceField.text == "") || (passwordField.text == "") || (repasswordField.text == "")) {
+            let alertController = UIAlertController(title: "Please fill out all fields", message:
+                "", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default,handler: nil))
+            self.presentViewController(alertController, animated: true, completion: nil)
+        }
+        else if((countryField.text == "Country") || (provinceField.text == "Province / State") || (passwordField.text == "Password")) {
+            let alertController = UIAlertController(title: "Please fill out all fields", message:
+                "", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default,handler: nil))
+            self.presentViewController(alertController, animated: true, completion: nil)
+        }
+        else if (passwordField.text != repasswordField.text) {
+            let alertController = UIAlertController(title: "Passwords don't match", message:
+                "", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default,handler: nil))
+            self.presentViewController(alertController, animated: true, completion: nil)
+        }
+        else {
+            var app = UIApplication.sharedApplication().delegate as AppDelegate
+            app.user = User(firstName: self.firstName, lastName: self.lastName, email: self.email, country:countryField.text, province:provinceField.text, password:passwordField.text, facebookID: self.facebookID)
+            println(app.user.firstName)
+            println(app.user.facebookID)
+            println(app.user.country)
+            println(app.user.province)
+            println(app.user.password)
+            
+            performSegueWithIdentifier("goToWelcome", sender: sender)
+            
+            
+        }
+
+    }
     
 }

@@ -21,6 +21,7 @@ class SignUp: UIViewController, FBLoginViewDelegate {
         
         self.fbLoginView.delegate = self
         self.fbLoginView.readPermissions = ["public_profile", "email", "user_friends"]
+        
     }
 
     
@@ -29,8 +30,12 @@ class SignUp: UIViewController, FBLoginViewDelegate {
         if segue.identifier == "goToSignUpWithEmail" {
             let signUpWithEmailController = segue.destinationViewController as SignUpWithEmail
         }
-        else if segue.identifier == "goTosignUpWithFB" {
+        else if segue.identifier == "goToSignUpWithFB" {
             let SignUpWithFBController = segue.destinationViewController as SignUpWithFB
+            SignUpWithFBController.firstName = firstName
+            SignUpWithFBController.lastName = lastName
+            SignUpWithFBController.email = email
+            SignUpWithFBController.facebookID = facebookID
         }
     }
     
@@ -50,6 +55,8 @@ class SignUp: UIViewController, FBLoginViewDelegate {
         lastName = user.last_name
         var userEmail = user.objectForKey("email") as String
         email = userEmail
+        
+        self.performSegueWithIdentifier("goToSignUpWithFB", sender: self)
         
     }
     

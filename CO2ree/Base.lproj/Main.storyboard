@@ -41,12 +41,27 @@
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signUpButton.png" id="Uqo-jW-cwf">
                                 <rect key="frame" x="40" y="339" width="240" height="49"/>
                                 <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="AQC-kO-25e" appends="YES" id="1tF-LG-bfI"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="countryField" destination="mQU-rZ-MOV" id="Ip7-l5-vCk"/>
+                        <outlet property="passwordField" destination="tMt-3W-jQW" id="Kjw-d4-lSc"/>
+                        <outlet property="provinceField" destination="eZW-9k-zBG" id="8ra-6E-Alf"/>
+                        <outlet property="repasswordField" destination="HsU-aO-wli" id="36j-kf-cVD"/>
+                        <segue destination="szX-mx-sVI" kind="modal" identifier="goToWelcome" modalTransitionStyle="crossDissolve" id="HH7-lc-EVZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fRo-yf-wLh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="AQC-kO-25e">
+                    <connections>
+                        <action selector="submitAction:" destination="GjT-iq-Bmn" id="adz-gW-C2N"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2871" y="-974"/>
         </scene>
@@ -110,7 +125,7 @@
                     <connections>
                         <outlet property="fbLoginView" destination="ITw-ht-1lA" id="aFU-34-Coq"/>
                         <segue destination="iDW-sh-NTe" kind="push" identifier="goToSignUpWithEmail" id="INq-GA-xHL"/>
-                        <segue destination="GjT-iq-Bmn" kind="modal" identifier="goTosignUpWithFB" modalTransitionStyle="crossDissolve" id="Rto-S5-5xw"/>
+                        <segue destination="GjT-iq-Bmn" kind="modal" identifier="goToSignUpWithFB" modalTransitionStyle="crossDissolve" id="Rto-S5-5xw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ddu-iq-wEH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -216,10 +231,19 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VTt-Sh-TRe">
+                                <rect key="frame" x="51" y="120" width="218" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="EIR-Hx-7R8"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="VTt-Sh-TRe" id="mhq-vo-jLb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z81-D1-7dr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -954,5 +978,7 @@ CQ
     <inferredMetricsTieBreakers>
         <segue reference="t82-5W-Sfy"/>
         <segue reference="rte-iT-1zR"/>
+        <segue reference="0R9-NU-HEu"/>
+        <segue reference="HH7-lc-EVZ"/>
     </inferredMetricsTieBreakers>
 </document>
