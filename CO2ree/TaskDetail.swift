@@ -66,8 +66,7 @@ class TaskDetail: UIViewController {
         user.score = futurescore
         userDataManager.addNewUser(user)
         userDataManager.save()
-        
-        self.reloadInputViews()
+        view.reloadInputViews()
         let alertController = UIAlertController(title: "Good Job!", message:
             "Your CO2 Score is now \(futurescore) kg!", preferredStyle: UIAlertControllerStyle.Alert)
         alertController.addAction(UIAlertAction(title: "ok", style: UIAlertActionStyle.Default,handler: nil))

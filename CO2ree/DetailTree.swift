@@ -12,7 +12,8 @@ class DetailTree: UIViewController {
     //@IBOutlet weak var treeName: UILabel!
     var height:CGFloat?
     var width:CGFloat?
-    
+    var user: User!
+    var userDataManager = UserDataManager()
     @IBOutlet weak var status: UILabel!
     var treeNameValue: String?
     var treeImageValue: String?
@@ -26,7 +27,11 @@ class DetailTree: UIViewController {
         super.viewDidLoad()
         navigationController?.navigationBar.barTintColor =  UIColor.whiteColor()
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: Color().get(0x5EBF4F)]
-        
+        user = userDataManager.get()
+        if user != nil {
+            userDataManager.addNewUser(user)
+            userDataManager.save()
+        }
         height = self.view.frame.size.height
         width = self.view.frame.size.width
         let gradient: CAGradientLayer = CAGradientLayer()
@@ -75,7 +80,20 @@ class DetailTree: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    func whichTree(){
+        var trees = ["Plain Tree","Pine Tree","Money Tree","Snoopy Tree","Binary Tree","Git Tree"]
+        var treeImages = ["plain-a.png","plain-b.png","plain-c.png","pine-a.png","pine-b.png","pine-c.png","money-a.png","money-b.png","money-c.png","snoopy-a.png","snoopy-b.png","snoopy-c.png","binary-a.png","binary-b.png","binary-c.png","git-a.png","git-b.png","git-c.png"]
+        treeNameLabel.text = trees[Int(user!.score!/30)]
+        let result = user!.score!/30 % 3
+        if(result == 0){
+            treeImage1.image = UIImage(named: treeImages[Int(user!.score!/30)])
+        } else if (result == 1){
+            treeImage2.image = UIImage(named: treeImages[Int(user!.score!/30)])
+        } else {
+            treeImage3.image = UIImage(named: treeImages[Int(user!.score!/30)])
+            
+        }
+    }
 
     /*
     // MARK: - Navigation

@@ -70,4 +70,8 @@ class Garden: UIViewController,UITableViewDataSource,UITableViewDelegate {
             }
         }
     }
+    func whichTree(){
+        var trees = ["Plain Tree","Pine Tree","Money Tree","Snoopy Tree","Binary Tree","Git Tree"]
+        var treeImages = ["plain-a.png","plain-b.png","plain-c.png","pine-a.png","pine-b.png","pine-c.png","money-a.png","money-b.png","money-c.png","snoopy-a.png","snoopy-b.png","snoopy-c.png","binary-a.png","binary-b.png","binary-c.png","git-a.png","git-b.png","git-c.png"]
+    }
 }
