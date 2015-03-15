@@ -40,7 +40,6 @@
 		BA53377C1AB416C3004450C7 /* homeGraph.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA53377A1AB416C3004450C7 /* homeGraph.jpg */; };
 		BA53377D1AB416C3004450C7 /* schoolGraph.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA53377B1AB416C3004450C7 /* schoolGraph.jpg */; };
 		BA53377F1AB418E1004450C7 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = BA53377E1AB418E1004450C7 /* back.png */; };
-		BA9291D71AB507BD007E6AC1 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9291D61AB507BD007E6AC1 /* FacebookSDK.framework */; };
 		BA9291DA1AB51113007E6AC1 /* SignUpWithFB.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9291D91AB51113007E6AC1 /* SignUpWithFB.swift */; };
 		BAAE19E21AB3DECE0008ED97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE19E11AB3DECE0008ED97 /* AppDelegate.swift */; };
 		BAAE19E41AB3DECE0008ED97 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE19E31AB3DECE0008ED97 /* Home.swift */; };
@@ -98,6 +97,7 @@
 		F3FF82981AB51A08006FA2D0 /* snoopy-a.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF82851AB51A08006FA2D0 /* snoopy-a.png */; };
 		F3FF82991AB51A08006FA2D0 /* snoopy-b.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF82861AB51A08006FA2D0 /* snoopy-b.png */; };
 		F3FF829A1AB51A08006FA2D0 /* snoopy-c.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF82871AB51A08006FA2D0 /* snoopy-c.png */; };
+		F3FF829C1AB535C5006FA2D0 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FF829B1AB535C5006FA2D0 /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,7 +144,6 @@
 		BA53377A1AB416C3004450C7 /* homeGraph.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = homeGraph.jpg; sourceTree = "<group>"; };
 		BA53377B1AB416C3004450C7 /* schoolGraph.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = schoolGraph.jpg; sourceTree = "<group>"; };
 		BA53377E1AB418E1004450C7 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
-		BA9291D61AB507BD007E6AC1 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		BA9291D81AB50849007E6AC1 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		BA9291D91AB51113007E6AC1 /* SignUpWithFB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpWithFB.swift; sourceTree = "<group>"; };
 		BAAE19DC1AB3DECE0008ED97 /* CO2ree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CO2ree.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -207,6 +206,7 @@
 		F3FF82851AB51A08006FA2D0 /* snoopy-a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snoopy-a.png"; sourceTree = "<group>"; };
 		F3FF82861AB51A08006FA2D0 /* snoopy-b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snoopy-b.png"; sourceTree = "<group>"; };
 		F3FF82871AB51A08006FA2D0 /* snoopy-c.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snoopy-c.png"; sourceTree = "<group>"; };
+		F3FF829B1AB535C5006FA2D0 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,7 +214,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA9291D71AB507BD007E6AC1 /* FacebookSDK.framework in Frameworks */,
+				F3FF829C1AB535C5006FA2D0 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +309,7 @@
 		BAAE19D31AB3DECE0008ED97 = {
 			isa = PBXGroup;
 			children = (
-				BA9291D61AB507BD007E6AC1 /* FacebookSDK.framework */,
+				F3FF829B1AB535C5006FA2D0 /* FacebookSDK.framework */,
 				BAAE19DE1AB3DECE0008ED97 /* CO2ree */,
 				BAAE19F41AB3DECE0008ED97 /* CO2reeTests */,
 				BAAE19DD1AB3DECE0008ED97 /* Products */,
@@ -659,6 +659,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -694,6 +695,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -705,6 +707,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/jenny/Documents/FacebookSDK,
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = CO2ree/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -720,6 +723,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/jenny/Documents/FacebookSDK,
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = CO2ree/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

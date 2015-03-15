@@ -3,7 +3,7 @@ import UIKit
 class Garden: UIViewController,UITableViewDataSource,UITableViewDelegate {
     var height:CGFloat?
     var width:CGFloat?
-    
+    var imagesize: String?
     @IBOutlet weak var findOutLabel: UILabel!
     @IBOutlet weak var table: UITableView!
     var arrayOfTrees: [Tree] = [Tree]()
@@ -37,12 +37,13 @@ class Garden: UIViewController,UITableViewDataSource,UITableViewDelegate {
     }
     
     func setUpTrees(){
-        arrayOfTrees.append(Tree(name: "Plain Tree", imageName: "plain-a.png",status: 0.0))
-        arrayOfTrees.append(Tree(name: "Pine Tree", imageName: "pine-a.png",status: 0.0))
-        arrayOfTrees.append(Tree(name: "Binary Tree", imageName: "binary-a.png",status: 0.0))
-        arrayOfTrees.append(Tree(name: "Git Tree", imageName: "git-a.png",status: 0.0))
-        arrayOfTrees.append(Tree(name: "Money Tree", imageName: "money-a.png",status: 0.0))
-        arrayOfTrees.append(Tree(name: "Snoopy Tree", imageName: "snoopy-a.png",status: 0.0))
+        imagesize = "a"
+        arrayOfTrees.append(Tree(name: "Plain Tree", imageName: "plain-\(imagesize).png",status: 0.0))
+        arrayOfTrees.append(Tree(name: "Pine Tree", imageName: "pine-\(imagesize).png",status: 0.0))
+        arrayOfTrees.append(Tree(name: "Binary Tree", imageName: "binary-\(imagesize).png",status: 0.0))
+        arrayOfTrees.append(Tree(name: "Git Tree", imageName: "git-\(imagesize).png",status: 0.0))
+        arrayOfTrees.append(Tree(name: "Money Tree", imageName: "money-\(imagesize).png",status: 0.0))
+        arrayOfTrees.append(Tree(name: "Snoopy Tree", imageName: "snoopy-\(imagesize).png",status: 0.0))
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
