@@ -19,6 +19,7 @@ class User : NSObject, NSCoding {
     var password: String?
     var score: Double?
     var token: String?
+    var isLogOut: Bool = true
     func encodeWithCoder(aCoder: NSCoder) {
         aCoder.encodeObject(firstName, forKey: "firstName")
         aCoder.encodeObject(lastName, forKey: "lastName")
@@ -28,6 +29,7 @@ class User : NSObject, NSCoding {
         aCoder.encodeObject(province, forKey: "province")
         aCoder.encodeObject(score, forKey: "score")
         aCoder.encodeObject(token, forKey: "token")
+        aCoder.encodeObject(isLogOut, forKey: "isLogOut")
     }
     required init(coder aDecoder: NSCoder) {
         firstName = aDecoder.decodeObjectForKey("firstName") as String?
@@ -38,7 +40,7 @@ class User : NSObject, NSCoding {
         province = aDecoder.decodeObjectForKey("province") as String?
         score = aDecoder.decodeObjectForKey("score") as Double?
         token = aDecoder.decodeObjectForKey("token") as String?
-        
+        isLogOut = aDecoder.decodeObjectForKey("isLogOut") as Bool
         
     }
     

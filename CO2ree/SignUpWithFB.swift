@@ -9,7 +9,7 @@
 import UIKit
 
 class SignUpWithFB: UIViewController {
-    
+    var userDataManager = UserDataManager()
     @IBOutlet var countryField: UITextField!
     @IBOutlet var provinceField: UITextField!
     @IBOutlet var passwordField: UITextField!
@@ -61,6 +61,8 @@ class SignUpWithFB: UIViewController {
             var app = UIApplication.sharedApplication().delegate as AppDelegate
             app.user = User(firstName: self.firstName, lastName: self.lastName, email: self.email, country:countryField.text, province:provinceField.text, password:passwordField.text, facebookID: self.facebookID)
             
+            
+            
 
             
             RESTClient.post("http://code.shawnjung.ca/user",
@@ -78,6 +80,9 @@ class SignUpWithFB: UIViewController {
                     // store session token
                     println(data)
                     app.user.token = data["session_token"] as? String
+                    app.user.isLogOut = false
+                    self.userDataManager.addNewUser(app.user)
+                    self.userDataManager.save()
                     self.performSegueWithIdentifier("goToWelcome", sender: self)
                 },
                 error: { data, response in

@@ -9,7 +9,7 @@
 import UIKit
 
 class LoginWithEmail: UIViewController {
-    
+    var userDataManager = UserDataManager()
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     override func viewDidLoad() {
@@ -38,7 +38,9 @@ class LoginWithEmail: UIViewController {
                 let app = UIApplication.sharedApplication().delegate as AppDelegate
                 app.user = User(firstName: data["first_name"] as String, lastName: data["last_name"] as String, email: data["email"] as String, country: data["country_code"] as String, province: data["subregion_code"] as String, password: "")
                 app.user.token = data["session_token"] as? String
-                
+                app.user.isLogOut = false
+                self.userDataManager.addNewUser(app.user)
+                self.userDataManager.save()
                 self.performSegueWithIdentifier("goToWelcome", sender: self)
 
                 
