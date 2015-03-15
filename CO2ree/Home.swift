@@ -37,7 +37,8 @@ class Home: UIViewController {
         treeNameLabel.text = "Git Tree"
         treeNameLabel.textColor = UIColor.whiteColor()
         treeNameLabel.frame.origin = CGPoint(x:self.width!*0.11, y: self.height!*0.13)
-        treeDescription.text = "You saved 89kg\n of carbon emissions to date"
+        var app = UIApplication.sharedApplication().delegate as AppDelegate
+        treeDescription.text = "You saved \(app.user!.score!) kg\n of carbon emissions to date"
         treeDescription.textColor = UIColor.whiteColor()
         treeDescription.frame.origin = CGPoint(x:self.width!*0.01, y: self.height!*0.75)
     }
