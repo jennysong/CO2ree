@@ -97,15 +97,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign UP" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="82S-Ki-aND">
-                                <rect key="frame" x="129" y="106" width="63" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SignUpWithFBButton.png" translatesAutoresizingMaskIntoConstraints="NO" id="g4V-ch-m78">
-                                <rect key="frame" x="40" y="213" width="240" height="49"/>
-                            </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="signUpWithEmailButton.png" translatesAutoresizingMaskIntoConstraints="NO" id="6EJ-Ka-PYt">
                                 <rect key="frame" x="40" y="276" width="240" height="49"/>
                                 <gestureRecognizers/>
@@ -367,7 +358,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1394" y="-457"/>
+            <point key="canvasLocation" x="1948" y="-464"/>
         </scene>
         <!--Login With Email-->
         <scene sceneID="9OL-Zb-yZ8">
@@ -392,7 +383,7 @@
             </objects>
             <point key="canvasLocation" x="1929" y="-1193"/>
         </scene>
-        <!--Ctree-->
+        <!--Tree App-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="Home" customModule="CO2ree" customModuleProvider="target" sceneMemberID="viewController">
@@ -404,39 +395,22 @@
                                 <rect key="frame" x="35" y="80" width="250" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UUR-It-MmJ">
-                                <rect key="frame" x="-26" y="408" width="373" height="81"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">You saved 89kg\n of carbon emissions to date
- </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VvK-q7-Y24">
-                                <rect key="frame" x="16" y="92" width="288" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Ctree" id="FIs-0G-Jvy">
+                    <navigationItem key="navigationItem" title="Tree App" id="FIs-0G-Jvy">
                         <barButtonItem key="rightBarButtonItem" id="h2h-Bg-em5">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XkG-2g-HKx">
                                 <rect key="frame" x="233" y="7" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="+">
-                                    <color key="titleColor" red="0.60392156862745094" green="0.92549019607843142" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="goToGarden:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DHv-PU-zMg"/>
                                     <action selector="goToGardenButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uLL-LL-g6V"/>
-                                    <segue destination="8fb-DI-JDq" kind="push" identifier="goToTaskFromHome" id="t82-5W-Sfy"/>
+                                    <segue destination="pZh-Gf-T8v" kind="push" identifier="goToGardenFromHome" id="0R9-NU-HEu"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -446,8 +420,6 @@
                     <size key="freeformSize" width="320" height="568"/>
                     <connections>
                         <outlet property="homeTreeImage" destination="ZQ8-0C-Ngk" id="7ll-te-OFZ"/>
-                        <outlet property="treeDescription" destination="UUR-It-MmJ" id="RZT-ev-KSq"/>
-                        <outlet property="treeNameLabel" destination="VvK-q7-Y24" id="m8c-f2-Hki"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -477,7 +449,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1424" y="211"/>
+            <point key="canvasLocation" x="1948" y="147"/>
         </scene>
         <!--Profile-->
         <scene sceneID="txB-fa-uCo">
@@ -535,47 +507,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="9er-Yw-bBl">
-                                <rect key="frame" x="27" y="86" width="266" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="Personal"/>
-                                    <segment title="World"/>
-                                </segments>
-                                <color key="tintColor" red="0.60392156860000001" green="0.92549019610000005" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find out what trees you have unlocked" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yB8-oP-XfS">
-                                <rect key="frame" x="16" y="126" width="297" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="0.50196081399917603" green="0.50196081399917603" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" pagingEnabled="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="82" sectionHeaderHeight="22" sectionFooterHeight="22" id="d8Z-PA-TYn">
-                                <rect key="frame" x="0.0" y="158" width="346" height="361"/>
+                                <rect key="frame" x="0.0" y="28" width="320" height="491"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CustomCell" selectionStyle="blue" indentationWidth="10" reuseIdentifier="myCell" rowHeight="82" id="ZRJ-n1-HwO" customClass="CustomCell" customModule="CO2ree" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CustomCell" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="myCell" rowHeight="82" id="ZRJ-n1-HwO" customClass="CustomCell" customModule="CO2ree" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" tableViewCell="ZRJ-n1-HwO" id="lHy-mj-kbi">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="dK4-BM-lz9">
+                                                    <rect key="frame" x="8" y="0.0" width="85" height="81"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" id="RaE-5T-rds">
-                                                    <rect key="frame" x="25" y="19" width="183" height="44"/>
+                                                    <rect key="frame" x="122" y="19" width="183" height="44"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="dK4-BM-lz9">
-                                                    <rect key="frame" x="228" y="8" width="77" height="65"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <color key="tintColor" red="0.60392156860000001" green="0.92549019610000005" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="myImage" destination="dK4-BM-lz9" id="voB-27-RU4"/>
                                             <outlet property="myLabel" destination="RaE-5T-rds" id="VzV-dq-pC3"/>
@@ -588,9 +543,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Garden" image="05tree.png" id="jfZ-EK-MMc"/>
-                    <navigationItem key="navigationItem" title="Personal Garden" id="RCJ-Qx-CUf"/>
+                    <navigationItem key="navigationItem" id="RCJ-Qx-CUf"/>
                     <connections>
-                        <outlet property="findOutLabel" destination="yB8-oP-XfS" id="hJs-np-nbw"/>
                         <outlet property="table" destination="d8Z-PA-TYn" id="NYw-65-U2x"/>
                     </connections>
                 </viewController>
@@ -614,7 +568,7 @@
             </objects>
             <point key="canvasLocation" x="3636" y="319"/>
         </scene>
-        <!--Add a Task-->
+        <!--Tasks-->
         <scene sceneID="MIL-BQ-6g1">
             <objects>
                 <viewController id="8fb-DI-JDq" customClass="Tasks" customModule="CO2ree" customModuleProvider="target" sceneMemberID="viewController">
@@ -622,6 +576,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="transportationButton.jpg" id="OP2-Xq-6EV">
+                                <rect key="frame" x="10" y="193" width="300" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="eqq-mm-D4u" appends="YES" id="x9y-3X-kXI"/>
+                                </connections>
+                            </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeButton.jpg" id="79z-JH-SFx">
                                 <rect key="frame" x="10" y="276" width="300" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -660,26 +622,12 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="transportationButton.jpg" id="OP2-Xq-6EV">
-                                <rect key="frame" x="10" y="193" width="300" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="eqq-mm-D4u" appends="YES" id="x9y-3X-kXI"/>
-                                </connections>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Tasks" image="tasks-gray.png" id="W4x-yH-2pA"/>
-                    <navigationItem key="navigationItem" title="Add a Task" id="Ngh-5t-AUK">
-                        <barButtonItem key="backBarButtonItem" id="qNc-Kc-ExB">
-                            <string key="title" base64-UTF8="YES">
-CQ
-</string>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Tasks" id="Ngh-5t-AUK"/>
                     <connections>
                         <segue destination="5rT-EH-b7C" kind="push" identifier="goToTasksTransportation" id="Mjz-y2-QP8"/>
                         <segue destination="5rT-EH-b7C" kind="push" identifier="goToTasksHome" id="uST-iB-zru"/>
@@ -966,7 +914,6 @@ CQ
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="t82-5W-Sfy"/>
         <segue reference="rte-iT-1zR"/>
         <segue reference="0R9-NU-HEu"/>
         <segue reference="HH7-lc-EVZ"/>
