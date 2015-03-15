@@ -9,6 +9,7 @@
 import UIKit
 
 class LoginWithFB: UIViewController, FBLoginViewDelegate {
+    var userDataManager = UserDataManager()
     var facebookID: String!
     var firstName: String!
     var lastName: String!
@@ -45,7 +46,9 @@ class LoginWithFB: UIViewController, FBLoginViewDelegate {
                 let app = UIApplication.sharedApplication().delegate as AppDelegate
                 app.user = User(firstName: data["first_name"] as String, lastName: data["last_name"] as String, email: data["email"] as String, country: data["country_code"] as String, province: data["subregion_code"] as String, password: "")
                 app.user.token = data["session_token"] as? String
-
+                app.user.isLogOut = false
+                self.userDataManager.addNewUser(app.user)
+                self.userDataManager.save()
                 self.performSegueWithIdentifier("goToWelcome", sender: self)
             },
             error: { data, response in
