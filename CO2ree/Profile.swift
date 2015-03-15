@@ -24,8 +24,8 @@ class Profile: UIViewController {
         userDataManager.save()
         
         //logOut
-        user?.logOut()
-        exit(1)
+        // user?.logOut()
+        // exit(1)
         
         // Do any additional setup after loading the view, typically from a nib.
         navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
