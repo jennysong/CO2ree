@@ -74,7 +74,7 @@ class SignUpWithFB: UIViewController {
                     "subregion_code": provinceField.text,
                     "password": passwordField.text,
                     "password_confirmation": passwordField.text,
-                    "faceboo_id": self.facebookID
+                    "facebook_id": self.facebookID
                 ],
                 success: { data, response in
                     // store session token
