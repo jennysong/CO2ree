@@ -80,6 +80,7 @@ class SignUpWithFB: UIViewController {
                     // store session token
                     println(data)
                     app.user.token = data["session_token"] as? String
+                    app.user.isLogOut = false
                     self.userDataManager.addNewUser(app.user)
                     self.userDataManager.save()
                     self.performSegueWithIdentifier("goToWelcome", sender: self)

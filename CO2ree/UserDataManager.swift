@@ -15,7 +15,7 @@ class UserDataManager {
         // load existing high scores or set up an empty array
         let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
         let documentsDirectory = paths[0] as String
-        let path = documentsDirectory.stringByAppendingPathComponent("UserD.plist")
+        let path = documentsDirectory.stringByAppendingPathComponent("UserDa.plist")
         let fileManager = NSFileManager.defaultManager()
         
         // check if file exists
@@ -40,7 +40,7 @@ class UserDataManager {
         let saveData = NSKeyedArchiver.archivedDataWithRootObject(self.users);
         let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true) as NSArray;
         let documentsDirectory = paths.objectAtIndex(0) as NSString;
-        let path = documentsDirectory.stringByAppendingPathComponent("UserD.plist");
+        let path = documentsDirectory.stringByAppendingPathComponent("UserDa.plist");
         saveData.writeToFile(path, atomically: true);
         
     }
