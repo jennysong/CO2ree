@@ -137,6 +137,7 @@
                         <outlet property="fbLoginView" destination="ITw-ht-1lA" id="aFU-34-Coq"/>
                         <segue destination="iDW-sh-NTe" kind="push" identifier="goToSignUpWithEmail" id="INq-GA-xHL"/>
                         <segue destination="GjT-iq-Bmn" kind="modal" identifier="goToSignUpWithFB" modalTransitionStyle="crossDissolve" id="Rto-S5-5xw"/>
+                        <segue destination="szX-mx-sVI" kind="push" identifier="goToWelcome" id="Y6U-vc-df7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ddu-iq-wEH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -297,6 +298,7 @@
                     <connections>
                         <outlet property="fbLoginView" destination="Ykn-A3-TNg" id="EIj-DH-QoM"/>
                         <segue destination="GjT-iq-Bmn" kind="push" identifier="goToFBSignup" id="J7T-Rx-6pa"/>
+                        <segue destination="szX-mx-sVI" kind="push" identifier="goToWelcome" id="5vO-ys-TWy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="99s-XK-Rzn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1417,9 +1419,9 @@ CQ
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Sng-K1-MlT"/>
-        <segue reference="Rto-S5-5xw"/>
+        <segue reference="Y6U-vc-df7"/>
         <segue reference="rte-iT-1zR"/>
+        <segue reference="Rto-S5-5xw"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>
