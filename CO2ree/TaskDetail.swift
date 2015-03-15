@@ -15,7 +15,8 @@ class TaskDetail: UIViewController {
     @IBOutlet weak var taskLabel: UILabel!
     @IBOutlet weak var taskDescription: UITextView!
     @IBOutlet weak var currentLabel: UILabel!
-
+    var user: User!
+    var userDataManager = UserDataManager()
     var app = UIApplication.sharedApplication().delegate as AppDelegate
     var futurescore: Double = 0.0
     
@@ -23,9 +24,14 @@ class TaskDetail: UIViewController {
         super.viewDidLoad()
   //      taskName.title = selectedTask
         taskLabel.text = selectedTask
+        user = userDataManager.get()
+        if user != nil {
+            userDataManager.addNewUser(user)
+            userDataManager.save()
+        }
         
         //
-        let current = app.user!.score!
+        let current = user!.score
         //
         currentLabel.text = "\(current)kg"
         
@@ -33,7 +39,10 @@ class TaskDetail: UIViewController {
             if TaskLibrary().library[index][0] == selectedTask {
                 taskDescription.text = TaskLibrary().library[index][1]
                 currentLabel.text = TaskLibrary().library[index][3]
-                futurescore = current + (TaskLibrary().library[index][3] as NSString).doubleValue
+                futurescore = current! + (TaskLibrary().library[index][3] as NSString).doubleValue
+                user.score = futurescore
+                userDataManager.addNewUser(user)
+                userDataManager.save()
                 
             }
         }
@@ -54,7 +63,11 @@ class TaskDetail: UIViewController {
     
     @IBAction func iDidItButton(sender: AnyObject) {
         app.user!.score! = futurescore
+        user.score = futurescore
+        userDataManager.addNewUser(user)
+        userDataManager.save()
         
+        self.reloadInputViews()
         let alertController = UIAlertController(title: "Good Job!", message:
             "Your CO2 Score is now \(futurescore) kg!", preferredStyle: UIAlertControllerStyle.Alert)
         alertController.addAction(UIAlertAction(title: "ok", style: UIAlertActionStyle.Default,handler: nil))

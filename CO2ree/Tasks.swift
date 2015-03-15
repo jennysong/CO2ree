@@ -11,7 +11,9 @@ import UIKit
 class Tasks: UIViewController {
     var height:CGFloat?
     var width:CGFloat?
-    
+    var user: User!
+    var userDataManager = UserDataManager()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,6 +21,11 @@ class Tasks: UIViewController {
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         height = self.view.frame.size.height
         width = self.view.frame.size.width
+        user = userDataManager.get()
+        if user != nil {
+            userDataManager.addNewUser(user)
+            userDataManager.save()
+        }
     }
     
     override func didReceiveMemoryWarning() {

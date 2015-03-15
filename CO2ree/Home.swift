@@ -13,10 +13,19 @@ class Home: UIViewController {
     var width:CGFloat?
     @IBOutlet weak var homeTreeImage: UIImageView!
     @IBOutlet weak var treeNameLabel: UILabel!
+    @IBOutlet weak var homeTreeImage2: UIImageView!
+    @IBOutlet weak var homeTreeImage3: UIImageView!
+    var user: User!
+    var userDataManager = UserDataManager()
     
     @IBOutlet weak var treeDescription: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        user = userDataManager.get()
+        if user != nil {
+            userDataManager.addNewUser(user)
+            userDataManager.save()
+        }
         navigationController?.navigationBar.barTintColor =  UIColor.whiteColor()
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: Color().get(0x5EBF4F)]
         height = self.view.frame.size.height
@@ -37,10 +46,11 @@ class Home: UIViewController {
         treeNameLabel.text = "Git Tree"
         treeNameLabel.textColor = UIColor.whiteColor()
         treeNameLabel.frame.origin = CGPoint(x:self.width!*0.11, y: self.height!*0.13)
-        var app = UIApplication.sharedApplication().delegate as AppDelegate
-        treeDescription.text = "You saved \(app.user!.score!) kg\n of carbon emissions to date"
+        whichTree()
+        treeDescription.text = "You saved \(user!.score!) kg\n of carbon emissions to date"
         treeDescription.textColor = UIColor.whiteColor()
         treeDescription.frame.origin = CGPoint(x:self.width!*0.01, y: self.height!*0.75)
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -58,6 +68,20 @@ class Home: UIViewController {
         }
         if segue.identifier == "goToLogIn" {
             let signUpController = segue.destinationViewController as LogIn
+        }
+    }
+    func whichTree(){
+        var trees = ["Plain Tree","Pine Tree","Money Tree","Snoopy Tree","Binary Tree","Git Tree"]
+        var treeImages = ["plain-a.png","plain-b.png","plain-c.png","pine-a.png","pine-b.png","pine-c.png","money-a.png","money-b.png","money-c.png","snoopy-a.png","snoopy-b.png","snoopy-c.png","binary-a.png","binary-b.png","binary-c.png","git-a.png","git-b.png","git-c.png"]
+        treeNameLabel.text = trees[Int(user!.score!/30)]
+        let result = user!.score!/30 % 3
+        if(result == 0){
+            homeTreeImage3.image = UIImage(named: treeImages[Int(user!.score!/30)])
+        } else if (result == 1){
+            homeTreeImage2.image = UIImage(named: treeImages[Int(user!.score!/30)])
+        } else {
+            homeTreeImage.image = UIImage(named: treeImages[Int(user!.score!/30)])
+            
         }
     }
 }
