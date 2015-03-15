@@ -9,14 +9,19 @@
 import UIKit
 
 class Welcome: UIViewController {
-    
+    var userDataManager = UserDataManager()
+    var user:User?
     @IBOutlet var nameLabel: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        var app = UIApplication.sharedApplication().delegate as AppDelegate
+        self.user = userDataManager.get()
+        userDataManager.addNewUser(self.user!)
+        userDataManager.save()
+/*        var app = UIApplication.sharedApplication().delegate as AppDelegate
         nameLabel.text = app.user.firstName
         // Do any additional setup after loading the view, typically from a nib.
+*/
+        nameLabel.text = self.user?.firstName
     }
     
     override func didReceiveMemoryWarning() {
