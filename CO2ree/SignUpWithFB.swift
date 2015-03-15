@@ -57,15 +57,34 @@ class SignUpWithFB: UIViewController {
             self.presentViewController(alertController, animated: true, completion: nil)
         }
         else {
+            println("here")
             var app = UIApplication.sharedApplication().delegate as AppDelegate
             app.user = User(firstName: self.firstName, lastName: self.lastName, email: self.email, country:countryField.text, province:provinceField.text, password:passwordField.text, facebookID: self.facebookID)
-            println(app.user.firstName)
-            println(app.user.facebookID)
-            println(app.user.country)
-            println(app.user.province)
-            println(app.user.password)
             
-            performSegueWithIdentifier("goToWelcome", sender: sender)
+            RESTClient.post("http://code.shawnjung.ca/user",
+                data: [
+                    "first_name": self.firstName,
+                    "last_name": self.lastName,
+                    "email": self.email,
+                    "country_code": countryField.text,
+                    "subregion_code": provinceField.text,
+                    "password": passwordField.text,
+                    "password_confirmation": passwordField.text,
+                    "faceboo_id": self.facebookID
+                ],
+                success: { data, response in
+                    println(data)
+                    self.performSegueWithIdentifier("goToWelcome", sender: self)
+                },
+                error: { data, response in
+                    println(data["errors"])
+                }
+                
+                
+            )
+            
+            
+            /*(url: String, data: NSDictionary? = nil, headers: NSDictionary? = nil, var before: ((NSMutableURLRequest) -> Void)? = nil, var complete: ((AnyObject, NSHTTPURLResponse) -> Void)? = nil, var success: ((AnyObject, NSHTTPURLResponse) -> Void)? = nil, var error: ((AnyObject, NSHTTPURLResponse) -> Void)? = nil)*/
             
             
         }

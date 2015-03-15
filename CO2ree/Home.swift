@@ -29,7 +29,7 @@ class Home: UIViewController {
         gradient.endPoint = CGPoint(x: 1.0, y: 1.0)
         gradient.frame = CGRect(x: 0.0, y: 0.0, width: self.view.frame.size.width, height: self.view.frame.size.height)
         self.view.layer.insertSublayer(gradient, atIndex: 0)
-        
+
         homeTreeImage.image = UIImage(named: "gittree-white.png")
         homeTreeImage.frame = CGRectMake(0,0,self.width!*0.6,self.height!*0.5)
         homeTreeImage.center = self.view.center
@@ -40,7 +40,6 @@ class Home: UIViewController {
         treeDescription.text = "You saved 89kg\n of carbon emissions to date"
         treeDescription.textColor = UIColor.whiteColor()
         treeDescription.frame.origin = CGPoint(x:self.width!*0.01, y: self.height!*0.75)
-        
     }
     
     override func didReceiveMemoryWarning() {
