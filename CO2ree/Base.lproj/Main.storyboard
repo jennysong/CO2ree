@@ -1,9 +1,79 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="nmO-ej-VXb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="h6q-yv-aye">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
+        <!--Sign Up WithFB-->
+        <scene sceneID="avI-JN-7fS">
+            <objects>
+                <viewController id="GjT-iq-Bmn" customClass="SignUpWithFB" customModule="CO2ree" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kr3-3K-gQd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fill out the fields below" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7RT-pr-DiH">
+                                <rect key="frame" x="89" y="56" width="177" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Country" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" id="mQU-rZ-MOV">
+                                <rect key="frame" x="55" y="111" width="211" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Province / State" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" id="eZW-9k-zBG">
+                                <rect key="frame" x="55" y="154" width="211" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" id="tMt-3W-jQW">
+                                <rect key="frame" x="55" y="201" width="211" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Re-enter Password" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" id="HsU-aO-wli">
+                                <rect key="frame" x="55" y="251" width="211" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signUpButton.png" id="Uqo-jW-cwf">
+                                <rect key="frame" x="40" y="339" width="240" height="49"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fRo-yf-wLh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2871" y="-974"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0xJ-54-UNU">
+            <objects>
+                <viewController id="h6q-yv-aye" customClass="ViewController" customModule="CO2ree" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KkH-KR-iie">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="3gH-8S-TH9" customClass="FBLoginView">
+                                <rect key="frame" x="72" y="219" width="177" height="52"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="fbLoginView" destination="3gH-8S-TH9" id="Anq-fz-pbA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v7x-F3-5ca" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3379" y="-1011"/>
+        </scene>
         <!--Sign Up-->
         <scene sceneID="axH-Vp-4Gp">
             <objects>
@@ -28,12 +98,19 @@
                                     <outletCollection property="gestureRecognizers" destination="OHp-gM-nkS" appends="YES" id="wr9-Vi-ZaD"/>
                                 </connections>
                             </imageView>
+                            <view contentMode="scaleToFill" id="ITw-ht-1lA" customClass="FBLoginView">
+                                <rect key="frame" x="80" y="207" width="160" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Sign Up" id="Kmb-wO-bKY"/>
                     <connections>
+                        <outlet property="fbLoginView" destination="ITw-ht-1lA" id="aFU-34-Coq"/>
                         <segue destination="iDW-sh-NTe" kind="push" identifier="goToSignUpWithEmail" id="INq-GA-xHL"/>
+                        <segue destination="GjT-iq-Bmn" kind="modal" identifier="goTosignUpWithFB" modalTransitionStyle="crossDissolve" id="Rto-S5-5xw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ddu-iq-wEH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -43,7 +120,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1948" y="-350"/>
+            <point key="canvasLocation" x="2480" y="-350"/>
         </scene>
         <!--Sign Up With Email-->
         <scene sceneID="Plh-YY-lwa">
@@ -123,7 +200,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2339" y="-350"/>
+            <point key="canvasLocation" x="2871" y="-350"/>
         </scene>
         <!--Welcome-->
         <scene sceneID="rb3-pk-FeB">
@@ -146,7 +223,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z81-D1-7dr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2743" y="-350"/>
+            <point key="canvasLocation" x="3275" y="-350"/>
         </scene>
         <!--Login WithFB-->
         <scene sceneID="Bay-UJ-9mV">
@@ -424,7 +501,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="72v-r4-kbX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2756" y="-308"/>
+            <point key="canvasLocation" x="3288" y="1067"/>
         </scene>
         <!--Garden-->
         <scene sceneID="AcC-T7-hDr">
@@ -610,43 +687,6 @@ CQ
             </objects>
             <point key="canvasLocation" x="2312" y="319"/>
         </scene>
-        <!--TasksWithCategories-->
-        <scene sceneID="VuV-qe-bEX">
-            <objects>
-                <viewController id="6mx-Ap-7qM" userLabel="TasksWithCategories" customClass="TasksWithCategories" customModule="CO2ree" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3Xc-1E-i4p">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="62E-CL-q3w">
-                                <rect key="frame" x="0.0" y="245" width="328" height="280"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="E6n-5x-U55" customClass="I">
-                                <rect key="frame" x="0.0" y="64" width="320" height="183"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <gestureRecognizers/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Title" id="ac4-6s-Unk"/>
-                    <connections>
-                        <outlet property="categoryGraph" destination="E6n-5x-U55" id="xC1-N8-WVV"/>
-                        <outlet property="categoryTitle" destination="ac4-6s-Unk" id="9zK-kS-pPf"/>
-                        <outlet property="tasksByCategory" destination="62E-CL-q3w" id="H33-Jf-PAx"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="joj-jV-374" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="keo-cW-JkC">
-                    <connections>
-                        <action selector="backButton:" destination="6mx-Ap-7qM" id="XWZ-qq-8Th"/>
-                    </connections>
-                </tapGestureRecognizer>
-            </objects>
-            <point key="canvasLocation" x="1410" y="1141"/>
-        </scene>
         <!--Title-->
         <scene sceneID="VJ7-XE-4sC">
             <objects>
@@ -695,7 +735,7 @@ CQ
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="35N-te-xfS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1780" y="1141"/>
+            <point key="canvasLocation" x="2312" y="1105"/>
         </scene>
         <!--TaskDetail-->
         <scene sceneID="lN3-PM-d0P">
@@ -766,7 +806,7 @@ CQ
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gHh-KM-sR2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2190" y="1141"/>
+            <point key="canvasLocation" x="2312" y="1789"/>
         </scene>
         <!--TabBarController-->
         <scene sceneID="8Zm-WR-ZP9">
@@ -848,11 +888,42 @@ CQ
             </objects>
             <point key="canvasLocation" x="968" y="319"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="w13-uD-eft">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rGa-qd-sQo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ia4-3g-4Xs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="baA-eJ-vaP" kind="relationship" relationship="rootViewController" id="8o1-uU-3Fg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1BS-3h-0tZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1416" y="-464"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="u21-6m-IKx">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="H0s-ek-QqO" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="79h-eU-J9I">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SoJ-7m-BrV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
     </scenes>
     <resources>
         <image name="05tree.png" width="17" height="20"/>
         <image name="LoginWithFacebookButton.png" width="432" height="76"/>
-        <image name="SignUpWithFBButton.png" width="426" height="70"/>
         <image name="foodButton.jpg" width="600" height="100"/>
         <image name="home-gray.png" width="23" height="21"/>
         <image name="homeButton.jpg" width="600" height="100"/>

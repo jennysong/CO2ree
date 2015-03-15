@@ -67,10 +67,8 @@ class SignUpWithEmail: UIViewController {
             self.presentViewController(alertController, animated: true, completion: nil)
         }
         else {
-            Jenny = User(firstName: firstNameInput.text, lastName: lastNameInput.text, email: emailInput.text)
-            Jenny.country = countryInput.text
-            Jenny.province = provinceInput.text
-            Jenny.password = passwordInput.text
+            var app = UIApplication.sharedApplication().delegate as AppDelegate
+            app.user = User(firstName: firstNameInput.text, lastName: lastNameInput.text, email: emailInput.text, country:countryInput.text, province:provinceInput.text, password:passwordInput.text)
             
             performSegueWithIdentifier("goToWelcome", sender: sender)
    

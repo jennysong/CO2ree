@@ -12,14 +12,33 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var user: User?
+    
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         UITabBar.appearance().barTintColor = UIColor.whiteColor()
         UITabBar.appearance().tintColor = Color().get(0x97EB5D)
-    
+        
+        FBLoginView.self
+        FBProfilePictureView.self
+        
+        if userExist() {
+            //start from home
+        }
+        else {
+            //start from signup
+        }
         return true
+    }
+    
+    func userExist() -> Bool {
+        if self.user == nil{
+            return false
+        }
+        else {
+            return true
+        }
     }
 
     func applicationWillResignActive(application: UIApplication) {

@@ -40,12 +40,15 @@
 		BA53377C1AB416C3004450C7 /* homeGraph.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA53377A1AB416C3004450C7 /* homeGraph.jpg */; };
 		BA53377D1AB416C3004450C7 /* schoolGraph.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA53377B1AB416C3004450C7 /* schoolGraph.jpg */; };
 		BA53377F1AB418E1004450C7 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = BA53377E1AB418E1004450C7 /* back.png */; };
+		BA9291D71AB507BD007E6AC1 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9291D61AB507BD007E6AC1 /* FacebookSDK.framework */; };
+		BA9291DA1AB51113007E6AC1 /* SignUpWithFB.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9291D91AB51113007E6AC1 /* SignUpWithFB.swift */; };
 		BAAE19E21AB3DECE0008ED97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE19E11AB3DECE0008ED97 /* AppDelegate.swift */; };
 		BAAE19E41AB3DECE0008ED97 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE19E31AB3DECE0008ED97 /* Home.swift */; };
 		BAAE19E71AB3DECE0008ED97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAAE19E51AB3DECE0008ED97 /* Main.storyboard */; };
 		BAAE19E91AB3DECE0008ED97 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAAE19E81AB3DECE0008ED97 /* Images.xcassets */; };
 		BAAE19EC1AB3DECE0008ED97 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAAE19EA1AB3DECE0008ED97 /* LaunchScreen.xib */; };
 		BAAE19F81AB3DECE0008ED97 /* CO2reeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE19F71AB3DECE0008ED97 /* CO2reeTests.swift */; };
+		BAC3FE941AB52F77005AA71F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC3FE931AB52F76005AA71F /* ViewController.swift */; };
 		BAD3AA7B1AB4722400470F8B /* TaskDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD3AA7A1AB4722400470F8B /* TaskDetail.swift */; };
 		F334F4BD1AB4B13E00A35510 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F334F4BC1AB4B13E00A35510 /* Color.swift */; };
 		F334F4CF1AB4D85500A35510 /* home-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = F334F4CA1AB4D85500A35510 /* home-gray.png */; };
@@ -141,6 +144,9 @@
 		BA53377A1AB416C3004450C7 /* homeGraph.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = homeGraph.jpg; sourceTree = "<group>"; };
 		BA53377B1AB416C3004450C7 /* schoolGraph.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = schoolGraph.jpg; sourceTree = "<group>"; };
 		BA53377E1AB418E1004450C7 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		BA9291D61AB507BD007E6AC1 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		BA9291D81AB50849007E6AC1 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		BA9291D91AB51113007E6AC1 /* SignUpWithFB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpWithFB.swift; sourceTree = "<group>"; };
 		BAAE19DC1AB3DECE0008ED97 /* CO2ree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CO2ree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAAE19E01AB3DECE0008ED97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAAE19E11AB3DECE0008ED97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -151,6 +157,7 @@
 		BAAE19F11AB3DECE0008ED97 /* CO2reeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CO2reeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAAE19F61AB3DECE0008ED97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAAE19F71AB3DECE0008ED97 /* CO2reeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CO2reeTests.swift; sourceTree = "<group>"; };
+		BAC3FE931AB52F76005AA71F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BAD3AA7A1AB4722400470F8B /* TaskDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetail.swift; sourceTree = "<group>"; };
 		F334F4BC1AB4B13E00A35510 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		F334F4CA1AB4D85500A35510 /* home-gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-gray.png"; sourceTree = "<group>"; };
@@ -207,6 +214,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA9291D71AB507BD007E6AC1 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +236,7 @@
 				BA4DCD401AB4CE5C00DFC265 /* LoginWithFB.swift */,
 				BA4DCD3C1AB4BBEC00DFC265 /* WhyNeedLogin.swift */,
 				BA4DCD3A1AB4BB9900DFC265 /* SignUp.swift */,
+				BA9291D91AB51113007E6AC1 /* SignUpWithFB.swift */,
 				BA4DCD461AB4D6BC00DFC265 /* SignUpWithEmail.swift */,
 				BA4DCD481AB4EA8200DFC265 /* Welcome.swift */,
 				BAAE19E31AB3DECE0008ED97 /* Home.swift */,
@@ -240,6 +249,7 @@
 				F34C306C1AB44C0900BA4627 /* CustomCell.swift */,
 				F3CCEEC41AB46AB90008340C /* DetailTree.swift */,
 				BA4DCD301AB4AAF900DFC265 /* User.swift */,
+				BAC3FE931AB52F76005AA71F /* ViewController.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -299,6 +309,7 @@
 		BAAE19D31AB3DECE0008ED97 = {
 			isa = PBXGroup;
 			children = (
+				BA9291D61AB507BD007E6AC1 /* FacebookSDK.framework */,
 				BAAE19DE1AB3DECE0008ED97 /* CO2ree */,
 				BAAE19F41AB3DECE0008ED97 /* CO2reeTests */,
 				BAAE19DD1AB3DECE0008ED97 /* Products */,
@@ -327,6 +338,7 @@
 				F3CCEEC21AB462D00008340C /* Tree.swift */,
 				BA221D4D1AB4370800DD7AC7 /* TaskLibrary.swift */,
 				F334F4BC1AB4B13E00A35510 /* Color.swift */,
+				BA9291D81AB50849007E6AC1 /* Header.h */,
 			);
 			path = CO2ree;
 			sourceTree = "<group>";
@@ -552,9 +564,11 @@
 				BA4DCD3B1AB4BB9900DFC265 /* SignUp.swift in Sources */,
 				BA5337611AB3F15D004450C7 /* Garden.swift in Sources */,
 				BA53375F1AB3ED71004450C7 /* Tasks.swift in Sources */,
+				BAC3FE941AB52F77005AA71F /* ViewController.swift in Sources */,
 				BA4DCD471AB4D6BC00DFC265 /* SignUpWithEmail.swift in Sources */,
 				BAD3AA7B1AB4722400470F8B /* TaskDetail.swift in Sources */,
 				BA4DCD331AB4B17600DFC265 /* LogIn.swift in Sources */,
+				BA9291DA1AB51113007E6AC1 /* SignUpWithFB.swift in Sources */,
 				BA4DCD3F1AB4BC6900DFC265 /* LoginWithEmail.swift in Sources */,
 				BA221D4E1AB4370800DD7AC7 /* TaskLibrary.swift in Sources */,
 				F334F4BD1AB4B13E00A35510 /* Color.swift in Sources */,
@@ -688,9 +702,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/jenny/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = CO2ree/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = CO2ree/Header.h;
 			};
 			name = Debug;
 		};
@@ -698,9 +717,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/jenny/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = CO2ree/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = CO2ree/Header.h;
 			};
 			name = Release;
 		};
