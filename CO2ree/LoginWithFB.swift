@@ -14,11 +14,22 @@ class LoginWithFB: UIViewController, FBLoginViewDelegate {
     var firstName: String!
     var lastName: String!
     var email: String!
-    
+    var height:CGFloat?
+    var width:CGFloat?
     @IBOutlet weak var fbLoginView: FBLoginView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        height = self.view.frame.size.height
+        width = self.view.frame.size.width
+        let gradient: CAGradientLayer = CAGradientLayer()
+        
+        gradient.colors = [Color().get(0x9AEC5B).CGColor, Color().get(0x5EBF4F).CGColor]
+        gradient.locations = [0.0 , 1.0]
+        gradient.startPoint = CGPoint(x: 0.0, y: 0.0)
+        gradient.endPoint = CGPoint(x: 1.0, y: 1.0)
+        gradient.frame = CGRect(x: 0.0, y: 0.0, width: self.width!, height: self.height!)
+        self.view.layer.insertSublayer(gradient, atIndex: 0)
         
         self.fbLoginView.delegate = self
         self.fbLoginView.readPermissions = ["public_profile", "email", "user_friends"]
