@@ -79,7 +79,7 @@ class SignUpWithFB: UIViewController {
                     self.performSegueWithIdentifier("goToWelcome", sender: self)
                 },
                 error: { data, response in
-                    var message:String = "\n".join(data["error"] as Array)
+                    var message:String = data["error"] as String
                     let alertController = UIAlertController(title: "Validation Error", message:
                         message, preferredStyle: UIAlertControllerStyle.Alert)
                     alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default,handler: nil))
