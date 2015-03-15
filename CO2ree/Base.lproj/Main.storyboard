@@ -536,7 +536,7 @@
             </objects>
             <point key="canvasLocation" x="1700.5" y="-1245.5"/>
         </scene>
-        <!--Ctree-->
+        <!--cTree-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController storyboardIdentifier="HomeController" id="vXZ-lx-hvc" customClass="Home" customModule="CO2ree" customModuleProvider="target" sceneMemberID="viewController">
@@ -548,11 +548,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZQ8-0C-Ngk">
-                                <rect key="frame" x="35" y="80" width="250" height="300"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUR-It-MmJ">
-                                <rect key="frame" x="-26" y="408" width="373" height="81"/>
+                                <rect key="frame" x="-134" y="488" width="643" height="81"/>
                                 <string key="text">You saved 89kg\n of carbon emissions to date
 
 </string>
@@ -561,15 +558,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VvK-q7-Y24">
-                                <rect key="frame" x="16" y="92" width="288" height="42"/>
+                                <rect key="frame" x="43" y="92" width="288" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZQ8-0C-Ngk">
+                                <rect key="frame" x="38" y="198" width="298" height="258"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Ctree" id="FIs-0G-Jvy"/>
+                    <navigationItem key="navigationItem" title="cTree" id="FIs-0G-Jvy"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -605,7 +605,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1424" y="211"/>
+            <point key="canvasLocation" x="1025.5" y="152.5"/>
         </scene>
         <!--Profile-->
         <scene sceneID="txB-fa-uCo">
@@ -1362,7 +1362,7 @@ CQ
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hnX-WP-NDM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="571" y="301"/>
+            <point key="canvasLocation" x="100.5" y="256.5"/>
         </scene>
         <!--Tasks-->
         <scene sceneID="jqr-W3-dXE">
@@ -1420,7 +1420,7 @@ CQ
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7uG-SD-X98" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="922" y="311"/>
+            <point key="canvasLocation" x="565.5" y="182.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="w13-uD-eft">
