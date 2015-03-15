@@ -66,6 +66,13 @@ class User : NSObject, NSCoding {
         self.score = 0.0
     }
     
+    func logOut(){
+        //Score need to be uploaded at the server with token
+        self.isLogOut = true
+        UserDataManager().addNewUser(self)
+        UserDataManager().save()
+    }
+    
     
     
 }

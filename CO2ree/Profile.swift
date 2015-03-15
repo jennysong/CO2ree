@@ -11,10 +11,22 @@ import UIKit
 class Profile: UIViewController {
     var height:CGFloat?
     var width:CGFloat?
+    var userDataManager = UserDataManager()
+    var user:User?
+    
     @IBOutlet weak var topHalfView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //retrive user data.
+        user = userDataManager.get()
+        userDataManager.addNewUser(user!)
+        userDataManager.save()
+        
+        //logOut
+        user?.logOut()
+        exit(1)
+        
         // Do any additional setup after loading the view, typically from a nib.
         navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: Color().get(0x9AEC5B)]
