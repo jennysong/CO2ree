@@ -13,10 +13,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var user: User!
-    
+    var userDataManager = UserDataManager()
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        user = userDataManager.get()
+        if user != nil {
+            userDataManager.addNewUser(user)
+            userDataManager.save()
+        }
         UITabBar.appearance().barTintColor = UIColor.whiteColor()
         UITabBar.appearance().tintColor = Color().get(0x97EB5D)
         
@@ -28,8 +33,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
 
-        var app = UIApplication.sharedApplication().delegate as AppDelegate
-        if ((app.user) != nil){
+//        var app = UIApplication.sharedApplication().delegate as AppDelegate
+        if (user != nil && user.isLogOut == false){
             var homeViewController: UITabBarController = mainStoryboard.instantiateViewControllerWithIdentifier("HomeControllerIdentifier") as UITabBarController
             self.window?.rootViewController = homeViewController
         }
