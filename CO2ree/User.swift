@@ -23,22 +23,22 @@ class User {
         self.firstName = firstName
         self.lastName = lastName
         self.email = email
-        self.facebookID = ""
+        self.facebookID = nil
         self.country = country
         self.province = province
         self.password = password
         self.score = 0.0
     }
     
-    init(firstName: String, lastName: String, email: String, facebookID: String) {
+    init(firstName: String, lastName: String, email: String, country: String, province: String, password: String, facebookID: String) {
         self.firstName = firstName
         self.lastName = lastName
         self.email = email
+        self.country = country
+        self.province = province
+        self.password = password
         self.facebookID = facebookID
-        var country = ""
-        var province = ""
-        var password = ""
-        var score: Double = 0.0
+        self.score = 0.0
     }
     
     
