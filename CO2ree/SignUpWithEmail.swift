@@ -70,13 +70,11 @@ class SignUpWithEmail: UIViewController {
             var app = UIApplication.sharedApplication().delegate as AppDelegate
             app.user = User(firstName: firstNameInput.text, lastName: lastNameInput.text, email: emailInput.text, country:countryInput.text, province:provinceInput.text, password:passwordInput.text)
             
-            performSegueWithIdentifier("goToWelcome", sender: sender)
-   
             RESTClient.post("http://code.shawnjung.ca/user",
                 data: [
-                    "first_name": self.firstNameInput,
-                    "last_name": self.lastNameInput,
-                    "email": self.emailInput,
+                    "first_name": firstNameInput.text,
+                    "last_name": lastNameInput.text,
+                    "email": emailInput.text,
                     "country_code": countryInput.text,
                     "subregion_code": provinceInput.text,
                     "password": passwordInput.text,
