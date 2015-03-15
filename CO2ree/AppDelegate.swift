@@ -23,25 +23,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FBLoginView.self
         FBProfilePictureView.self
         
+
         
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        //if userExist() {
+            var homeViewController: UITabBarController = mainStoryboard.instantiateViewControllerWithIdentifier("HomeControllerIdentifier") as UITabBarController
+            self.window?.rootViewController = homeViewController
+        //}
         
-        if userExist() {
-            //start from home
-        }
-        else {
-            //start from signup
-        }
+        self.window?.makeKeyAndVisible()
+        
         return true
+        
+        
     }
     
-    func userExist() -> Bool {
-        if self.user == nil{
-            return false
-        }
-        else {
-            return true
-        }
-    }
     
     func application(application: UIApplication, openURL url: NSURL, sourceApplication: NSString?, annotation: AnyObject) -> Bool {
         var wasHandled:Bool = FBAppCall.handleOpenURL(url, sourceApplication: sourceApplication)

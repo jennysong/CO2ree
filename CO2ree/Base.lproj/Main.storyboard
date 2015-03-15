@@ -378,6 +378,7 @@
                         <segue destination="5VJ-nI-z4k" kind="push" identifier="goToLoginWithFB" id="eh7-du-qia"/>
                         <segue destination="S5V-hh-hPG" kind="push" identifier="goToLoginWithEmail" id="OXZ-VU-wuW"/>
                         <segue destination="dQT-Yz-Ga6" kind="push" identifier="goToSignUp" id="yZh-Nv-yql"/>
+                        <segue destination="nmO-ej-VXb" kind="modal" identifier="goToHome" modalTransitionStyle="crossDissolve" id="Gas-yW-aUy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zpR-2e-1nM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -429,7 +430,7 @@
         <!--Ctree-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="Home" customModule="CO2ree" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeController" id="vXZ-lx-hvc" customClass="Home" customModule="CO2ree" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fAz-SK-IPf"/>
                         <viewControllerLayoutGuide type="bottom" id="5bf-mA-HOK"/>
@@ -1079,10 +1080,10 @@ CQ
             </objects>
             <point key="canvasLocation" x="2312" y="1789"/>
         </scene>
-        <!--TabBarController-->
+        <!--Tab Bar Controller-->
         <scene sceneID="8Zm-WR-ZP9">
             <objects>
-                <tabBarController title="TabBarController" automaticallyAdjustsScrollViewInsets="NO" id="nmO-ej-VXb" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="HomeControllerIdentifier" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nmO-ej-VXb" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="2X1-mJ-JnU">
@@ -1099,7 +1100,7 @@ CQ
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hnX-WP-NDM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="431" y="319"/>
+            <point key="canvasLocation" x="571" y="301"/>
         </scene>
         <!--Tasks-->
         <scene sceneID="jqr-W3-dXE">
@@ -1157,12 +1158,12 @@ CQ
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7uG-SD-X98" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="968" y="319"/>
+            <point key="canvasLocation" x="922" y="311"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="w13-uD-eft">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rGa-qd-sQo" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rGa-qd-sQo" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ia4-3g-4Xs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
