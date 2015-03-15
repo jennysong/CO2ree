@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.SOJU.$(PRODUCT_NAME:rfc1034identifier)</string>
+	<string>com.SOJU.CO2ree</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -37,15 +37,15 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>FacebookAppID</key>
-	<string>1572233189683574</string>
+	<string>933051593402144</string>
 	<key>FacebookDisplayName</key>
-	<string>cTree</string>
+	<string>CO2ree</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb1572233189683574</string>
+				<string>fb933051593402144</string>
 			</array>
 		</dict>
 	</array>

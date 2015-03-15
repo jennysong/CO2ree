@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="rGa-qd-sQo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="h6q-yv-aye">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
@@ -50,6 +50,30 @@
             </objects>
             <point key="canvasLocation" x="2871" y="-974"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="0xJ-54-UNU">
+            <objects>
+                <viewController id="h6q-yv-aye" customClass="ViewController" customModule="CO2ree" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KkH-KR-iie">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="3gH-8S-TH9" customClass="FBLoginView">
+                                <rect key="frame" x="72" y="219" width="177" height="52"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="fbLoginView" destination="3gH-8S-TH9" id="Anq-fz-pbA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v7x-F3-5ca" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3379" y="-1011"/>
+        </scene>
         <!--Sign Up-->
         <scene sceneID="axH-Vp-4Gp">
             <objects>
@@ -65,16 +89,9 @@
                                     <outletCollection property="gestureRecognizers" destination="OHp-gM-nkS" appends="YES" id="wr9-Vi-ZaD"/>
                                 </connections>
                             </imageView>
-                            <view contentMode="scaleToFill" id="cml-7b-uIa" customClass="FBLoginView">
-                                <rect key="frame" x="40" y="208" width="240" height="48"/>
+                            <view contentMode="scaleToFill" id="ITw-ht-1lA" customClass="FBLoginView">
+                                <rect key="frame" x="80" y="207" width="160" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" id="U6r-Qg-yEh" customClass="FBLoginView">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="48"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
-                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -82,8 +99,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Sign Up" id="Kmb-wO-bKY"/>
                     <connections>
-                        <outlet property="fbLoginView" destination="U6r-Qg-yEh" id="a96-wG-pWl"/>
-                        <outlet property="loginView" destination="cml-7b-uIa" id="ZFx-Ln-5O7"/>
+                        <outlet property="fbLoginView" destination="ITw-ht-1lA" id="aFU-34-Coq"/>
                         <segue destination="iDW-sh-NTe" kind="push" identifier="goToSignUpWithEmail" id="INq-GA-xHL"/>
                         <segue destination="GjT-iq-Bmn" kind="modal" identifier="goTosignUpWithFB" modalTransitionStyle="crossDissolve" id="Rto-S5-5xw"/>
                     </connections>

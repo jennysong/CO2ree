@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 SOJUniverse. All rights reserved.
 //
 
-#ifndef Hello_Header_h
-#define Hello_Header_h
+#ifndef Header_h
+#define Header_h
 
 #import <FacebookSDK/FacebookSDK.h>
 #endif

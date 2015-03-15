@@ -19,7 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         UITabBar.appearance().barTintColor = UIColor.whiteColor()
         UITabBar.appearance().tintColor = Color().get(0x97EB5D)
-       
+        
+        FBLoginView.self
+        FBProfilePictureView.self
+        
         if userExist() {
             //start from home
         }
