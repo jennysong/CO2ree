@@ -12,6 +12,9 @@ class Home: UIViewController {
     var height:CGFloat?
     var width:CGFloat?
     @IBOutlet weak var homeTreeImage: UIImageView!
+    @IBOutlet weak var treeNameLabel: UILabel!
+    
+    @IBOutlet weak var treeDescription: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.barTintColor =  UIColor.whiteColor()
@@ -30,7 +33,14 @@ class Home: UIViewController {
         homeTreeImage.image = UIImage(named: "gittree-white.png")
         homeTreeImage.frame = CGRectMake(0,0,self.width!*0.6,self.height!*0.5)
         homeTreeImage.center = self.view.center
-        homeTreeImage.frame.origin = CGPoint(x:self.width!*0.23, y: self.height!*0.15)
+        homeTreeImage.frame.origin = CGPoint(x:self.width!*0.19, y: self.height!*0.23)
+        treeNameLabel.text = "Git Tree"
+        treeNameLabel.textColor = UIColor.whiteColor()
+        treeNameLabel.frame.origin = CGPoint(x:self.width!*0.11, y: self.height!*0.13)
+        treeDescription.text = "You saved 89kg\n of carbon emissions to date"
+        treeDescription.textColor = UIColor.whiteColor()
+        treeDescription.frame.origin = CGPoint(x:self.width!*0.01, y: self.height!*0.75)
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -44,7 +54,7 @@ class Home: UIViewController {
             let tasksController = segue.destinationViewController as Tasks
         }*/
         if segue.identifier == "goToGardenFromHome" {
-            let garden = segue.destinationViewController as Garden
+            let gardenController = segue.destinationViewController as Garden
         }
         if segue.identifier == "goToLogIn" {
             let signUpController = segue.destinationViewController as LogIn
