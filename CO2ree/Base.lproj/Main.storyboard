@@ -53,7 +53,6 @@
         <!--View Controller-->
         <scene sceneID="0xJ-54-UNU">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="v7x-F3-5ca" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="h6q-yv-aye" customClass="ViewController" customModule="CO2ree" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KkH-KR-iie">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -71,6 +70,7 @@
                         <outlet property="fbLoginView" destination="3gH-8S-TH9" id="Anq-fz-pbA"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v7x-F3-5ca" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3379" y="-1011"/>
         </scene>
@@ -400,24 +400,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Ctree" id="FIs-0G-Jvy">
-                        <barButtonItem key="rightBarButtonItem" id="h2h-Bg-em5">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XkG-2g-HKx">
-                                <rect key="frame" x="233" y="7" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <state key="normal" title="+">
-                                    <color key="titleColor" red="0.60392156862745094" green="0.92549019607843142" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="goToGarden:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DHv-PU-zMg"/>
-                                    <action selector="goToGardenButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uLL-LL-g6V"/>
-                                    <segue destination="8fb-DI-JDq" kind="push" identifier="goToTaskFromHome" id="t82-5W-Sfy"/>
-                                </connections>
-                            </button>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Ctree" id="FIs-0G-Jvy"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
@@ -918,7 +901,6 @@ CQ
         <!--View Controller-->
         <scene sceneID="u21-6m-IKx">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SoJ-7m-BrV" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="H0s-ek-QqO" sceneMemberID="viewController">
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="79h-eU-J9I">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -927,6 +909,7 @@ CQ
                     </view>
                     <toolbarItems/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SoJ-7m-BrV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
@@ -952,7 +935,6 @@ CQ
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="t82-5W-Sfy"/>
         <segue reference="rte-iT-1zR"/>
     </inferredMetricsTieBreakers>
 </document>
